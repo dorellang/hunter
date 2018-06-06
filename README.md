@@ -1,13 +1,14 @@
 # Hunter
 
-What is Hunter? 
+(WARNING: This is a Work-In-Progress, so stuff may not work as expected...)
 
-What is it useful for?
+Hunter (standing for Hunter Useful and Nice Tool for Ecmascript Reengineering) is a platform in development that helps programmers to understand JavaScript applications via interactive visualizations.
 
+Currently we're only supporting up to ES5 apps (this will change soon).
 
 ## Load Hunter 
 
-Execute the following code snippet to load Roassal2
+Execute the following code snippet in a Pharo 6 image to load Hunter (and its dependencies)
 ```Smalltalk
 Gofer it
     smalltalkhubUser: 'dorellang' project: 'Hunter';
@@ -15,6 +16,12 @@ Gofer it
     loadDevelopment
 ```
 
-## Produce a JSON file from a JavaScript application
+## Produce a JSON AST file from a JavaScript application to load onto Hunter
+Next you will want to actually load data from a JS project. Check this [the script in this project](https://github.com/dorellang/esprima-bin-wrapper) to check how you can produce an AST JSON file that you can actually load onto Hunter. From now we'll just assume that you have such file at `~/result.json`
 
-Mention: https://github.com/dorellang/esprima-bin-wrapper
+## Visualize!
+
+Assuming you did the former steps, in your Smalltalk image open the World Menu and go to Doge (TODO rename to Hunter) >  Open and load your `~/result.json` file. Wait a moment (it takes about ~40 seconds for a medium to big sized project to load), and then an inspector window with Treemap visualization should open.
+
+## TODO
+* World Menu is ripped-off from other project, so we need to change the Project Name in World Menu, the icon, and rewrite About text.
