@@ -2,7 +2,7 @@
 
 (WARNING: This is a Work-In-Progress, so stuff may not work as expected...)
 
-Hunter (standing for Hunter Useful and Nice Tool for Ecmascript Reengineering) is a platform in development that helps programmers to understand JavaScript applications via interactive visualizations.
+Hunter (standing for **H**unter **U**seful and **N**ice **T**ool for **E**CMA**S**cript **R**eengineering) is a platform in development that helps programmers to understand JavaScript applications via interactive visualizations.
 
 Currently we're only supporting up to ES5 apps (this will change soon).
 
@@ -24,4 +24,4 @@ Next you will want to actually load data from a JS project. Check this [the scri
 Assuming you did the former steps, in your Smalltalk image open the World Menu and go to Doge (TODO rename to Hunter) >  Open and load your `~/result.json` file. Wait a moment (it takes about ~40 seconds for a medium to big sized project to load), and then an inspector window with Treemap visualization should open.
 
 ## TODO
-* World Menu is ripped-off from other project, so we need to change the Project Name in World Menu, the icon, and rewrite About text.
+* Add more TODOs
