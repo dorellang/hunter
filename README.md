@@ -21,7 +21,7 @@ Next you will want to actually load data from a JS project. Check this [the scri
 
 ## Visualize!
 
-Assuming you did the former steps, in your Smalltalk image open the World Menu and go to Doge (TODO rename to Hunter) >  Open and load your `~/result.json` file. Wait a moment (it takes about ~40 seconds for a medium to big sized project to load), and then an inspector window with Treemap visualization should open.
+Assuming you did the former steps, in your Smalltalk image open the World Menu and go to Hunter >  Open and load your `~/result.json` file. Wait a moment (it takes about ~40 seconds for a medium to big sized project to load), and then an inspector window with Treemap visualization should open.
 
 ## TODO
 * Add more TODOs
