@@ -8,7 +8,7 @@ Currently we're only supporting up to ES5 apps (this will change soon).
 
 ## Load Hunter 
 
-Execute the following code snippet in a Pharo 6 image to load Hunter (and its dependencies)
+Execute the following code snippet in a [Pharo 6](https://pharo.org/) image to load Hunter (and its dependencies)
 ```Smalltalk
 Gofer it
     smalltalkhubUser: 'dorellang' project: 'Hunter';
@@ -22,6 +22,3 @@ Next you will want to actually load data from a JS project. Check this [the scri
 ## Visualize!
 
 Assuming you did the former steps, in your Smalltalk image open the World Menu and go to Hunter >  Open and load your `~/result.json` file. Wait a moment (it takes about ~40 seconds for a medium to big sized project to load), and then an inspector window with Treemap visualization should open.
-
-## TODO
-* Add more TODOs
