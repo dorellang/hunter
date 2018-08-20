@@ -6,15 +6,9 @@ Hunter (standing for **H**unter **U**seful and **N**ice **T**ool for **E**CMA**S
 
 Currently we're only supporting up to ES5 apps (this will change soon).
 
-## Load Hunter 
+## Install Hunter 
 
-Execute the following code snippet in a [Pharo 7](https://pharo.org/) image to load Hunter (and its dependencies)
-```Smalltalk
-Gofer it
-    smalltalkhubUser: 'dorellang' project: 'Hunter';
-    configurationOf: 'Hunter';
-    loadDevelopment
-```
+Run the `install.sh` script in the repo.
 
 ## Produce a JSON AST file from a JavaScript application to load onto Hunter
 Next you will want to actually load data from a JS project. Check this [the script in this project](https://github.com/dorellang/esprima-bin-wrapper) to check how you can produce an AST JSON file that you can actually load onto Hunter. From now we'll just assume that you have such file at `~/result.json`
