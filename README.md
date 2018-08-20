@@ -8,7 +8,7 @@ Currently we're only supporting up to ES5 apps (this will change soon).
 
 ## Load Hunter 
 
-Execute the following code snippet in a [Pharo 6](https://pharo.org/) image to load Hunter (and its dependencies)
+Execute the following code snippet in a [Pharo 7](https://pharo.org/) image to load Hunter (and its dependencies)
 ```Smalltalk
 Gofer it
     smalltalkhubUser: 'dorellang' project: 'Hunter';
