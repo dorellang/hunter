@@ -1,0 +1,3 @@
+visiting
+visitExpressionStatement: anExpressionStatement
+	anExpressionStatement expression accept: self.

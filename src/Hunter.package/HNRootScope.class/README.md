@@ -1,0 +1,1 @@
+I represent a top level scope in a ECMAScript Hunter project. Actually you shouldn't bind any name to me, my only role is to provide a default behavior when a binding scope for a name cannot be found.

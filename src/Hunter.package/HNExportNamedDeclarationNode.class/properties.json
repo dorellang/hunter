@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "HNASTNode",
+	"category" : "Hunter-AST",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"declaration",
+		"specifiers",
+		"source"
+	],
+	"name" : "HNExportNamedDeclarationNode",
+	"type" : "normal"
+}

@@ -1,0 +1,22 @@
+{
+	"instance" : {
+		"metaModelFromNode:" : "DiegoOrellana 5/28/2018 18:39",
+		"addReferenceFrom:" : "DiegoOrellana 8/5/2018 18:26",
+		"linesOfCode" : "AlexandreBergel 7/27/2018 16:11",
+		"valueFromExpression:" : "DiegoOrellana 6/4/2018 02:37",
+		"findProject" : "DiegoOrellana 5/28/2018 18:36",
+		"linkNode:toMetaModel:" : "DiegoOrellana 5/28/2018 19:06",
+		"filepathInProject" : "DiegoOrellana 8/13/2018 17:37",
+		"definitionNode:" : "DiegoOrellana 4/13/2018 21:35",
+		"linkExpression:toValue:" : "DiegoOrellana 6/15/2018 17:56",
+		"parent" : "DiegoOrellana 4/30/2018 14:08",
+		"referenceCount" : "DiegoOrellana 8/5/2018 18:24",
+		"sourceCode" : "DiegoOrellana 5/5/2018 22:42",
+		"gtInspectorSourceCode:" : "DiegoOrellana 8/5/2018 20:59",
+		"definitionNode" : "DiegoOrellana 4/13/2018 21:35",
+		"parent:" : "DiegoOrellana 4/30/2018 14:08",
+		"sourceFileContents" : "DiegoOrellana 5/5/2018 20:19",
+		"project" : "DiegoOrellana 5/28/2018 18:34"
+	},
+	"class" : { }
+}

@@ -1,0 +1,1 @@
+I represent a scope belonging to a block in  an ECMAScript project.

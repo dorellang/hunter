@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "DiegoOrellana 7/27/2018 12:00",
+	"super" : "HNScope",
+	"category" : "Hunter-Scope",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNProgramScope",
+	"type" : "normal"
+}

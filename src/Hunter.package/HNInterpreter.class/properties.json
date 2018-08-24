@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "DiegoOrellana 7/28/2018 20:10",
+	"super" : "HNNodeVisitor",
+	"category" : "Hunter-Interpreter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scope",
+		"statementPos",
+		"expressionPos"
+	],
+	"name" : "HNInterpreter",
+	"type" : "normal"
+}

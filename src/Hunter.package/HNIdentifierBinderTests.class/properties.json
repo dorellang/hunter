@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Hunter-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"project",
+		"metaModelBuilder",
+		"rootScope",
+		"scopeProcessor",
+		"identifierBinder"
+	],
+	"name" : "HNIdentifierBinderTests",
+	"type" : "normal"
+}

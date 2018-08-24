@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "DiegoOrellana 4/5/2018 10:28",
+	"super" : "HNNodeVisitor",
+	"category" : "Hunter-BaseASTVisitors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"identifierFoundCallback",
+		"defaultExprFoundCallback"
+	],
+	"name" : "HNLHSPatternVisitor",
+	"type" : "normal"
+}

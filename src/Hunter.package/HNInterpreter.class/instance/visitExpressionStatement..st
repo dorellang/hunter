@@ -1,0 +1,3 @@
+visiting
+visitExpressionStatement: anExpression
+	self interpretAndLink: anExpression expression

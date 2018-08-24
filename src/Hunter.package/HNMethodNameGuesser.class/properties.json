@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "DiegoOrellana 4/28/2018 23:45",
+	"super" : "HNBaseFunctionNameGuesser",
+	"category" : "Hunter-Library",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNMethodNameGuesser",
+	"type" : "normal"
+}

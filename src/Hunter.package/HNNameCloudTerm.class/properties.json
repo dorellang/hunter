@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-NameCloud",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"word",
+		"count",
+		"metaModels"
+	],
+	"name" : "HNNameCloudTerm",
+	"type" : "normal"
+}

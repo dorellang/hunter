@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "HNNoOpVisitor",
+	"category" : "Hunter-Importing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scope",
+		"project",
+		"program"
+	],
+	"name" : "HNImportProcessor",
+	"type" : "normal"
+}

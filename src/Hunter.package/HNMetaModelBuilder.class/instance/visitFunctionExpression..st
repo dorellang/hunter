@@ -1,0 +1,3 @@
+visiting
+visitFunctionExpression: aFunctionExpression
+	self handleFunctionLikeNode: aFunctionExpression

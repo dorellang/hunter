@@ -1,0 +1,3 @@
+visiting
+visitFunction: aFunction
+	self subclassResponsibility

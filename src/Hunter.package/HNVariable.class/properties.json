@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "DiegoOrellana 4/3/2018 09:35",
+	"super" : "HNSourceMetaModel",
+	"category" : "Hunter-MetaModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"kind",
+		"initValue",
+		"isAssigned"
+	],
+	"name" : "HNVariable",
+	"type" : "normal"
+}

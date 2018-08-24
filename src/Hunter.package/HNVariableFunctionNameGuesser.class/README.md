@@ -1,0 +1,1 @@
+I am a helper class. My instances via the guessForNode: message attempt to guess the name of the function corresponding to the node passed as an argument by checking if the node is within a variable definition.

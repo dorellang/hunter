@@ -1,0 +1,3 @@
+visiting
+accept: aMetaModelVisitor
+	self subclassResponsibility

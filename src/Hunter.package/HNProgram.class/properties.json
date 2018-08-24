@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "DiegoOrellana 4/3/2018 09:30",
+	"super" : "HNFreeCodeMetaModel",
+	"category" : "Hunter-MetaModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"filepath",
+		"sourceFileContents",
+		"rawDependencies",
+		"resolvedDependencies",
+		"filepathInProject"
+	],
+	"name" : "HNProgram",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+visiting
+visitReturnStatement: aReturnStatement
+	self interpretAndLink: aReturnStatement argument

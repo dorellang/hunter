@@ -1,0 +1,21 @@
+{
+	"instance" : {
+		"lookup:occurringBefore:" : "DiegoOrellana 7/24/2018 22:43",
+		"project" : "DiegoOrellana 7/9/2018 14:28",
+		"lookup:" : "DiegoOrellana 7/23/2018 23:49",
+		"bindingScopeFor:ifNotFound:" : "DiegoOrellana 7/23/2018 22:50",
+		"hoistBind:to:" : "DiegoOrellana 7/23/2018 23:46",
+		"checkIfDeclaredAndMarked:" : "DiegoOrellana 7/23/2018 23:55",
+		"isDeclared:" : "DiegoOrellana 7/26/2018 22:00",
+		"initialize" : "DiegoOrellana 7/22/2018 21:11",
+		"bind:to:" : "DiegoOrellana 7/23/2018 23:46",
+		"declareAndMark:" : "DiegoOrellana 7/24/2018 00:12",
+		"bindingNonBlockScope" : "DiegoOrellana 7/9/2018 14:28",
+		"declare:" : "DiegoOrellana 7/23/2018 23:43",
+		"fallbackBindingScopeFor:ifNotFound:" : "DiegoOrellana 7/27/2018 12:29",
+		"globalScope" : "DiegoOrellana 7/27/2018 11:56",
+		"isGlobalScope" : "DiegoOrellana 7/28/2018 23:27",
+		"markDeclaration:" : "DiegoOrellana 7/24/2018 00:19"
+	},
+	"class" : { }
+}

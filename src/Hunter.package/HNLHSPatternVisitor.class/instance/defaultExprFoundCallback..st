@@ -1,0 +1,3 @@
+accessing
+defaultExprFoundCallback: anUpToOneArgBlock
+	defaultExprFoundCallback := anUpToOneArgBlock

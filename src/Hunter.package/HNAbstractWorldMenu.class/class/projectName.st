@@ -1,0 +1,3 @@
+world menu
+projectName
+	^ 'Hunter'

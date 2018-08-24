@@ -1,0 +1,17 @@
+{
+	"instance" : {
+		"metaModelFromNode:" : "DiegoOrellana 6/4/2018 02:33",
+		"vizDescription" : "DiegoOrellana 8/22/2018 01:15",
+		"allChildrenAddIn:" : "AlexandreBergel 7/27/2018 16:41",
+		"allChildren" : "AlexandreBergel 7/27/2018 16:40",
+		"children" : "DiegoOrellana 6/30/2018 19:52",
+		"valueFromExpression:" : "DiegoOrellana 6/4/2018 02:37",
+		"findProject" : "DiegoOrellana 5/28/2018 18:35",
+		"linkNode:toMetaModel:" : "DiegoOrellana 5/28/2018 19:04",
+		"parent" : "DiegoOrellana 6/4/2018 02:33",
+		"linkExpression:toValue:" : "DiegoOrellana 6/3/2018 14:05",
+		"accept:" : "DiegoOrellana 6/30/2018 20:02",
+		"project" : "DiegoOrellana 6/4/2018 02:33"
+	},
+	"class" : { }
+}

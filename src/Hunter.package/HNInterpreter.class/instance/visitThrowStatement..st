@@ -1,0 +1,3 @@
+visiting
+visitThrowStatement: aThrowStatement
+	self interpretAndLink: aThrowStatement argument

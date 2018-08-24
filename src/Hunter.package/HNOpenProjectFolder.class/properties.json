@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNAbstractWorldMenu",
+	"category" : "Hunter-WorldMenu",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"LastPath"
+	],
+	"instvars" : [ ],
+	"name" : "HNOpenProjectFolder",
+	"type" : "normal"
+}

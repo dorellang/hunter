@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNBaseValue",
+	"category" : "Hunter-Interpreter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"referencedNames"
+	],
+	"name" : "HNRuntimeValue",
+	"type" : "normal"
+}

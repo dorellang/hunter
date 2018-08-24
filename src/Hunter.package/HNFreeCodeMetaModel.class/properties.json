@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "DiegoOrellana 5/6/2018 23:07",
+	"super" : "HNSourceMetaModel",
+	"category" : "Hunter-MetaModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"classes",
+		"functions",
+		"variables"
+	],
+	"name" : "HNFreeCodeMetaModel",
+	"type" : "normal"
+}

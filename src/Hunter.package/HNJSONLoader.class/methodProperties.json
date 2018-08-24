@@ -1,0 +1,8 @@
+{
+	"instance" : { },
+	"class" : {
+		"buildMetamodelFromResultList:" : "DiegoOrellana 8/20/2018 17:38",
+		"loadFromJSONStream:" : "DiegoOrellana 5/6/2018 19:49",
+		"loadFromScriptDirs:andModuleDirs:" : "DiegoOrellana 8/20/2018 16:19"
+	}
+}

@@ -1,0 +1,3 @@
+accessing
+metaModelFromNode: anASTNode
+	self subclassResponsibility

@@ -1,0 +1,3 @@
+accessing
+valueFromExpression: anASTNode
+	self subclassResponsibility

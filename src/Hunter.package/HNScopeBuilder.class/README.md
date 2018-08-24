@@ -1,0 +1,1 @@
+I am a Hunter AST Processor. My duties are to create the Hunter Scopes given an AST with its meta-model and link it to the AST node that encloses it.  See HNBaseScope for more information about Scopes.

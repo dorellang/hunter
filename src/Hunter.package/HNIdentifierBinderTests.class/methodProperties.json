@@ -1,0 +1,12 @@
+{
+	"instance" : {
+		"program" : "DiegoOrellana 7/27/2018 12:04",
+		"testClassDeclaration" : "DiegoOrellana 7/27/2018 14:10",
+		"testVariableAndFunctionDeclaration" : "DiegoOrellana 7/27/2018 12:36",
+		"setUp" : "DiegoOrellana 7/27/2018 12:24",
+		"testCatch" : "DiegoOrellana 7/27/2018 14:00",
+		"testArrowFunctionExpression" : "DiegoOrellana 7/27/2018 13:49",
+		"testGlobalWithoutDefinition" : "DiegoOrellana 7/27/2018 14:58"
+	},
+	"class" : { }
+}

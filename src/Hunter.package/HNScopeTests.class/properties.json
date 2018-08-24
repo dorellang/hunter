@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "DiegoOrellana 6/26/2018 08:35",
+	"super" : "TestCase",
+	"category" : "Hunter-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rootScope",
+		"project",
+		"program"
+	],
+	"name" : "HNScopeTests",
+	"type" : "normal"
+}
