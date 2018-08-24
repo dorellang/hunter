@@ -8,3 +8,4 @@ pharo-local/
 pharo
 pharo-ui
 pharo-vm/
+*.swp
