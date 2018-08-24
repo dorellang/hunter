@@ -1,0 +1,10 @@
+Pharo.changes
+Pharo.changes.*
+Pharo.image
+Pharo.image.bak.*
+Pharo*.sources
+image.*/
+pharo-local/
+pharo
+pharo-ui
+pharo-vm/
