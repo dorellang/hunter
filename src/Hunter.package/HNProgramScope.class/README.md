@@ -1,0 +1,1 @@
+I represent a global Hunter scope within a Hunter ECMAScript Program.

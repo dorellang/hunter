@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "HNBasicMetaModel",
+	"category" : "Hunter-MetaModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nodeToMetaModelDict",
+		"programs",
+		"exprToValueDict",
+		"scopePositioningDict",
+		"nodeToScopeDict",
+		"programsByPath",
+		"commonPathPrefix",
+		"nameCloud"
+	],
+	"name" : "HNProject",
+	"type" : "normal"
+}

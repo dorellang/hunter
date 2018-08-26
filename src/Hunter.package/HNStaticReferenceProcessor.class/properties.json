@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "HNNoOpVisitor",
+	"category" : "Hunter-Importing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"project",
+		"program"
+	],
+	"name" : "HNStaticReferenceProcessor",
+	"type" : "normal"
+}

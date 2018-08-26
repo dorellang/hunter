@@ -1,0 +1,3 @@
+visiting
+visitVariable: aVariable
+	self subclassResponsibility

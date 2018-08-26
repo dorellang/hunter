@@ -1,0 +1,3 @@
+visiting
+visitArrowFunctionExpression: anArrowFunctionExpression
+	self handleFunctionLikeNode: anArrowFunctionExpression

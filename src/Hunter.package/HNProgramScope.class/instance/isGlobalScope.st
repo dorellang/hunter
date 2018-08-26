@@ -1,0 +1,3 @@
+testing
+isGlobalScope
+	^ true

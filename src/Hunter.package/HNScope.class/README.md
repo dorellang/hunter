@@ -1,0 +1,1 @@
+I represent an scope belonging to either a program or  a function in an ECMAScript project. They are collapsed in the same class, as there aren't any behavioral difference between them that justifies modelling them in distinct classes.

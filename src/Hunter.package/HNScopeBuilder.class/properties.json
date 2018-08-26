@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DiegoOrellana 7/24/2018 21:37",
+	"super" : "HNNoOpVisitor",
+	"category" : "Hunter-Scope",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scope"
+	],
+	"name" : "HNScopeBuilder",
+	"type" : "normal"
+}

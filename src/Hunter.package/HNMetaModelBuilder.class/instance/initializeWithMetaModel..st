@@ -1,0 +1,3 @@
+initialization
+initializeWithMetaModel: aMetaModelOrProject
+	metaModel := aMetaModelOrProject

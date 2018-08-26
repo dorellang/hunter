@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "DiegoOrellana 4/3/2018 09:41",
+	"super" : "HNBasicMetaModel",
+	"category" : "Hunter-MetaModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"definitionNode",
+		"parent",
+		"sourceCode",
+		"project",
+		"referenceCount"
+	],
+	"name" : "HNSourceMetaModel",
+	"type" : "normal"
+}

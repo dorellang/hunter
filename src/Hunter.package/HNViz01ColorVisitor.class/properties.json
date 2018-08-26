@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNBaseMetaModelVisitor",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"palette"
+	],
+	"name" : "HNViz01ColorVisitor",
+	"type" : "normal"
+}

@@ -1,0 +1,25 @@
+as yet unclassified
+exampleCode
+	"
+	Esprima generated from:
+	
+class Rectangle {
+ 	aValue () {return 42;}
+}
+
+class ColoredRectangle extends Rectangle {
+	aValue () {return 43;}
+}
+
+c = new ColoredRectangle();
+console.log(c.aValue())
+
+
+	"
+
+	^ '[
+{"path":"/Users/alexandrebergel/Desktop/Hunter/exampleWithClasses/example.js","type":"module","status":"ok","result":{"type":"Program","body":[{"type":"ClassDeclaration","id":{"type":"Identifier","name":"Rectangle","range":[6,15],"loc":{"start":{"line":1,"column":6},"end":{"line":1,"column":15}}},"superClass":null,"body":{"type":"ClassBody","body":[{"type":"MethodDefinition","key":{"type":"Identifier","name":"aValue","range":[20,26],"loc":{"start":{"line":2,"column":2},"end":{"line":2,"column":8}}},"computed":false,"value":{"type":"FunctionExpression","id":null,"params":[],"body":{"type":"BlockStatement","body":[{"type":"ReturnStatement","argument":{"type":"Literal","value":42,"raw":"42","range":[38,40],"loc":{"start":{"line":2,"column":20},"end":{"line":2,"column":22}}},"range":[31,41],"loc":{"start":{"line":2,"column":13},"end":{"line":2,"column":23}}}],"range":[30,42],"loc":{"start":{"line":2,"column":12},"end":{"line":2,"column":24}}},"generator":false,"expression":false,"async":false,"range":[27,42],"loc":{"start":{"line":2,"column":9},"end":{"line":2,"column":24}}},"kind":"method","static":false,"range":[20,42],"loc":{"start":{"line":2,"column":2},"end":{"line":2,"column":24}}}],"range":[16,44],"loc":{"start":{"line":1,"column":16},"end":{"line":3,"column":1}}},"range":[0,44],"loc":{"start":{"line":1,"column":0},"end":{"line":3,"column":1}}},{"type":"ClassDeclaration","id":{"type":"Identifier","name":"ColoredRectangle","range":[52,68],"loc":{"start":{"line":5,"column":6},"end":{"line":5,"column":22}}},"superClass":{"type":"Identifier","name":"Rectangle","range":[77,86],"loc":{"start":{"line":5,"column":31},"end":{"line":5,"column":40}}},"body":{"type":"ClassBody","body":[{"type":"MethodDefinition","key":{"type":"Identifier","name":"aValue","range":[90,96],"loc":{"start":{"line":6,"column":1},"end":{"line":6,"column":7}}},"computed":false,"value":{"type":"FunctionExpression","id":null,"params":[],"body":{"type":"BlockStatement","body":[{"type":"ReturnStatement","argument":{"type":"Literal","value":43,"raw":"43","range":[108,110],"loc":{"start":{"line":6,"column":19},"end":{"line":6,"column":21}}},"range":[101,111],"loc":{"start":{"line":6,"column":12},"end":{"line":6,"column":22}}}],"range":[100,112],"loc":{"start":{"line":6,"column":11},"end":{"line":6,"column":23}}},"generator":false,"expression":false,"async":false,"range":[97,112],"loc":{"start":{"line":6,"column":8},"end":{"line":6,"column":23}}},"kind":"method","static":false,"range":[90,112],"loc":{"start":{"line":6,"column":1},"end":{"line":6,"column":23}}}],"range":[87,114],"loc":{"start":{"line":5,"column":41},"end":{"line":7,"column":1}}},"range":[46,114],"loc":{"start":{"line":5,"column":0},"end":{"line":7,"column":1}}},{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"Identifier","name":"c","range":[116,117],"loc":{"start":{"line":9,"column":0},"end":{"line":9,"column":1}}},"right":{"type":"NewExpression","callee":{"type":"Identifier","name":"ColoredRectangle","range":[124,140],"loc":{"start":{"line":9,"column":8},"end":{"line":9,"column":24}}},"arguments":[],"range":[120,142],"loc":{"start":{"line":9,"column":4},"end":{"line":9,"column":26}}},"range":[116,142],"loc":{"start":{"line":9,"column":0},"end":{"line":9,"column":26}}},"range":[116,143],"loc":{"start":{"line":9,"column":0},"end":{"line":9,"column":27}}},{"type":"ExpressionStatement","expression":{"type":"CallExpression","callee":{"type":"MemberExpression","computed":false,"object":{"type":"Identifier","name":"console","range":[144,151],"loc":{"start":{"line":10,"column":0},"end":{"line":10,"column":7}}},"property":{"type":"Identifier","name":"log","range":[152,155],"loc":{"start":{"line":10,"column":8},"end":{"line":10,"column":11}}},"range":[144,155],"loc":{"start":{"line":10,"column":0},"end":{"line":10,"column":11}}},"arguments":[{"type":"CallExpression","callee":{"type":"MemberExpression","computed":false,"object":{"type":"Identifier","name":"c","range":[156,157],"loc":{"start":{"line":10,"column":12},"end":{"line":10,"column":13}}},"property":{"type":"Identifier","name":"aValue","range":[158,164],"loc":{"start":{"line":10,"column":14},"end":{"line":10,"column":20}}},"range":[156,164],"loc":{"start":{"line":10,"column":12},"end":{"line":10,"column":20}}},"arguments":[],"range":[156,166],"loc":{"start":{"line":10,"column":12},"end":{"line":10,"column":22}}}],"range":[144,167],"loc":{"start":{"line":10,"column":0},"end":{"line":10,"column":23}}},"range":[144,167],"loc":{"start":{"line":10,"column":0},"end":{"line":10,"column":23}}}],"sourceType":"module","range":[0,167],"loc":{"start":{"line":1,"column":0},"end":{"line":10,"column":23}}}}
+
+]
+
+'

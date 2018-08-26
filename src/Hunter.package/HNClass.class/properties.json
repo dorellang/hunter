@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "HNSourceMetaModel",
+	"category" : "Hunter-MetaModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"superClassExpr",
+		"instanceMethods",
+		"staticMethods",
+		"constructor",
+		"superclassName",
+		"superclass"
+	],
+	"name" : "HNClass",
+	"type" : "normal"
+}

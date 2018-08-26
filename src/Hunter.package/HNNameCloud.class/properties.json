@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RTNameCloud",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNNameCloud",
+	"type" : "normal"
+}

@@ -1,0 +1,2 @@
+visiting
+visitExportAllDeclaration: aNode

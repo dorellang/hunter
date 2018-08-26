@@ -1,0 +1,1 @@
+I am a helper object. My purpose is to infer an EcmaScript function name by trying a number of different strategies (AKA "Name Guessers"). I am myself a Name Guesser and I use the Name Guessers provided in my guessers method.

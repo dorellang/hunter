@@ -1,0 +1,1 @@
+I am a Hunter AST processor my role is to fill the scopes with HNScopeBinding for the identifiers in a certain position with a HNDeferredValue. I might not be 100% accurate.

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "DiegoOrellana 6/17/2018 22:23",
+	"super" : "HNNoOpVisitor",
+	"category" : "Hunter-MetaModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"metaModel",
+		"programPath"
+	],
+	"name" : "HNMetaModelBuilder",
+	"type" : "normal"
+}

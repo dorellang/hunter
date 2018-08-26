@@ -1,0 +1,3 @@
+visiting
+visitForOfStatement: aForOfStatement
+	"todo"

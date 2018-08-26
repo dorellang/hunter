@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-AST",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cooked",
+		"raw"
+	],
+	"name" : "HNTemplateElementValueNode",
+	"type" : "normal"
+}

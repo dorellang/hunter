@@ -1,0 +1,2 @@
+visiting
+visitMemberExpression: aNode

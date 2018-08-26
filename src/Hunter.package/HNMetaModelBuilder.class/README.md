@@ -1,0 +1,1 @@
+I represent an MetaModel Builder. My role is to take the AST and generate the MetaModel instances from it. I shouldn't be doing anything , like interpreting at compile time JavaScript expressions or filling the Scope with bindings.

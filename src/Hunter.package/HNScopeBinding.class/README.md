@@ -1,0 +1,1 @@
+I represent a Scope Binding which is held in a HNBaseScope instance. I am basically a (value, position) tuple which defines an ordering based on the position instance variable (useful when performing value lookup).

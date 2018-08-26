@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "HNBaseMetaModelVisitor",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNViz01PopupTextVisitor",
+	"type" : "normal"
+}

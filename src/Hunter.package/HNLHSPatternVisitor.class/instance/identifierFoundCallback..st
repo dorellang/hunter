@@ -1,0 +1,3 @@
+accessing
+identifierFoundCallback: anUpToThreeArgBlock
+	identifierFoundCallback := anUpToThreeArgBlock

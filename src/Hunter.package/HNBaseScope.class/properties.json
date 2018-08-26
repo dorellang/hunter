@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "DiegoOrellana 7/24/2018 21:58",
+	"super" : "Object",
+	"category" : "Hunter-Scope",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parent",
+		"project",
+		"bindings",
+		"declarations",
+		"currentPosition",
+		"globalScope"
+	],
+	"name" : "HNBaseScope",
+	"type" : "normal"
+}

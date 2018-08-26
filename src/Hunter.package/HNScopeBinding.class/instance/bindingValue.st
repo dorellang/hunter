@@ -1,0 +1,3 @@
+accessing
+bindingValue
+	^ value

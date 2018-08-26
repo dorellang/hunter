@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "DiegoOrellana 8/9/2018 22:00",
+	"super" : "Object",
+	"category" : "Hunter-EsprimaWrapper",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNEsprimaWrapper",
+	"type" : "normal"
+}

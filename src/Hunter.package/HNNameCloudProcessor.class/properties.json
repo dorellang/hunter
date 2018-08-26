@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "HNNoOpVisitor",
+	"category" : "Hunter-NameCloud",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"project",
+		"program"
+	],
+	"name" : "HNNameCloudProcessor",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "DiegoOrellana 7/27/2018 10:56",
+	"super" : "HNNoOpVisitor",
+	"category" : "Hunter-Scope",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scope",
+		"project"
+	],
+	"name" : "HNIdentifierBinder",
+	"type" : "normal"
+}

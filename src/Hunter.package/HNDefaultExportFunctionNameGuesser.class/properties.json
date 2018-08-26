@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "HNBaseFunctionNameGuesser",
+	"category" : "Hunter-Library",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNDefaultExportFunctionNameGuesser",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+bindingNonBlockScope
+	^ parent bindingNonBlockScope
