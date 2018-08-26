@@ -1,0 +1,17 @@
+SmalltalkCISpec {
+  #name : 'Hunter',
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Hunter',
+      #repository : 'github://dorellang/hunter:master/src',
+      #onWarningLog : true,
+      #failOn : [ #OCUndeclaredVariableWarning ],
+      #useLatestMetacello : true,
+      #load : [ 'default' ],
+      #platforms : [ #pharo ]
+    }
+  ],
+  #testing : {
+    #packages : [ 'Hunter' ]
+  }
+}
