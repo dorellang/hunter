@@ -4,7 +4,7 @@
 
 Hunter (standing for **H**unter **U**seful and **N**ice **T**ool for **E**CMA**S**cript **R**eengineering) is a platform in development that helps programmers to understand JavaScript applications via interactive visualizations.
 
-Currently we're only supporting up to ES5 apps (this will change soon).
+Hunter runs on top of [Pharo](http://pharo.org), the live programming environment.
 
 ## Install Hunter 
 
@@ -33,7 +33,7 @@ This is the recommended way of installing Hunter as it gets you a pristine Pharo
 
 Maybe you find that the overhead of downloading a new Pharo image and VM is too much if you already have some other images there. In that case, do the following:
 
-```
+```smalltalk
 Metacello new
 	baseline: 'Hunter';
 	repository: 'github://dorellang/hunter:master/src';
