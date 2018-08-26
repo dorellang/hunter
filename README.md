@@ -1,5 +1,7 @@
 # Hunter
 
+[![Build Status](https://travis-ci.org/dorellang/hunter.svg?branch=master)](https://travis-ci.org/dorellang/hunter)
+
 (WARNING: This is a Work-In-Progress, so stuff may not work as expected...)
 
 Hunter (standing for **H**unter **U**seful and **N**ice **T**ool for **E**CMA**S**cript **R**eengineering) is a platform in development that helps programmers to understand JavaScript applications via interactive visualizations.
