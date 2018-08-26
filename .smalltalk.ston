@@ -5,7 +5,7 @@ SmalltalkCISpec {
       #baseline : 'Hunter',
       #repository : 'github://dorellang/hunter:master/src',
       #onWarningLog : true,
-      #failOn : [ #OCUndeclaredVariableWarning ],
+      #failOn : [ ],
       #useLatestMetacello : false,
       #load : [ 'default' ],
       #platforms : [ #pharo ]
