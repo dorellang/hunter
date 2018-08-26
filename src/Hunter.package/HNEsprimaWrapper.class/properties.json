@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "HNBaseEsprimaWrapper",
+	"name" : "HNEsprimaWrapper",
 	"type" : "normal"
 }

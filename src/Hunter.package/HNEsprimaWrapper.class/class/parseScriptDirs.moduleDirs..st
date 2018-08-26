@@ -4,7 +4,7 @@ parseScriptDirs: aScriptDirCollection moduleDirs: aModuleDirCollection
 	| process |
 	process := OSSUnixSubprocess new
 		command: 'node';
-		arguments: {'esprima-bin-wrapper.node.js'},
+		arguments: { self esprimaBinWrapperPath },
 			(self getArgumentsForScriptDirs: aScriptDirCollection andModuleDirs: aModuleDirCollection);
 		redirectStdoutTo: (OSSVMProcess vmProcess systemAccessor makeBlockingPipe);
 		run.
