@@ -1,9 +1,0 @@
-{
-	"instance" : { },
-	"class" : {
-		"setupNeoJSONReader:" : "DiegoOrellana 6/18/2018 18:51",
-		"readFrom:" : "DiegoOrellana 6/26/2018 08:55",
-		"processValue:" : "DiegoOrellana 4/19/2018 10:56",
-		"processDict:" : "DiegoOrellana 5/6/2018 20:19"
-	}
-}
