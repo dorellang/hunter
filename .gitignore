@@ -10,3 +10,4 @@ pharo
 pharo-ui
 pharo-vm/
 *.swp
+progress.log
