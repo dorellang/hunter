@@ -7,4 +7,4 @@ install:
   - sudo apt-get install libssl1.0.0:i386
   - ./install.sh
 script:
-  - ./pharo Pharo.image test Hunter
+  - ./pharo Pharo.image test --fail-on-failure --fail-on-error Hunter
