@@ -13,11 +13,12 @@ openFile
 	LastPath := file asPath parent.
 
 	'Loading AST from JSON file...' displayProgressFrom: 0 to: 2 during: [ :bar |
-		| results |
+		| results hunter |
 		bar value: 0.
-		results := HNJSONLoader loadFromJSONStream: file asFileReference readStream.
+		hunter := Hunter new jsonFile: file.
+		results := hunter buildAST.
 		bar value: 1.
 		bar title: 'Building meta-models...'.
-		project := HNJSONLoader buildMetamodelFromResultList: results.
+		project := hunter buildMetamodelFromResultList: results.
 		project inspect
 	].

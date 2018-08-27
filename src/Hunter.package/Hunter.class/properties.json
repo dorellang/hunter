@@ -1,13 +1,18 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Hunter",
+	"category" : "Hunter-Main",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [
 		"BaseDirectory"
 	],
-	"instvars" : [ ],
-	"name" : "HNUtil",
+	"instvars" : [
+		"moduleDirs",
+		"scriptDirs",
+		"jsonFile",
+		"stream"
+	],
+	"name" : "Hunter",
 	"type" : "normal"
 }

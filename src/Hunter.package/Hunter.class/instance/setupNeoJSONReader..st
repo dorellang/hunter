@@ -1,4 +1,4 @@
-instance creation
+private - json reading
 setupNeoJSONReader: aNeoJSONReader
 	"Sets up a NeoJSONReader with the AST Schema, which is named #ASTNode"
 	aNeoJSONReader

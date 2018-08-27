@@ -36,7 +36,7 @@ testBasic
     "sourceType": "script"
 }' readStream.
 
-	parsedAST := (HNJSONReader setupNeoJSONReader: (NeoJSONReader on: jsonStream))
+	parsedAST := (Hunter new setupNeoJSONReader: (NeoJSONReader on: jsonStream))
 		nextAs: #ASTNode.
 
 	self assert: parsedAST type equals: 'Program'.

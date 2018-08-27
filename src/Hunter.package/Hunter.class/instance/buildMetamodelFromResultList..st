@@ -1,4 +1,4 @@
-public - importing
+building
 buildMetamodelFromResultList: aParseResultList
 	| size processed project |
 	processed := 0.

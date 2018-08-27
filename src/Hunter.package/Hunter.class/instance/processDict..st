@@ -1,4 +1,4 @@
-private
+private - json reading
 processDict: aDict
 	| type class result |
 	type := aDict at: 'type' ifAbsent: [ Error signal: 'Expected type in ASTNode'].
@@ -9,8 +9,4 @@ processDict: aDict
 		result perform: (assoc key, ':') asSymbol with: (self processValue: assoc value).
 	].
 	result postProcessWith: aDict.
-	^ result.
-	
-	
-	
-	
+	^ result
