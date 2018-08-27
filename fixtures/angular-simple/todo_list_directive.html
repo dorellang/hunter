@@ -1,0 +1,11 @@
+<ul>
+  <li ng-repeat="item in $ctrl.todoList">
+    {{item}}
+    <a href="#" ng-click="$ctrl.deleteItem($index)">[Delete]</a>
+  </li>
+  <li>
+    <input type="text" ng-model="$ctrl.newItem" placeholder="Type a new item">
+  </li>
+</ul>
+
+<button ng-click="$ctrl.addItem($ctrl.newItem)">Add new item</button>
