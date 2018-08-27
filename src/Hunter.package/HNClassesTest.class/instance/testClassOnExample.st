@@ -2,8 +2,7 @@ tests
 testClassOnExample
 
 	| r project classes |
-	r := HNJSONLoader loadFromJSONStream: self exampleCode readStream.
-	project := HNJSONLoader buildMetamodelFromResultList: r.
+	project := Hunter new stream: self exampleCode readStream; buildProject.
 	
 	self assert: project classes size equals: 2.
 	classes := project classes.

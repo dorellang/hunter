@@ -9,11 +9,12 @@ openFile
 	LastPath := directory asPath.
 
 	'Collecting AST from project files...' displayProgressFrom: 0 to: 2 during: [ :bar |
-		| results |
+		| hunter results |
 		bar value: 0.
-		results := HNJSONLoader loadFromScriptDirs: {} andModuleDirs: { directory pathString }.
+		hunter := Hunter new moduleDirs: { directory pathString }.
+		results := hunter buildAST.
 		bar value: 1.
 		bar title: 'Building meta-models...'.
-		project := HNJSONLoader buildMetamodelFromResultList: results.
+		project := hunter buildMetamodelFromResultList: results.
 		project inspect
 	].

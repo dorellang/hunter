@@ -1,6 +1,6 @@
-public - importing
+private - loading
 loadFromJSONStream: readStream
-	^ (HNJSONReader setupNeoJSONReader: (NeoJSONReader on: readStream))
+	^ (self setupNeoJSONReader: (NeoJSONReader on: readStream))
 		for: HNParseResult do: [ :mapping |
 			mapping mapInstVars: #(path type status sourceType).
 			(mapping mapInstVar: #result) valueSchema: #ASTNode.

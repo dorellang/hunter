@@ -1,4 +1,4 @@
-private
+private - json reading
 processValue: anObject
 	anObject isDictionary ifTrue: [ ^ self processDict: anObject ].
 	anObject isArray ifTrue: [ ^ anObject collect: [:item |  self processValue: item ] ].

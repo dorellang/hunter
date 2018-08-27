@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Hunter",
+	"super" : "TestCase",
+	"category" : "Hunter-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "HNJSONReader",
+	"name" : "HunterTests",
 	"type" : "normal"
 }

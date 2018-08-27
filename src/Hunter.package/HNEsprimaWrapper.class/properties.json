@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "DiegoOrellana 8/9/2018 22:00",
 	"super" : "Object",
-	"category" : "Hunter-EsprimaWrapper",
+	"category" : "Hunter-Main",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
