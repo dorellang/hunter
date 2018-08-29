@@ -25,7 +25,7 @@ buildProject
 					accept: identifierBinder;
 					accept: importProcessor;
 					accept: nameCloudProcessor.
-					ast accept: angularVisitor.
+					"ast accept: angularVisitor."
 
 				"NOTE Assuming resulting AST has only one Program node at root."
 				"(and it's added at end to project by visitor)"
