@@ -11,7 +11,8 @@
 		"moduleDirs",
 		"scriptDirs",
 		"jsonFile",
-		"stream"
+		"stream",
+		"parseResultCollection"
 	],
 	"name" : "Hunter",
 	"type" : "normal"

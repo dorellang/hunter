@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DiegoOrellana 8/28/2018 20:46",
+	"super" : "HNASTProcessor",
+	"category" : "Hunter-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"identifiers"
+	],
+	"name" : "HNIdentifierFinder1",
+	"type" : "normal"
+}

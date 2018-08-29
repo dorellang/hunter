@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNNodeVisitor",
+	"category" : "Hunter-BaseASTVisitors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"matcher"
+	],
+	"name" : "HNASTProcessor",
+	"type" : "normal"
+}

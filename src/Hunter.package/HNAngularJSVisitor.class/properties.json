@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNNodeVisitor",
+	"category" : "Hunter-AngularJS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"project"
+	],
+	"name" : "HNAngularJSVisitor",
+	"type" : "normal"
+}

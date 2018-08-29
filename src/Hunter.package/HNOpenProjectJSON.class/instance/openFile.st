@@ -13,12 +13,12 @@ openFile
 	LastPath := file asPath parent.
 
 	'Loading AST from JSON file...' displayProgressFrom: 0 to: 2 during: [ :bar |
-		| results hunter |
+		| hunter |
 		bar value: 0.
 		hunter := Hunter new jsonFile: file.
-		results := hunter buildAST.
+		hunter buildAST.
 		bar value: 1.
 		bar title: 'Building meta-models...'.
-		project := hunter buildMetamodelFromResultList: results.
+		project := hunter buildProject.
 		project inspect
 	].

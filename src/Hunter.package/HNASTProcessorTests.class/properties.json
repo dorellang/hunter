@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "HunterTests",
+	"name" : "HNASTProcessorTests",
 	"type" : "normal"
 }
