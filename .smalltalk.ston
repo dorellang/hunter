@@ -3,12 +3,12 @@ SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'Hunter',
-      #repository : 'github://dorellang/hunter:master/src',
+      #directory : 'src',
       #onWarningLog : true,
-      #failOn : [ ],
       #useLatestMetacello : false,
       #load : [ 'default' ],
-      #platforms : [ #pharo ]
+      #platforms : [ #pharo ],
+      #postLoading: '.sci-postloading.st'
     }
   ],
   #testing : {
