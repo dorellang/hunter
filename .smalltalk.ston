@@ -10,7 +10,7 @@ SmalltalkCISpec {
       #platforms : [ #pharo ]
     }
   ],
-  #postLoading: '.sci-postloading.st'
+  #postLoading: '.sci-postloading.st',
   #testing : {
     #packages : [ 'Hunter' ]
   }
