@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"matcher",
 		"conditions",
-		"actions"
+		"actions",
+		"specifier"
 	],
 	"name" : "HNASTCaseBuilder",
 	"type" : "normal"

@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Hunter-BaseASTVisitors",
+	"super" : "HNASTProcessor",
+	"category" : "Hunter-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"matcher",
-		"currentFrame"
+		"identifiers"
 	],
-	"name" : "HNASTMatchSpecifier",
+	"name" : "HNIdentifierFinder2",
 	"type" : "normal"
 }
