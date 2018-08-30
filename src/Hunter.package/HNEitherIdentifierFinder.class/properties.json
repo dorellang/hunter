@@ -1,13 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "DiegoOrellana 8/29/2018 23:22",
 	"super" : "HNASTProcessor",
-	"category" : "Hunter-Tests",
+	"category" : "Hunter-ASTProcessorExamples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"identifiers"
 	],
-	"name" : "HNIdentifierFinder2",
+	"name" : "HNEitherIdentifierFinder",
 	"type" : "normal"
 }

@@ -1,8 +1,8 @@
 tests
-testIdentifierFinderWithEither
+testEitherIdentifierFinder
 	| ast processor |
 	ast := self basicAST.
-	processor := HNIdentifierFinder2 new.
+	processor := HNEitherIdentifierFinder new.
 	ast accept: processor.
 	self assert: processor foundNames size equals: 3.
 	self assert: processor foundNames first equals: 'foo'.

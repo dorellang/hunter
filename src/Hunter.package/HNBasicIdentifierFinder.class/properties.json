@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DiegoOrellana 8/28/2018 20:46",
+	"super" : "HNASTProcessor",
+	"category" : "Hunter-ASTProcessorExamples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"identifiers"
+	],
+	"name" : "HNBasicIdentifierFinder",
+	"type" : "normal"
+}

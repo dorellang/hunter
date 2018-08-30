@@ -2,7 +2,7 @@ tests
 testIdentifierFinder
 	| ast processor |
 	ast := self basicAST.
-	processor := HNIdentifierFinder1 new.
+	processor := HNBasicIdentifierFinder new.
 	ast accept: processor.
 	self assert: processor foundNames size equals: 8.
 	self assert: processor foundNames first equals: 'foo'.
