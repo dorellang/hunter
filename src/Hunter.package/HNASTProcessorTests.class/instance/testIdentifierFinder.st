@@ -1,16 +1,19 @@
 tests
 testIdentifierFinder
-	| ast processor |
+	| ast processor identifiers |
 	ast := self basicAST.
-	processor := HNBasicIdentifierFinder new.
+	identifiers := OrderedCollection new.
+	processor := HNBasicASTProcessor new specify: [ :on |
+		on node if: #hasTypeIdentifier; do: [ :id | identifiers add: id name ]
+	].
 	ast accept: processor.
-	self assert: processor foundNames size equals: 8.
-	self assert: processor foundNames first equals: 'foo'.
-	self assert: processor foundNames second equals: 'qux'.	
+	self assert: identifiers size equals: 8.
+	self assert: identifiers first equals: 'foo'.
+	self assert: identifiers second equals: 'qux'.	
 	"these identifiers appear twice because of parse desugaring"
-	self assert: processor foundNames third equals: 'bar'.
-	self assert: processor foundNames fourth equals: 'bar'.
-	self assert: processor foundNames fifth equals: 'baz'.
-	self assert: processor foundNames sixth equals: 'baz'.
-	self assert: processor foundNames seventh equals: 'quux'.
-	self assert: processor foundNames eighth equals: 'corge'.
+	self assert: identifiers third equals: 'bar'.
+	self assert: identifiers fourth equals: 'bar'.
+	self assert: identifiers fifth equals: 'baz'.
+	self assert: identifiers sixth equals: 'baz'.
+	self assert: identifiers seventh equals: 'quux'.
+	self assert: identifiers eighth equals: 'corge'.

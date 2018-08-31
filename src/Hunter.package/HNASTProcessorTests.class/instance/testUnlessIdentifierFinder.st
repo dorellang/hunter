@@ -1,15 +1,19 @@
 tests
 testUnlessIdentifierFinder
-	| ast processor |
+	| ast processor identifiers |
 	ast := self basicAST.
-	processor := HNUnlessIdentifierFinder new.
+	identifiers := OrderedCollection new.
+	processor := HNBasicASTProcessor new specify: [ :on |
+		on node if: #hasTypeIdentifier; unless: [ :n | n name = 'foo' ];
+		do: [ :id | identifiers add: id name ]
+	].
 	ast accept: processor.
-	self assert: processor foundNames size equals: 7.
-	self assert: processor foundNames first equals: 'qux'.	
+	self assert: identifiers size equals: 7.
+	self assert: identifiers first equals: 'qux'.
 	"these identifiers appear twice because of parse desugaring"
-	self assert: processor foundNames second equals: 'bar'.
-	self assert: processor foundNames third equals: 'bar'.
-	self assert: processor foundNames fourth equals: 'baz'.
-	self assert: processor foundNames fifth equals: 'baz'.
-	self assert: processor foundNames sixth equals: 'quux'.
-	self assert: processor foundNames seventh equals: 'corge'.
+	self assert: identifiers second equals: 'bar'.
+	self assert: identifiers third equals: 'bar'.
+	self assert: identifiers fourth equals: 'baz'.
+	self assert: identifiers fifth equals: 'baz'.
+	self assert: identifiers sixth equals: 'quux'.
+	self assert: identifiers seventh equals: 'corge'

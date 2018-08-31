@@ -1,0 +1,1 @@
+I represent an AST Processor with a defined node-matching behavior. I am meant to be subclassed and have my #matchAST: method overriden.

@@ -1,11 +1,19 @@
 tests
 testEitherIdentifierFinder
-	| ast processor |
+	| ast processor identifiers |
 	ast := self basicAST.
-	processor := HNEitherIdentifierFinder new.
+	identifiers := OrderedCollection new.
+	processor := HNBasicASTProcessor new specify: [ :on |
+		on node if: #hasTypeIdentifier;
+			ifEither: [
+				on node if: [ :id | id name = 'foo' ].
+				on node if: [ :id | id name = 'bar' ]
+			];
+			do: [ :id | identifiers add: id name ]
+	].
 	ast accept: processor.
-	self assert: processor foundNames size equals: 3.
-	self assert: processor foundNames first equals: 'foo'.
+	self assert: identifiers size equals: 3.
+	self assert: identifiers first equals: 'foo'.
 	"bar identifier appears twice because of parse desugaring"
-	self assert: processor foundNames second equals: 'bar'.
-	self assert: processor foundNames second equals: 'bar'.
+	self assert: identifiers second equals: 'bar'.
+	self assert: identifiers second equals: 'bar'.
