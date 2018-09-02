@@ -1,3 +1,8 @@
 building
 build
-	^ HNASTCase new conditions: conditions; actions: actions
+	^ (HNASTCase withMatcher: specifier matcher)
+			conditions: conditions;
+			actions: actions;
+			directChildCasesDict: directChildCasesDict;
+			descendantCasesDict: descendantCasesDict;
+			order: order

@@ -1,3 +1,3 @@
 processing
 processNode: aNode
-	cases select: [ :c | c matches: aNode ] thenDo: [ :c | c process: aNode ]
+	self processNode: aNode with: [ ]

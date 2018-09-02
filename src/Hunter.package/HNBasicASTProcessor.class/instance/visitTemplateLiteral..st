@@ -1,5 +1,6 @@
 visiting
 visitTemplateLiteral: aNode
-	self matcher processNode: aNode.
-	aNode quasis do: [ :quasi | quasi accept: self ].
-	aNode expressions do: [ :expr | expr accept: self ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #quasis.
+		self visitChildrenOf: aNode at: #expressions
+	]

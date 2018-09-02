@@ -1,4 +1,5 @@
 visiting
 visitVariableDeclaration: aNode
-	self matcher processNode: aNode.
-	aNode declarations do: [ :decl | decl accept: super ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #declarations
+	]

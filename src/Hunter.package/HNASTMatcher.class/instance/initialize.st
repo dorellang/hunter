@@ -1,3 +1,7 @@
 initialization
 initialize
-	cases := OrderedCollection new
+	cases := OrderedCollection new.
+	currentFrame := HNASTMatcherFrame withCases: cases.
+	casesMatched := {}
+
+	

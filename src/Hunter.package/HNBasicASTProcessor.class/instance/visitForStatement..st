@@ -1,7 +1,8 @@
 visiting
 visitForStatement: aNode
-	self matcher processNode: aNode.
-	aNode init ifNotNil: [ :init | init accept: self ].
-	aNode test ifNotNil: [ :test | test accept: self ].
-	aNode update ifNotNil: [ :update | update accept: self ].
-	aNode body accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #init.
+		self visitChildrenOf: aNode at: #test.
+		self visitChildrenOf: aNode at: #update.
+		self visitChildrenOf: aNode at: #body
+	]

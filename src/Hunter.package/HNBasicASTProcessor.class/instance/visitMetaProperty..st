@@ -1,5 +1,6 @@
 visiting
 visitMetaProperty: aNode
-	self matcher processNode: aNode.
-	aNode meta accept: self.
-	aNode property accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #meta.
+		self visitChildrenOf: aNode at: #property
+	]

@@ -1,5 +1,6 @@
 visiting
 visitCatchClause: aNode
-	self matcher processNode: aNode.
-	aNode param accept: self.
-	aNode body accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #body.
+		self visitChildrenOf: aNode at: #param
+	]

@@ -1,4 +1,5 @@
 visiting
 visitYieldExpression: aNode
-	self matcher processNode: aNode.
-	aNode 	argument ifNotNil: [ :arg | arg accept: self ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #argument
+	]

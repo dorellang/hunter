@@ -1,4 +1,5 @@
 visiting
 visitSpreadElement: aNode
-	self matcher processNode: aNode.
-	aNode argument accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #argument
+	]

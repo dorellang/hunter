@@ -1,5 +1,6 @@
 visiting
 visitVariableDeclarator: aNode
-	self matcher processNode: aNode.
-	aNode init ifNotNil: [ :init | init accept: self ].
-	aNode id accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #init.
+		self visitChildrenOf: aNode at: #id
+	]

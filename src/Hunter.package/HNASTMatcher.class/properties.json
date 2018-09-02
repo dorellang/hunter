@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cases"
+		"cases",
+		"currentFrame",
+		"casesMatched"
 	],
 	"name" : "HNASTMatcher",
 	"type" : "normal"

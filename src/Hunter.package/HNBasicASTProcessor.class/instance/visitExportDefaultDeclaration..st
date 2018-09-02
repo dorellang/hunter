@@ -1,4 +1,5 @@
 visiting
 visitExportDefaultDeclaration: aNode
-	self matcher processNode: aNode.
-	aNode declaration accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #declaration
+	]

@@ -1,4 +1,6 @@
 visiting
 visitArrayExpression: aNode
-	self matcher processNode: aNode.
-	aNode elements reject: #isNil thenDo: [ :e | e accept: self ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #elements
+	]
+	

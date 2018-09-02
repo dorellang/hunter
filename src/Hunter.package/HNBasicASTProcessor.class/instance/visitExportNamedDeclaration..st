@@ -1,6 +1,7 @@
 visiting
 visitExportNamedDeclaration: aNode
-	self matcher processNode: aNode.
-	aNode declaration accept: self.
-	aNode specifiers do: [ :spec | spec accept: self ].
-	aNode source accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #declaration.
+		self visitChildrenOf: aNode at: #specifiers.
+		self visitChildrenOf: aNode at: #source
+	]

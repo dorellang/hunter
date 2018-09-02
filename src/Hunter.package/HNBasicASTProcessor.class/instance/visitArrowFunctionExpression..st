@@ -1,5 +1,6 @@
 visiting
 visitArrowFunctionExpression: aNode
-	self matcher processNode: aNode.
-	aNode params do: [ :p | p accept: self ].
-	aNode body accept: self.
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #params.
+		self visitChildrenOf: aNode at: #body
+	]

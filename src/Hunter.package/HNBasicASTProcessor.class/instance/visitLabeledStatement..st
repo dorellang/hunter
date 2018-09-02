@@ -1,5 +1,6 @@
 visiting
 visitLabeledStatement: aNode
-	self matcher processNode: aNode.
-	aNode label accept: self.
-	aNode body accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #label.
+		self visitChildrenOf: aNode at: #body
+	]

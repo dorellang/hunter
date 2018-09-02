@@ -1,6 +1,7 @@
 visiting
 visitTryStatement: aNode
-	self matcher processNode: aNode.
-	aNode block accept: self.
-	aNode handler ifNotNil: [ :handler | handler accept: self ].
-	aNode finalizer ifNotNil: [ :finalizer | finalizer accept: self ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #block.
+		self visitChildrenOf: aNode at: #handler.
+		self visitChildrenOf: aNode at: #finalizer
+	]

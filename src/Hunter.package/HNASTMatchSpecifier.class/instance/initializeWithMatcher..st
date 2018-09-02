@@ -1,3 +1,4 @@
 initialization
 initializeWithMatcher: aMatcher
-	matcher := aMatcher
+	matcher := aMatcher.
+	nextOrder := 1

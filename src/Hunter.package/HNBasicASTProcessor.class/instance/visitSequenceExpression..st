@@ -1,4 +1,5 @@
 visiting
 visitSequenceExpression: aNode
-	self matcher processNode: aNode.
-	aNode expressions do: [ :expr | expr accept: self ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #expressions
+	]

@@ -1,5 +1,6 @@
 visiting
 visitSwitchStatement: aNode
-	self matcher processNode: aNode.
-	aNode discriminant accept: self.
-	aNode cases do: [ :case | case accept: self ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #discriminant.
+		self visitChildrenOf: aNode at: #cases
+	]

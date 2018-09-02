@@ -1,5 +1,6 @@
 visiting
 visitTaggedTemplateExpression: aNode
-	self matcher processNode: aNode.
-	aNode tag accept: self.
-	aNode quasi accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #tag.
+		self visitChildrenOf: aNode at: #quasi
+	]

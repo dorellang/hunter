@@ -1,5 +1,6 @@
 visiting
 visitAssignmentPattern: aNode
-	self matcher processNode: aNode.
-	aNode left accept: self.
-	aNode right accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #left.
+		self visitChildrenOf: aNode at: #right
+	]

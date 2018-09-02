@@ -1,5 +1,6 @@
 visiting
 visitSwitchCase: aNode
-	self matcher processNode: aNode.
-	aNode test ifNotNil: [:test | test accept: self ].
-	aNode consequent do: [ :statement | statement accept: self ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #test.
+		self visitChildrenOf: aNode at: #consequent
+	]

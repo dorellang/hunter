@@ -1,5 +1,6 @@
 visiting
 visitExportSpecifier: aNode
-	self matcher processNode: aNode.
-	aNode exported accept: self.
-	aNode local accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #exported.
+		self visitChildrenOf: aNode at: #local
+	]

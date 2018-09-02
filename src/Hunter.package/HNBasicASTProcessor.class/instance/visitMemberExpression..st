@@ -1,5 +1,6 @@
 visiting
 visitMemberExpression: aNode
-	self matcher processNode: aNode.
-	aNode object accept: self.
-	aNode computed ifTrue: [ aNode property accept: self ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #object.
+		self visitChildrenOf: aNode at: #computed
+	]

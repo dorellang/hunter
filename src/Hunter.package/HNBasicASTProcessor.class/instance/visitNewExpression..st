@@ -1,5 +1,6 @@
 visiting
 visitNewExpression: aNode
-	self matcher processNode: aNode.
-	aNode callee accept: self.
-	aNode arguments do: [ :arg | arg accept: self ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #callee.
+		self visitChildrenOf: aNode at: #arguments
+	]

@@ -1,5 +1,6 @@
 visiting
 visitImportDefaultSpecifier: aNode
-	self matcher processNode: aNode.
-	aNode local accept: self.
-	aNode imported ifNotNil: [ :imported | imported accept: self ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #local.
+		self visitChildrenOf: aNode at: #imported
+	]

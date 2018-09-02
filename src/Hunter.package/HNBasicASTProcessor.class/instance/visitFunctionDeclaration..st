@@ -1,6 +1,7 @@
 visiting
 visitFunctionDeclaration: aNode
-	self matcher processNode: aNode.
-	aNode id ifNotNil: [ :id | id accept: self ].
-	aNode params do: [ :p | p accept: self ].
-	aNode body accept: self.
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #id.
+		self visitChildrenOf: aNode at: #params.
+		self visitChildrenOf: aNode at: #body
+	]

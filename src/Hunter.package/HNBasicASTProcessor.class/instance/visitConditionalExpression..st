@@ -1,6 +1,7 @@
 visiting
 visitConditionalExpression: aNode
-	self matcher processNode: aNode.
-	aNode test accept: self.
-	aNode consequent accept: self.
-	aNode alternate accept: self
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #test.
+		self visitChildrenOf: aNode at: #consequent.
+		self visitChildrenOf: aNode at: #alternate
+	]

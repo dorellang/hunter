@@ -1,4 +1,5 @@
 visiting
 visitArrayPattern: aNode
-	self matcher processNode: aNode.
-	aNode elements do: [ :el | el ifNotNil: [ :e | e accept: self ] ]
+	self matcher processNode: aNode with: [
+		self visitChildrenOf: aNode at: #elements
+	]

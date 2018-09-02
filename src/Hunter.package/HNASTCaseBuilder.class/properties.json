@@ -8,7 +8,11 @@
 	"instvars" : [
 		"conditions",
 		"actions",
-		"specifier"
+		"specifier",
+		"matchChildrenAtDict",
+		"directChildCasesDict",
+		"descendantCasesDict",
+		"order"
 	],
 	"name" : "HNASTCaseBuilder",
 	"type" : "normal"

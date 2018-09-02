@@ -1,0 +1,3 @@
+accessing
+relevantCases
+	 ^ currentFrame relevantCases
