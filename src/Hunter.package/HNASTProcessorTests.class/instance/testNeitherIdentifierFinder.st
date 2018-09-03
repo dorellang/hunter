@@ -13,8 +13,4 @@ testNeitherIdentifierFinder
 			do: [ :id | identifiers add: id name ]
 	].
 	ast accept: processor.
-	self assert: identifiers size equals: 3.
-	self assert: identifiers first equals: 'qux'.	
-	"these identifiers appear twice because of parse desugaring"
-	self assert: identifiers second equals: 'quux'.
-	self assert: identifiers third equals: 'corge'
+	self assert: identifiers asArray equals: {'qux'.	'quux'. 'corge'}

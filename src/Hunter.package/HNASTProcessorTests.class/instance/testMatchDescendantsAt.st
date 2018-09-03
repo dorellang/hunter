@@ -10,11 +10,7 @@ testMatchDescendantsAt
 			]
 	].
 	ast accept: processor.
-	self assert: identifiers size equals: 6.
-	self assert: identifiers first equals: 'qux'.
-	"these identifiers appear twice because of parse desugaring"
-	self assert: identifiers second equals: 'bar'.
-	self assert: identifiers third equals: 'bar'.
-	self assert: identifiers fourth equals: 'baz'.
-	self assert: identifiers fifth equals: 'baz'.
-	self assert: identifiers sixth equals: 'quux'.
+	"some appear twice because of parser desugaring"
+	self assert: identifiers asArray equals: {
+		'qux'. 'bar'. 'bar'. 'baz'. 'baz'. 'quux'
+	}

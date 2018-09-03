@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"cases",
-		"currentFrame",
-		"casesMatched"
+		"currentFrame"
 	],
 	"name" : "HNASTMatcher",
 	"type" : "normal"

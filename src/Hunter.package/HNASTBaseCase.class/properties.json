@@ -6,13 +6,14 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"parent",
-		"descendantRelevantCases",
-		"directChildCases",
-		"newDescendantCases",
-		"descendantRelevantCasesDict",
-		"casesMatched"
+		"conditions",
+		"actions",
+		"matcher",
+		"directChildCasesDict",
+		"descendantCasesDict",
+		"order",
+		"subcases"
 	],
-	"name" : "HNASTMatcherFrame",
+	"name" : "HNASTBaseCase",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
 accessing
 directChildCases: someCases
-	directChildCases := someCases 
+	directChildCases := someCases

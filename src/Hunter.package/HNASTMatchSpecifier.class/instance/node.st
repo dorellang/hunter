@@ -1,3 +1,3 @@
 public
 node
-	^ currentFrame newCaseBuilder
+	^ currentFrame newCaseBuilderWithClass: HNASTCase

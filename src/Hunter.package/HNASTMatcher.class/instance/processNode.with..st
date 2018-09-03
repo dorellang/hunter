@@ -1,12 +1,7 @@
 processing
 processNode: aNode with: aBlock
-	(self relevantCases select: [ :c | c matches: aNode ])
-		do: [ :c | c process: aNode ];
-		ifEmpty: [ aBlock value ]
-		ifNotEmpty: [ :matched |
-			| oldMatched |
-			oldMatched := matched.
-			casesMatched := matched.
-			aBlock value.
-			casesMatched := oldMatched
-		]
+	self pushNewFrame.
+	currentFrame matchCasesFor: aNode.
+	currentFrame casesMatched do: [ :c | c process: aNode ].
+	aBlock value.
+	self popFrame.

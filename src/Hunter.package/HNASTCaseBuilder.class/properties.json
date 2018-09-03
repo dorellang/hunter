@@ -12,7 +12,9 @@
 		"matchChildrenAtDict",
 		"directChildCasesDict",
 		"descendantCasesDict",
-		"order"
+		"order",
+		"caseClass",
+		"subcases"
 	],
 	"name" : "HNASTCaseBuilder",
 	"type" : "normal"

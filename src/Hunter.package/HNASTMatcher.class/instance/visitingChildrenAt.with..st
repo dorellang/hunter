@@ -1,13 +1,17 @@
 processing
 visitingChildrenAt: slotName with: aBlock
 	| directChildCases descendantCases |
-	casesMatched ifEmpty: [
-		"new frame is not needed if not matching anything"
+	currentFrame casesMatched ifEmpty: [
+		self pushNewFrame.
+		currentFrame directChildCases: {}.
 		aBlock value.
+		self popFrame.
 		^ self
 	].
-	directChildCases := casesMatched flatCollect: [ :c | c directChildCasesFor: slotName ].
-	descendantCases := casesMatched flatCollect: [ :c | c descendantCasesFor: slotName ].
+	directChildCases := currentFrame casesMatched
+		flatCollect: [ :c | c directChildCasesFor: slotName ].
+	descendantCases := currentFrame casesMatched
+		flatCollect: [ :c | c descendantCasesFor: slotName ].
 	self pushNewFrame.
 	currentFrame directChildCases: directChildCases;
 		descendantCases: descendantCases.

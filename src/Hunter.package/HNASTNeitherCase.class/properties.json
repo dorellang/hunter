@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "HNASTCase",
+	"name" : "HNASTNeitherCase",
 	"type" : "normal"
 }

@@ -1,5 +1,3 @@
 helpers
 basicAST
-	^ (Hunter new stream: self basicASTJSON readStream;
-		buildAST;
-		astCollection) first
+	^ self astFromJSON: self basicASTJSON
