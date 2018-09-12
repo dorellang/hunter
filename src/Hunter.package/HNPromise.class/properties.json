@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "DiegoOrellana 9/12/2018 00:27",
+	"super" : "Object",
+	"category" : "Hunter-Util",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"result",
+		"error",
+		"resolvedCbs",
+		"rejectedCbs",
+		"completedCbs"
+	],
+	"name" : "HNPromise",
+	"type" : "normal"
+}

@@ -1,0 +1,2 @@
+*Hunter
+whenHNPromiseRejected: rejectBlock

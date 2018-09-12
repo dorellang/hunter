@@ -1,0 +1,1 @@
+I represent a Hunter Promise object. My API is inspired on ES2015 promises. I am NOT thread-safe, don't use me in multi-threaded code!
