@@ -5,7 +5,6 @@ visitCallExpression: aNode
 		beforeDot := aNode callee object. "angular"
 		afterDot := aNode callee property. "module"
 		(beforeDot type = 'Identifier' and: [ beforeDot name = 'angular' ]) ifTrue: [
-			self halt.
 		]
 	].
 

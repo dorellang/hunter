@@ -1,7 +1,6 @@
 matching
 matchCasesFor: aNode
 	| newRelevantCases newCasesMatched relevantCases mightHaveSubcases |
-	self haltIf: [ directChildCases notEmpty ].
 	relevantCases := OrderedCollection new addAll: descendantRelevantCases;
 		addAll: directChildCases;
 		yourself.
