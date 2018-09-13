@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "HNPromiseTests",
+	"name" : "HNPromiseTest",
 	"type" : "normal"
 }
