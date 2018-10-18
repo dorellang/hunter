@@ -1,6 +1,6 @@
 inspecting
 gtInspectorSourceCode: composite
-	<gtInspectorPresentationOrder: 20>
+	<gtInspectorPresentationOrder: -10>
 	| tab |
 	tab := composite tabulator.
 	tab title: 'Source Code';
