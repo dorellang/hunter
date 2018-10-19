@@ -19,5 +19,9 @@ baseline: spec
 				spec
 					className: #ConfigurationOfRoassal2;
 					versionString: #'stable';
-					repository: 'http://smalltalkhub.com/mc/ObjectProfile/Roassal2/main/' ].
+					repository: 'http://smalltalkhub.com/mc/ObjectProfile/Roassal2/main/' ];
+			baseline: 'Phanide' with: [
+				spec
+					repository: 'github://ronsaldo/phanide:4679635b00c35d4edda63b7927fc09c1a4948564/filetree'.
+			].
 		spec package: 'Hunter'. ].
