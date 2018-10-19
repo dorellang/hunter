@@ -3,7 +3,8 @@ visualizePrograms
 	| b lb |
 	b := RTMondrian new.
 	b shape circle size: #linesOfCode.
-	b interaction popupText: #filepathInProject; highlightNeighbors: #resolvedDependencies.
+	b interaction popupText: #filepathInProject; highlightNeighbors: #resolvedDependencies;
+		addInteraction: HNHighlightable new.
 	b nodes: self programs.
 	b shape
 		shape: (RTArrowedLine new head: (RTEmptyArrowHead new size: 2; width: 0.5); width: 0.5);

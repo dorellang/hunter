@@ -7,7 +7,8 @@ visualize: aProject
 	b := RTCircularTreeMapBuilder new.
 	b shape color: [:metaModel | metaModel accept: colorVisitor ].
 	b baseradius: 200; weight: [ :metaModel | metaModel accept: weightVisitor ].
-	b interaction popupText: [:metaModel | metaModel accept: popupTextVisitor ].
+	b interaction popupText: [:metaModel | metaModel accept: popupTextVisitor ];
+		addInteraction: HNHighlightable new.
 	b explore: aProject using: [ :metaModel | metaModel children ].
 	lb := RTLegendBuilder new.
 	lb onDemand: '+ Info'.

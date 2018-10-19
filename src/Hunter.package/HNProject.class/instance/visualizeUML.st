@@ -5,6 +5,7 @@ visualizeUML
 	b instanceVariables: #variables.
 	b methodselector: #name.
 	b methodsNames: #instanceMethods.
+	b interaction addInteraction: HNHighlightable new.
 "	b attributeselector: #variables."
 "	b lineShape arrowedLine."
 	b addObjects: self classes.
