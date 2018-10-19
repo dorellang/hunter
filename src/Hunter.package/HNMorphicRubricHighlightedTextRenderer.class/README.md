@@ -1,0 +1,1 @@
+Just like GLMMorphicRubricHighlightedTextRenderer, except it enforces a dark background.

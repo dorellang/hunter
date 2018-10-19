@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "DiegoOrellana 10/19/2018 03:36",
+	"super" : "GLMMorphicRubricHighlightedTextRenderer",
+	"category" : "Hunter-Util",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNMorphicRubricHighlightedTextRenderer",
+	"type" : "normal"
+}

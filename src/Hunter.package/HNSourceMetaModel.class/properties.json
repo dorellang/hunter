@@ -4,7 +4,9 @@
 	"category" : "Hunter-MetaModel",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"Styler"
+	],
 	"instvars" : [
 		"definitionNode",
 		"parent",
