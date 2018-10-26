@@ -104,11 +104,19 @@ const argv = yargs
     requiresArg: true,
     description: "A module or a directory containing .js modules to be parsed."
   })
+  .option('x', {
+    alias: 'x',
+    type: 'array',
+    requiresArg: true,
+    description: "A filepath or a directory containing .js sources. " + 
+      "First it'll try to parse it as a module. If that doesn't work then it " +
+      "will try to parse it as a script."
+  })
   .check(argv => {
-    if(argv.s || argv.m){
+    if(argv.s || argv.m || argv.x){
       return true;
     } else {
-      throw "Either some scripts or modules must be specified."
+      throw "Either some scripts, modules or sources must be specified."
     }
   })
   .help()
@@ -131,13 +139,32 @@ const moduleProcessor = new PathProcessor(
                     sourceCode =>
                       esprima.parseModule(sourceCode, {range: true, loc: true}))
 );
+const moduleOrScriptProcessor = new PathProcessor(
+  'moduleOrScript',
+  new FileProcessor(
+    'moduleOrScript',
+    sourceCode => {
+      try {
+        return esprima.parseModule(sourceCode, {range: true, loc: true})
+      } catch (e) {
+        return esprima.parseScript(sourceCode, {range: true, loc: true})
+      }
+    }
+  )
+);
+
 const moduleResults = (argv.m || [])
                         .map(sPath => moduleProcessor.processPath(sPath))
                         .reduce((acc, result) => acc.concat(result), []);
 const scriptResults = (argv.s || [])
                         .map(sPath => scriptProcessor.processPath(sPath))
                         .reduce((acc, result) => acc.concat(result), []);
-const results = moduleResults.concat(scriptResults);
+const moduleOrScriptResults = (argv.x || [])
+                      .map(sPath => moduleOrScriptProcessor.processPath(sPath))
+                      .reduce((acc, result) => acc.concat(result), []);
+
+const results = moduleResults.concat(scriptResults)
+  .concat(moduleOrScriptResults);
 
 var jsonStream = JSONStream.stringify();
 jsonStream.on("data", json => console.log(json));

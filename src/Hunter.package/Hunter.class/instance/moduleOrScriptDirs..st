@@ -1,0 +1,3 @@
+accessing
+moduleOrScriptDirs: aModuleOrScriptDirs
+	moduleOrScriptDirs := aModuleOrScriptDirs

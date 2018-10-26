@@ -1,7 +1,8 @@
 private - loading
 loadFromDirs
-	| stream |
-	stream := ZnBufferedReadStream on: (HNEsprimaWrapper
+	| aStream |
+	aStream := ZnBufferedReadStream on: (HNEsprimaWrapper
 		parseScriptDirs: scriptDirs
-		moduleDirs: moduleDirs).
-	^ self loadFromJSONStream: stream.
+		moduleDirs: moduleDirs
+		moduleOrScriptDirs: moduleOrScriptDirs).
+	^ self loadFromJSONStream: aStream.

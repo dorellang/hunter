@@ -1,5 +1,6 @@
 parsing
-getArgumentsForScriptDirs: aScriptDirCollection andModuleDirs: aModuleDirCollection
+getArgumentsForScriptDirs: aScriptDirCollection moduleDirs: aModuleDirCollection
+moduleOrScriptDirs: aModuleOrScriptDirCollection
 	| arguments |
 	arguments := OrderedCollection new.
 	aScriptDirCollection ifNotEmpty: [
@@ -9,5 +10,9 @@ getArgumentsForScriptDirs: aScriptDirCollection andModuleDirs: aModuleDirCollect
 	aModuleDirCollection ifNotEmpty: [
 		arguments add: '-m'.
 		arguments addAll: aModuleDirCollection
+	].
+	aModuleOrScriptDirCollection ifNotEmpty: [
+		arguments add: '-x'.
+		arguments addAll: aModuleOrScriptDirCollection
 	].
 	^ arguments
