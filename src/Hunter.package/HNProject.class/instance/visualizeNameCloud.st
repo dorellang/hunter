@@ -6,6 +6,7 @@ visualizeNameCloud
 			c name cutCamelCase do: [ :part | nameCloud addObject: c toWord: part ]
 		]
 	].
+	nameCloud view @ RTZoomableView.
 	lb := RTLegendBuilder new.
 	lb onDemand: '+ Info'.
 	lb view: nameCloud view.

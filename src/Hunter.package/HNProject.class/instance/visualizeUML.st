@@ -10,6 +10,7 @@ visualizeUML
 "	b lineShape arrowedLine."
 	b addObjects: self classes.
 	b layout tree; ifNotConnectedThen: RTGridLayout new.
+	b view @ RTZoomableView.
 	lb := RTLegendBuilder new.
 	lb onDemand: '+ Info'.
 	lb view: b view.

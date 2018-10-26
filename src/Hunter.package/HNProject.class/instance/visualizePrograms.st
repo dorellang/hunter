@@ -14,6 +14,7 @@ visualizePrograms
 	b normalizer normalizeSize: #linesOfCode using: [:nb | nb sqrt * 100];
 		normalizeColor: [:p | p resolvedDependencies size sqrt ];
 		alphaColor: 0.5.
+	b view @ RTZoomableView.
 	lb := RTLegendBuilder new.
 	lb onDemand: '+ Info'.
 	lb view: b view.
