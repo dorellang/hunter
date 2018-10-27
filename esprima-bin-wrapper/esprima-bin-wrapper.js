@@ -31,6 +31,9 @@ class FileProcessor {
   processSourceCode(filePath, sourceCode){
     let ast;
     try {
+      sourceCode = sourceCode.replace(
+        /(^#!.*)/, m => Array(m.length + 1).join(' ')
+      );
       ast = this.parseFn(sourceCode);
     } catch (e) {
       return {
