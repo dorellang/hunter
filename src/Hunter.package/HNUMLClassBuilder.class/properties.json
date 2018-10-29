@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RTUMLClassBuilder",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNUMLClassBuilder",
+	"type" : "normal"
+}

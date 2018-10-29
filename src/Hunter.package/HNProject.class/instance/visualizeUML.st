@@ -1,7 +1,7 @@
 visualization
 visualizeUML
 	| b lb |
-	b := RTUMLClassBuilder new.
+	b := HNUMLClassBuilder new.
 	b instanceVariables: #variables.
 	b methodselector: #name.
 	b methodsNames: #instanceMethods.
