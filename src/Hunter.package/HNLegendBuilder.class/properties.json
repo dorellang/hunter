@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RTLegendBuilder",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNLegendBuilder",
+	"type" : "normal"
+}

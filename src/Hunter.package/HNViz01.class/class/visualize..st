@@ -10,8 +10,8 @@ visualize: aProject
 	b interaction popupText: [:metaModel | metaModel accept: popupTextVisitor ];
 		addInteraction: HNHighlightable new.
 	b explore: aProject using: [ :metaModel | metaModel children ].
-	lb := RTLegendBuilder new.
-	lb onDemand: '+ Info'.
+	lb := HNLegendBuilder new.
+	lb onDemand: 'Help'.
 	lb view: b view.
 	lb addText: 'Each circle may represent either a file, a function or a class.'.
 	lb addText: 'Size is proportional to lines of code.'.

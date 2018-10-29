@@ -15,8 +15,8 @@ visualizePrograms
 		normalizeColor: [:p | p resolvedDependencies size sqrt ];
 		alphaColor: 0.5.
 	b view @ RTZoomableView.
-	lb := RTLegendBuilder new.
-	lb onDemand: '+ Info'.
+	lb := HNLegendBuilder new.
+	lb onDemand: 'Help'.
 	lb view: b view.
 	lb addText: 'Each node represents a JS file.'.
 	lb addText: 'And the arrows, the dependencies between them.'.

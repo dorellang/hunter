@@ -7,8 +7,8 @@ visualizeNameCloud
 		]
 	].
 	nameCloud view @ RTZoomableView.
-	lb := RTLegendBuilder new.
-	lb onDemand: '+ Info'.
+	lb := HNLegendBuilder new.
+	lb onDemand: 'Help'.
 	lb view: nameCloud view.
 	lb addText: 'This shows each word (separated by camelCase) appearing in a JS Identifier.'.
 	lb addText: 'Size is proportional to the number of times it is encountered.'.
