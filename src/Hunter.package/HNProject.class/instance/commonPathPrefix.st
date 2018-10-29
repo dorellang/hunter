@@ -9,4 +9,4 @@ commonPathPrefix
 		[ commonPathPrefix = programDir or: [ commonPathPrefix contains: programDir ] ]
 			whileFalse: [ commonPathPrefix := commonPathPrefix parent ]
 	].
-	^ commonPathPrefix := '/', (commonPathPrefix printWithDelimiter: $/)
+	^ commonPathPrefix := commonPathPrefix pathString
