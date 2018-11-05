@@ -9,7 +9,7 @@ visualizePrograms
 	b shape
 		shape: (RTArrowedLine new head: (RTEmptyArrowHead new size: 2; width: 0.5); width: 0.5);
 			withShorterDistanceAttachPoint.
-	b edges connectToAll: #resolvedDependencies.
+	b edges moveBehind; connectToAll: #resolvedDependencies.
 	b layout forceWithCharge: -80 "force"; ifNotConnectedThen: RTGridLayout new.
 	b normalizer normalizeSize: #linesOfCode using: [:nb | nb sqrt * 100];
 		normalizeColor: [:p | p resolvedDependencies size sqrt ];
