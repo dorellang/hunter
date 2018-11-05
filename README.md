@@ -25,6 +25,7 @@ sudo apt-get install libx11-6:i386
 sudo apt-get install libgl1-mesa-glx:i386 
 sudo apt-get install libfontconfig1:i386 
 sudo apt-get install libssl1.0.0:i386
+sudo apt-get install libcairo2:i386
 ```
 
 ### Install Hunter from zero with install.sh
