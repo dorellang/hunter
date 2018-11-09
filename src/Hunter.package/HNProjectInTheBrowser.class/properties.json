@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-Glamour",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"announcer",
+		"project",
+		"searchText"
+	],
+	"name" : "HNProjectInTheBrowser",
+	"type" : "normal"
+}
