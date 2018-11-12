@@ -1,28 +1,15 @@
 building
 compose
 	self title: [ :projectInB | 'Hunter - ' , projectInB project commonPathPrefix ].
-"	self addAction: (GLMGenericAction new
-		action: [
-			self panes do: [ :aPane | 
-				aPane updateToolbar.
-				aPane presentations presentations first withAllPresentations do: [ :aPresentation |
-				aPresentation wantsAutomaticRefresh ifTrue: [ 
-					aPresentation requestRefresh ] ]
-			]
-		];
-		icon: GLMUIThemeExtraIcons glamorousRefresh;
-		title: 'Refresh'
-	)."
-	
 	self tabulator
-		with: [ :browser | 
-			browser
+		with: [ :rootTabulator | 
+			rootTabulator
 				column: #master;
 				column: #detail.
-			browser transmit
+			rootTabulator transmit
 				to: #master;
 				andShow: [ :a | self composeMasterOn: a ].
-			browser transmit
-				from: #master;
+			rootTabulator transmit
+				from: #master port: #selectedProgram;
 				to: #detail;
-				andShow: [ :a | self composeDetailOn: a ] ].
+				andShowIfNone: [ :a | self composeDetailOn: a ] ]
