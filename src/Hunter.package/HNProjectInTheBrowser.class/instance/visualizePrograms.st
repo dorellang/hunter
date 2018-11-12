@@ -18,6 +18,7 @@ visualizePrograms
 		alphaColor: 0.5.
 	b shape if: [ :program | program  name includesSubstring: searchText caseSensitive: false ] 		fillColor: Color green.
 	b view @ RTZoomableView.
+	b view @ elementHighligter.
 	lb := HNLegendBuilder new.
 	lb onDemand: 'Help'.
 	lb view: b view.

@@ -10,4 +10,5 @@ searchTextMorph
 		help: 'filename part to search')
 			ghostText: 'Search...';
 			wantsFrameAdornments: false;
+			autoAccept: true;
 			yourself.

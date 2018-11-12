@@ -1,3 +1,4 @@
 initialization
 initialize
-	searchText := ''
+	searchText := ''.
+	elementHighligter := HNHighlightElementsInView new

@@ -1,16 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "RTAbstractInteractionView",
 	"category" : "Hunter-Glamour",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"announcer",
-		"project",
-		"searchText",
-		"elementHighligter"
+		"view",
+		"transparency"
 	],
-	"name" : "HNProjectInTheBrowser",
+	"name" : "HNHighlightElementsInView",
 	"type" : "normal"
 }

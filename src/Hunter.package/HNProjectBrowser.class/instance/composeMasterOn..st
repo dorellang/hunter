@@ -18,7 +18,6 @@ composeMasterOn: aPresentation
 		tabulator transmit 
 			to: #programs; 
 			andShow: [ :a |
-				'normal' logCr.
 				(self composeDynamic: #gtInspectorProgramsIn: on: a)
 					updateOn: HNProjectInTheBrowserUpdated from: [ :model | model announcer ]
 			].

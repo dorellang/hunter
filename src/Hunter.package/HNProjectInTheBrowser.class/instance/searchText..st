@@ -1,4 +1,4 @@
 accessing
 searchText: anObject
 	searchText := anObject.
-	self announceUpdate.
+	elementHighligter highlightElementsUsing: anObject asString
