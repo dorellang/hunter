@@ -1,7 +1,7 @@
 building
 composeDynamic: selector on: a
 	^ a dynamic
-		display: [ :aProjectInB | 
+		display: [ :selectedObject | 
 			GLMCompositePresentation new with: [ :dynamic | 
-				aProjectInB perform: selector with: dynamic ] ];
+				selectedObject perform: selector with: dynamic ] ];
 		yourself

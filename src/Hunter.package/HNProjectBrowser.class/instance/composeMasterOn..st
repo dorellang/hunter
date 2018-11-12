@@ -1,26 +1,29 @@
 building
 composeMasterOn: aPresentation
+	| stacker |
+	stacker := GLMStacker new.
+	stacker
+		aPane: #programs;
+		aPane: #uml.
 
-	| searchTextMorph |
-	searchTextMorph := self searchTextMorph.
+	stacker transmit
+		to: #programs;
+		andShow: [ :a | 
+			a title: 'Programs'.
+			self composeProgramsTabOn: a ].
 
-	aPresentation tabulator with: [ :tabulator |
-		tabulator 
-			row: #programs;
-			row: #search size: searchTextMorph height.
+	stacker transmit
+		to: #uml;
+		andShow: [ :a | 
+			a title: 'UML'.
+			self composeUMLTabOn: a ].
 
-		"Search widget"
-		tabulator transmit
-			to: #search;
-			andShow: [ :a | a morph display: [ searchTextMorph ] ].
-				
-		"Viz widget"
-		tabulator transmit 
-			to: #programs; 
-			andShow: [ :a |
-				(self composeDynamic: #gtInspectorProgramsIn: on: a)
-					updateOn: HNProjectInTheBrowserUpdated from: [ :model | model announcer ]
-			].
-		
-		tabulator transmit from: #programs; toOutsidePort: #selectedProgram
-	]
+	stacker transmit
+		from: #programs port: #selectedProgram;
+		toOutsidePort: #selectedProgram.
+
+	stacker transmit
+		from: #uml;
+		toOutsidePort: #selectedProgram.
+
+	aPresentation custom: stacker

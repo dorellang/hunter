@@ -6,9 +6,11 @@ compose
 			rootTabulator
 				column: #master;
 				column: #detail.
+			
 			rootTabulator transmit
 				to: #master;
 				andShow: [ :a | self composeMasterOn: a ].
+			
 			rootTabulator transmit
 				from: #master port: #selectedProgram;
 				to: #detail;
