@@ -16,5 +16,6 @@ openFile
 		bar value: 1.
 		bar title: 'Building meta-models...'.
 		project := hunter buildProject.
-		project inspectWithLabel: 'Hunter - ', project commonPathPrefix
+		HNProjectBrowser openOn: (HNProjectInTheBrowser new project: project).
+		"project inspectWithLabel: 'Hunter - ', project commonPathPrefix"
 	].
