@@ -5,5 +5,5 @@ composeDetailOn: aPresentation
 	anAccumulator
 		show: [ :a | 
 			a title: [ :x | x name ].
-			self composeDynamic: #gtInspectorTreeMap: on: a ].
+			self composeDetailTabOn: a ].
 	aPresentation custom: anAccumulator

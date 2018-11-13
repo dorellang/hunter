@@ -15,6 +15,8 @@ gtInspectorSourceCode: composite
 		a label display: self filepathInProject
 	].
 	tab transmit to: #source; andShow: [ :a |
+		| charRange |
+		charRange := self definitionNode range.
 		a custom: (
 			HNRubricHighlightedTextPresentation new
 				font: StandardFonts codeFont;
@@ -24,17 +26,7 @@ gtInspectorSourceCode: composite
 					)
 				];
 				withLineNumbers: true;
-				display: [ :each | self sourceCode ]
+				display: [ :each | self program sourceFileContents ];
+				selectionInterval: (charRange first + 1 to: charRange second + 1)
 		).
-	].
-	"
-	composite custom: (
-		GLMRubricHighlightedTextPresentation new
-			title: 'Source Code';
-			withLineNumbers: true;
-			editingMode: [ 
-				GLMHighlighterTextRubEditingMode new
-			];
-			font: StandardFonts codeFont;
-			display: [ :each | self sourceCode ]
-	)"
+	]
