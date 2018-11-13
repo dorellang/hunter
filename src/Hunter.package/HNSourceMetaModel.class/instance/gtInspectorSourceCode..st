@@ -15,9 +15,16 @@ gtInspectorSourceCode: composite
 		a label display: self filepathInProject
 	].
 	tab transmit to: #source; andShow: [ :a |
-		| charRange |
-		charRange := self definitionNode range.
-		a custom: (
+		| code segmentBegin segmentEnd segment |
+		segmentBegin := self definitionNode range first + 1.
+		segmentEnd := self definitionNode range second + 1.
+		segment := 
+			(RubPlainSegmentMorph from: segmentBegin to: segmentEnd)
+				color: (Color lightGreen alpha: 0.3);
+				setBalloonText: (self accept: HNViz01PopupTextVisitor new);
+				yourself.
+
+		code := 
 			HNRubricHighlightedTextPresentation new
 				font: StandardFonts codeFont;
 				editingMode: [ :rubPresentation |
@@ -27,6 +34,10 @@ gtInspectorSourceCode: composite
 				];
 				withLineNumbers: true;
 				display: [ :each | self program sourceFileContents ];
-				selectionInterval: (charRange first + 1 to: charRange second + 1)
-		).
+				scrollAtIndex: segmentEnd;
+				scrollAtIndex: segmentBegin;
+				addTextSegment: segment;
+				yourself.
+
+		a custom: code.
 	]
