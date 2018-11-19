@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "HNRoassalVizPresenter",
+	"super" : "GlamourPresentationPresenter",
 	"category" : "Hunter-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"project"
-	],
-	"name" : "HNNameCloudVizPresenter",
+	"instvars" : [ ],
+	"name" : "HNGlamourPresentationPresenter",
 	"type" : "normal"
 }

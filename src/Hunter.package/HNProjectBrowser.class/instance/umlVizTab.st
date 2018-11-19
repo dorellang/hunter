@@ -3,6 +3,7 @@ umlVizTab
 	| tab |
 	tab := self newTab.
 	tab label: 'UML';
+		iconName: #hierarchy;
 		closeable: false;
-		presenter: (LabelPresenter new label: 'UML').
+		presenter: (HNUMLVizPresenter on: [ :v | v project: project ]).
 	^ tab

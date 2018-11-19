@@ -1,13 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "HNRoassalVizPresenter",
+	"super" : "GLMCompositePresentation",
 	"category" : "Hunter-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"project"
+		"viewBlock",
+		"paintingBlock",
+		"selectedHolder"
 	],
-	"name" : "HNNameCloudVizPresenter",
+	"name" : "HNRoassalVizGlamourPresentation",
 	"type" : "normal"
 }

@@ -3,6 +3,7 @@ nameCloudTab
 	| tab |
 	tab := self newTab.
 	tab label: 'NameCloud';
+		iconName: #glamorousCloud;
 		closeable: false;
-		presenter: (LabelPresenter new label: 'namecloud').
+		presenter: (HNNameCloudVizPresenter on: [ :v | v project: project ]).
 	^ tab

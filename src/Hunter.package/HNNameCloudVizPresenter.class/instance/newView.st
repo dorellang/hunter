@@ -1,0 +1,3 @@
+hooks
+newView
+	^ project nameCloud

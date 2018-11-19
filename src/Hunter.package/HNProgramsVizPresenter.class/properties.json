@@ -1,12 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "HNPresenter",
+	"super" : "HNRoassalVizPresenter",
 	"category" : "Hunter-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"glamour",
 		"project"
 	],
 	"name" : "HNProgramsVizPresenter",
