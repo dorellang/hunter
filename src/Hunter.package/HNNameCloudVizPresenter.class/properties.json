@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNPresenter",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"glamour"
+	],
+	"name" : "HNNameCloudVizPresenter",
+	"type" : "normal"
+}

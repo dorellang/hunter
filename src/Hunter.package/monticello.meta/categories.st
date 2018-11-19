@@ -13,6 +13,7 @@ SystemOrganization addCategory: #'Hunter-MetaModel'!
 SystemOrganization addCategory: #'Hunter-NameCloud'!
 SystemOrganization addCategory: #'Hunter-Scope'!
 SystemOrganization addCategory: #'Hunter-Tests'!
+SystemOrganization addCategory: #'Hunter-UI'!
 SystemOrganization addCategory: #'Hunter-Util'!
 SystemOrganization addCategory: #'Hunter-Visualizations'!
 SystemOrganization addCategory: #'Hunter-WorldMenu'!
