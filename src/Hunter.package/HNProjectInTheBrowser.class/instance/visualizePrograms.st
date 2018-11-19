@@ -2,23 +2,41 @@ visualization
 visualizePrograms
 	| b lb |
 	b := RTMondrian new.
-	b shape circle size: #linesOfCode.
-	
-	b interaction popupText: #filepathInProject; highlightNeighbors: #resolvedDependencies;
+
+	"nodes"
+	b shape circle size: #linesOfCode; borderColor: Color black.
+	b interaction 
+		popupText: #filepathInProject; 
+		highlightNeighbors: #resolvedDependencies;
 		addInteraction: HNHighlightable new.
-	
 	b nodes: self project programs.
+
+	"edges"
 	b shape
-		shape: (RTArrowedLine new head: (RTEmptyArrowHead new size: 2; width: 0.5); width: 0.5);
-			withShorterDistanceAttachPoint.
+		shape: (RTArrowedLine new head: (RTFilledNarrowArrow asHead size: 4; width: 0.5); width: 0.5);
+		color: Color black;
+		withShorterDistanceAttachPoint.
 	b edges moveBehind; connectToAll: #resolvedDependencies.
-	b layout forceWithCharge: -80 "force"; ifNotConnectedThen: RTGridLayout new.
-	b normalizer normalizeSize: #linesOfCode using: [:nb | nb sqrt * 100];
+
+	"layout"
+	b layout
+		forceWithCharge: -80;
+		ifNotConnectedThen: RTGridLayout new.
+
+	"nodes' size and color"
+	b normalizer 
+		normalizeSize: #linesOfCode using: [:nb | nb sqrt ];
 		normalizeColor: [:p | p resolvedDependencies size sqrt ];
 		alphaColor: 0.5.
-	b shape if: [ :program | program  name includesSubstring: searchText caseSensitive: false ] 		fillColor: Color green.
+	"b shape
+		if: [ :program | program  name includesSubstring: searchText caseSensitive: false ]
+		fillColor: Color green."
+
+	"view settings"
 	b view @ RTZoomableView.
 	b view @ elementHighligter.
+
+	"legend"
 	lb := HNLegendBuilder new.
 	lb onDemand: 'Help'.
 	lb view: b view.
@@ -27,4 +45,5 @@ visualizePrograms
 	lb addText: 'Radio is proportional to lines of code.'.
 	lb addColorFadingFrom: Color gray to: Color red text: '# of nodes that depend on me'.
 	lb build.
+	
 	^ b
