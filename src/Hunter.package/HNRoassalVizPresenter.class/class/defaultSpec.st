@@ -1,3 +1,3 @@
 specs
 defaultSpec
-	^ SpecLayout composed add: #glamour; yourself
+	^ SpecLayout composed add: #glamour; add: #refreshBtn; yourself

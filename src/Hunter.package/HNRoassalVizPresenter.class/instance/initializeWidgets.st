@@ -1,9 +1,9 @@
 initialization
 initializeWidgets
 	glamour := HNGlamourPresentationPresenter new
-		glmPres: (
+		buildPresentationWith: [
 			HNRoassalVizGlamourPresentation new
-				createViewWith: [ self newView ];
-				paintWith: [ :view :model | self paint: model into: view ];
-				startOn: self initialModel
-		)
+				createViewWith: [ self view ];
+				paintWith: [ :view | self paintInto: view ];
+				startOn: 1.
+		]

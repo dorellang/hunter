@@ -1,3 +1,0 @@
-hooks
-initialModel
-	^ project

@@ -1,10 +1,10 @@
 hooks
-paint: input into: b
+paintInto: b
 	| lb |
 	b shape circle size: #linesOfCode.
 	b interaction popupText: #filepathInProject; highlightNeighbors: #resolvedDependencies;
 		addInteraction: HNHighlightable new.
-	b nodes: input programs.
+	b nodes: project programs.
 	b shape
 		shape: (RTArrowedLine new head: (RTEmptyArrowHead new size: 2; width: 0.5); width: 0.5);
 			withShorterDistanceAttachPoint.

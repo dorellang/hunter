@@ -1,3 +1,3 @@
 hooks
-newView
+view
 	^ HNUMLClassBuilder new

@@ -1,5 +1,5 @@
 hooks
-paint: aModel into: aView
+paintInto: aView
 	"TODO do this more cleanly; should use aModel instead of project :(... And initialModel
 	shouldn't depend on project either"
 	| lb |

@@ -1,5 +1,5 @@
 hooks
-paint: input into: b
+paintInto: b
 	| lb |
 	b instanceVariables: #variables.
 	b methodselector: #name.
@@ -7,7 +7,7 @@ paint: input into: b
 	b interaction addInteraction: HNHighlightable new.
 "	b attributeselector: #variables."
 "	b lineShape arrowedLine."
-	b addObjects: input classes.
+	b addObjects: project classes.
 	b layout tree; ifNotConnectedThen: RTGridLayout new.
 	b view @ RTZoomableView.
 	lb := HNLegendBuilder new.
