@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RTOptimizedForceBasedLayout",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNOptimizedForceBasedLayout",
+	"type" : "normal"
+}
