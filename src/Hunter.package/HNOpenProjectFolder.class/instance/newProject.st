@@ -1,5 +1,5 @@
 opening
-newProjectBrowser
+newProject
 	| directory project |
 	directory := UIManager default modalMorph theme
 			chooseDirectoryIn: UIManager default modalMorph
@@ -17,5 +17,5 @@ newProjectBrowser
 		bar title: 'Building meta-models...' translated.
 		project := hunter buildProject.
 		
-		^ HNProjectInTheBrowser new project: project
+		^ project
 	].
