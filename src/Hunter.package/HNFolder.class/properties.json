@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-MetaModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"path",
+		"programs",
+		"subFolders",
+		"parent"
+	],
+	"name" : "HNFolder",
+	"type" : "normal"
+}

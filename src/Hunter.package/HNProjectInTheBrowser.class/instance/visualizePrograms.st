@@ -1,6 +1,8 @@
 visualization
 visualizePrograms
 	| b lb |
+	self flag: #todo. "code duplicated in a method with the same selector"
+	
 	b := RTMondrian new.
 
 	"nodes"

@@ -13,7 +13,8 @@
 		"nodeToScopeDict",
 		"programsByPath",
 		"commonPathPrefix",
-		"nameCloud"
+		"nameCloud",
+		"folder"
 	],
 	"name" : "HNProject",
 	"type" : "normal"

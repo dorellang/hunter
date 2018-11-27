@@ -5,12 +5,15 @@ buildProject
 	processed := 0.
 	size := parseResultCollection size.
 	project := HNProject new.
+
 	'0 of ', size asString, ' source files processed...'
 		displayProgressFrom: 0 to: size during: [ :bar |
 			bar value: 0.
+			self flag: #todo. "Do not fail silently"
 			parseResultCollection select: [:result | result status = 'ok'] thenDo: [ :result |
 				| metaModelBuilder rootScope scopeBuilder identifierBinder importProcessor 
-					nameCloudProcessor angularVisitor ast program |
+					nameCloudProcessor angularVisitor ast |
+				
 				metaModelBuilder := HNMetaModelBuilder withMetaModel: project programPath: result path.
 				rootScope := HNRootScope withProject: project.
 				scopeBuilder := HNScopeBuilder withScope: rootScope.
@@ -29,7 +32,7 @@ buildProject
 
 				"NOTE Assuming resulting AST has only one Program node at root."
 				"(and it's added at end to project by visitor)"
-				program := project programs last filepath: result path.
+				project programs last filepath: result path.
 
 				"Updating progress bar"
 				processed := processed + 1.
@@ -38,4 +41,6 @@ buildProject
 			] 
 		].
 	project resolveSuperclassRelations.
+	project resolveFolders.
+	
 	^ project

@@ -10,7 +10,8 @@
 		"sourceFileContents",
 		"rawDependencies",
 		"resolvedDependencies",
-		"filepathInProject"
+		"filepathInProject",
+		"folder"
 	],
 	"name" : "HNProgram",
 	"type" : "normal"

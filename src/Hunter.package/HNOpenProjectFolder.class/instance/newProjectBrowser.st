@@ -17,5 +17,5 @@ newProjectBrowser
 		bar title: 'Building meta-models...' translated.
 		project := hunter buildProject.
 		
-		^ HNProjectInTheBrowser new project: project
+		^ project
 	].
