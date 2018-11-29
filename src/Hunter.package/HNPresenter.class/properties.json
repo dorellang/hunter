@@ -1,11 +1,15 @@
 {
+	"classtraitcomposition" : "TDataBindingOwner classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"refresher"
+	],
+	"name" : "HNPresenter",
 	"commentStamp" : "",
 	"super" : "ComposablePresenter",
-	"category" : "Hunter-UI",
+	"traitcomposition" : "TDataBindingOwner",
+	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "HNPresenter",
-	"type" : "normal"
+	"category" : "Hunter-UI"
 }

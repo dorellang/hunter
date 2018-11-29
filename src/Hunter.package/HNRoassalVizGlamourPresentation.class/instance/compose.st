@@ -8,4 +8,7 @@ compose
 	].
 	tabulator transmit from: #view; toWatcher;
 		when: [ :x | x isString not and: [ x isNotNil and: [ x isNumber not ] ] ];
-		transformed: [ :x | selectedHolder value: x. self halt ].
+		transformed: [ :x |
+			selectedEntity := x.
+			self refresher refreshIfRequested
+		].

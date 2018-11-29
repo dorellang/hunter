@@ -5,5 +5,5 @@ umlVizTab
 	tab label: 'UML';
 		iconName: #hierarchy;
 		closeable: false;
-		presenter: (HNUMLVizPresenter on: [ :v | v project: project ]).
+		presenter: (self instantiate: HNUMLVizPresenter on: [ :v | v project: project ]).
 	^ tab

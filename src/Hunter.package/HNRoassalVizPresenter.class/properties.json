@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "HNPresenter",
+	"super" : "HNSubPresenter",
 	"category" : "Hunter-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"glamour",
-		"refreshBtn"
+		"#glamour",
+		"#project => DataBindingSlot oneWay",
+		"#selectedEntity => DataBindingSlot twoWay"
 	],
 	"name" : "HNRoassalVizPresenter",
 	"type" : "normal"

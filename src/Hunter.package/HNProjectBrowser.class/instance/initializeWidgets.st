@@ -7,4 +7,7 @@ initializeWidgets
 	master addTab: self umlVizTab.
 	master addTab: self nameCloudTab.
 	
-	detail := self instantiate: HNDetailPane on: [ :p | p project: project ]
+	detail := self instantiate: HNDetailPane on: [ :p |
+		p project: project;
+			selectedEntity: self &#selectedEntity
+	]

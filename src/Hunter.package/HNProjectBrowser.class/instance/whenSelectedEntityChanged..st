@@ -1,3 +1,3 @@
 api-events
 whenSelectedEntityChanged: aBlock
-	selectedEntityHolder whenChangedDo: aBlock
+	selectedEntity whenChangedDo: aBlock

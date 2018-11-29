@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "GLMCompositePresentation",
+	"super" : "HNPresenter",
 	"category" : "Hunter-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "HNUMLVizGlamourPresentation",
+	"name" : "HNSubPresenter",
 	"type" : "normal"
 }

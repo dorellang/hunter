@@ -5,5 +5,5 @@ nameCloudTab
 	tab label: 'NameCloud';
 		iconName: #glamorousCloud;
 		closeable: false;
-		presenter: (HNNameCloudVizPresenter on: [ :v | v project: project ]).
+		presenter: (self instantiate: HNNameCloudVizPresenter on: [ :v | v project: project ]).
 	^ tab

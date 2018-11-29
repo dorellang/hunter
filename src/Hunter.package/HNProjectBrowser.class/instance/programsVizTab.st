@@ -5,5 +5,8 @@ programsVizTab
 	tab label: 'Programs';
 		iconName: #objects;
 		closeable: false;
-		presenter: (HNProgramsVizPresenter on: [ :v | v project: project ]).
+		presenter: (self instantiate: HNProgramsVizPresenter on: [ :v |
+			v project: project;
+				selectedEntity: self &#selectedEntity
+		]).
 	^ tab

@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"master",
-		"detail",
-		"project",
-		"selectedEntityHolder"
+		"#master",
+		"#detail",
+		"#project => DataBindingSlot oneWay",
+		"#selectedEntity => DataBindingSlot oneWay"
 	],
 	"name" : "HNProjectBrowser",
 	"type" : "normal"

@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "HNPresenter",
+	"super" : "HNSubPresenter",
 	"category" : "Hunter-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"project",
-		"detailTabMgr"
+		"#project => DataBindingSlot oneWay",
+		"#selectedEntity => DataBindingSlot twoWay"
 	],
 	"name" : "HNDetailPane",
 	"type" : "normal"

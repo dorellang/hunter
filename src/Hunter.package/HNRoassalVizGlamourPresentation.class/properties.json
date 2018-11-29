@@ -1,15 +1,18 @@
 {
-	"commentStamp" : "",
-	"super" : "GLMCompositePresentation",
-	"category" : "Hunter-UI",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TDataBindingOwner classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"viewBlock",
-		"paintingBlock",
-		"selectedHolder"
+		"#viewBlock",
+		"#paintingBlock",
+		"#refresher",
+		"#selectedEntity => DataBindingSlot twoWay"
 	],
 	"name" : "HNRoassalVizGlamourPresentation",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "GLMCompositePresentation",
+	"traitcomposition" : "TDataBindingOwner",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Hunter-UI"
 }

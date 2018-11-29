@@ -1,3 +1,3 @@
 api
 initializePresenter
-	"TODO"
+	self refresher refreshIfRequested
