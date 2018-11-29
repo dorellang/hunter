@@ -7,9 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"#selectedEntity => DataBindingSlot twoWay",
-		"#treeMap",
-		"#code"
+		"#text"
 	],
-	"name" : "HNDetailPane",
+	"name" : "HNCodePresenter",
 	"type" : "normal"
 }

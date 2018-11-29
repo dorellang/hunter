@@ -2,7 +2,8 @@
 	"classtraitcomposition" : "TDataBindingOwner classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"refresher"
+		"#refresher",
+		"#project => DataBindingSlot oneWay"
 	],
 	"name" : "HNPresenter",
 	"commentStamp" : "",

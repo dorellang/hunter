@@ -7,7 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"#glamour",
-		"#project => DataBindingSlot oneWay",
+		"#counter",
 		"#selectedEntity => DataBindingSlot twoWay"
 	],
 	"name" : "HNRoassalVizPresenter",

@@ -1,15 +1,19 @@
-visualizations
-visualize: aHNMetaModel
-	| b lb weightVisitor colorVisitor popupTextVisitor palette |
+hooks
+paintInto: b 
+	| lb weightVisitor colorVisitor popupTextVisitor palette |
+	selectedEntity ifNil: [ ^self ].
+	
 	weightVisitor := HNViz01WeightVisitor new.
 	colorVisitor := HNViz01ColorVisitor new.
 	popupTextVisitor := HNViz01PopupTextVisitor new.
-	b := RTCircularTreeMapBuilder new.
+
 	b shape color: [:metaModel | metaModel accept: colorVisitor ].
 	b baseradius: 200; weight: [ :metaModel | metaModel accept: weightVisitor ].
 	b interaction popupText: [:metaModel | metaModel accept: popupTextVisitor ];
 		addInteraction: HNHighlightable new.
-	b explore: aHNMetaModel using: [ :metaModel | metaModel children ].
+
+	b explore: selectedEntity using: [ :metaModel | metaModel children ].
+
 	lb := HNLegendBuilder new.
 	lb onDemand: 'Help'.
 	lb view: b view.
@@ -18,5 +22,3 @@ visualize: aHNMetaModel
 	palette := RTColorPalette diverging colors: 10 scheme: 'RdYlGn'.
 	lb addColorFadingUsing: palette reverse text: '# of variables'.
 	lb build.
-	b build.
-	^ b

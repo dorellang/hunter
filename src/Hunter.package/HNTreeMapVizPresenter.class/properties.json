@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "MartinDias 11/29/2018 18:13",
-	"super" : "HNPresenter",
+	"commentStamp" : "",
+	"super" : "HNRoassalVizPresenter",
 	"category" : "Hunter-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "HNSubPresenter",
+	"name" : "HNTreeMapVizPresenter",
 	"type" : "normal"
 }
