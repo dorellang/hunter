@@ -1,0 +1,3 @@
+hooks
+view
+	^ project nameCloud

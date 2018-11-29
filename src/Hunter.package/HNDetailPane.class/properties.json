@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "HNPresenter",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"project",
+		"detailTabMgr"
+	],
+	"name" : "HNDetailPane",
+	"type" : "normal"
+}

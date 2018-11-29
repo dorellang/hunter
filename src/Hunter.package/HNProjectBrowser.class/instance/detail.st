@@ -1,0 +1,3 @@
+accessing
+detail
+	^ detail

@@ -1,0 +1,3 @@
+api
+selectedEntity
+	^ selectedEntityHolder value

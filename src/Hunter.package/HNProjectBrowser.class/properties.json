@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "HNPresenter",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"master",
+		"detail",
+		"project",
+		"selectedEntityHolder"
+	],
+	"name" : "HNProjectBrowser",
+	"type" : "normal"
+}

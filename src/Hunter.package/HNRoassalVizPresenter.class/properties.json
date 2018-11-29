@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "HNPresenter",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"glamour",
+		"refreshBtn"
+	],
+	"name" : "HNRoassalVizPresenter",
+	"type" : "normal"
+}

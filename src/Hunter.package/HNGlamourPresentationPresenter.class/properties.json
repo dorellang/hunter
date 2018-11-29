@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GlamourPresentationPresenter",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"presentationBuilderBlock"
+	],
+	"name" : "HNGlamourPresentationPresenter",
+	"type" : "normal"
+}

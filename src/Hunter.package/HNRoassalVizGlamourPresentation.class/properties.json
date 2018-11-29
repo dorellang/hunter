@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "GLMCompositePresentation",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"viewBlock",
+		"paintingBlock",
+		"selectedHolder"
+	],
+	"name" : "HNRoassalVizGlamourPresentation",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "RTAbstractInteractionView",
+	"category" : "Hunter-Glamour",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"view",
+		"transparency"
+	],
+	"name" : "HNHighlightElementsInView",
+	"type" : "normal"
+}
