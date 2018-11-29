@@ -21,5 +21,9 @@ baseline: spec
 			baseline: 'Phanide' with: [
 				spec
 					repository: 'github://ronsaldo/phanide:4679635b00c35d4edda63b7927fc09c1a4948564/filetree'.
+			];
+			baseline: 'DataBindings' with: [
+				spec
+					repository: 'github://dorellang/DataBindings/src'.
 			].
 		spec package: 'Hunter'. ].
