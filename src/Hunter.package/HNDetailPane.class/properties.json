@@ -6,11 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"master",
-		"detail",
 		"project",
-		"selectedEntityHolder"
+		"detailTabMgr"
 	],
-	"name" : "HNProjectBrowser",
+	"name" : "HNDetailPane",
 	"type" : "normal"
 }

@@ -1,16 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "HNPresenter",
+	"super" : "GlamourPresentationPresenter",
 	"category" : "Hunter-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"master",
-		"detail",
-		"project",
-		"selectedEntityHolder"
+		"presentationBuilderBlock"
 	],
-	"name" : "HNProjectBrowser",
+	"name" : "HNGlamourPresentationPresenter",
 	"type" : "normal"
 }

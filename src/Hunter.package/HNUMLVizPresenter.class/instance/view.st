@@ -1,0 +1,3 @@
+hooks
+view
+	^ HNUMLClassBuilder new

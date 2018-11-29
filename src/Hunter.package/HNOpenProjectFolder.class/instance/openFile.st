@@ -2,5 +2,4 @@ opening
 openFile
 	| project |
 	project := self newProjectBrowser.
-	"HNProjectBrowser openOn: project"
-	project inspectWithLabel: 'Hunter - ', project commonPathPrefix
+	(HNProjectBrowser on: [ :b | b project: project]) openWithSpec

@@ -6,11 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"master",
-		"detail",
-		"project",
-		"selectedEntityHolder"
+		"glamour",
+		"refreshBtn"
 	],
-	"name" : "HNProjectBrowser",
+	"name" : "HNRoassalVizPresenter",
 	"type" : "normal"
 }
