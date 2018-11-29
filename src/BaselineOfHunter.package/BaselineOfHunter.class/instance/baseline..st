@@ -17,7 +17,7 @@ baseline: spec
 					repository: 'github://marianopeck/OSSubprocess:master/repository' ];
 			baseline: 'Roassal2' with: [
 				spec
-					repository: 'github://ObjectProfile/Roassal2:ebec51e358f33b135d566200c72efce2e2c65235/src' ];
+					repository: 'github://ObjectProfile/Roassal2:fd01e5ddc33c2dfa300948949092a614cb47ef78/src' ];
 			baseline: 'Phanide' with: [
 				spec
 					repository: 'github://ronsaldo/phanide:4679635b00c35d4edda63b7927fc09c1a4948564/filetree'.
