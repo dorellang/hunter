@@ -1,16 +1,25 @@
 hooks
 paintInto: b
-	| lb |
-	
+
+	| lb es |
+
 	"nodes"
 	b shape circle size: #linesOfCode; borderColor: Color black.
+
 	b interaction 
-		popupText: #filepathInProject; 
-		highlightNeighbors: #resolvedDependencies color: Color blue;
-		addInteraction: (HNHighlightable new
-			edgeColor: Color blue;
+		popupText: #filepathInProject.
+
+	es := b nodes: self project programs.
+	
+	es do: [:anElement |
+		anElement addInteraction: (HNHighlightable new
+			focusOnIncomingAndOutgoingElements;
+			edgeColor: [ :edge | 
+				(edge from == anElement) 
+					ifTrue: [ Color blue ] 
+					ifFalse: [ Color red ] ];
 			yourself).
-	b nodes: self project programs.
+		].
 
 	"edges"
 	b shape
@@ -39,9 +48,8 @@ paintInto: b
 
 	"view settings"
 	b view @ RTZoomableView.
-
-	self flag: #todo. "Restore search"
-"	b view @ elementHighligter."
+	self flag: #todo.
+	"b view @ elementHighligter."
 
 	"legend"
 	lb := HNLegendBuilder new.
