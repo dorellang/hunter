@@ -2,7 +2,7 @@ specs
 onChanges: dataChanges
 	dataChanges
 		whenValueChangedAt: #project
-		do: [ :entity | 
+		do: [ :aProject | 
 			tree
-				roots: {entity folder};
+				roots: {aProject folder};
 				expandAll ]
