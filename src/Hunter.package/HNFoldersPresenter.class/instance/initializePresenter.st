@@ -9,4 +9,4 @@ initializePresenter
 		iconBlock: [ :item | 
 			(item isKindOf: HNFolder)
 				ifTrue: [ self iconNamed: #package ]
-				ifFalse: [ self iconNamed: #glamorousGreenCircle ] ]
+				ifFalse: [ self iconNamed: #collection ] ]
