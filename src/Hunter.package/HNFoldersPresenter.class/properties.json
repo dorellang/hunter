@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNSubPresenter",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tree"
+	],
+	"name" : "HNFoldersPresenter",
+	"type" : "normal"
+}

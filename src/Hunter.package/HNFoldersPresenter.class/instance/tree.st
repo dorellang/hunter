@@ -1,0 +1,3 @@
+specs
+tree
+	^ tree
