@@ -6,10 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"#selectedEntity => DataBindingSlot twoWay",
-		"#text",
-		"#textModel"
+		"tree"
 	],
-	"name" : "HNCodePresenter",
+	"name" : "HNFoldersPresenter",
 	"type" : "normal"
 }

@@ -3,6 +3,7 @@ defaultSpec
 	^ SpecLayout composed
 		newRow: [ :row |
 			row add: #master.
-			row add: #detail
+			row addSplitter.
+			row add: #detail.
 		]; yourself
 		

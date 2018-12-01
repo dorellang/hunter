@@ -12,7 +12,7 @@ paintInto: b
 	b interaction popupText: [:metaModel | metaModel accept: popupTextVisitor ];
 		addInteraction: HNHighlightable new.
 
-	b explore: selectedEntity using: [ :metaModel | metaModel children ].
+	b explore: selectedEntity program using: [ :metaModel | metaModel children ].
 
 	lb := HNLegendBuilder new.
 	lb onDemand: 'Help'.
