@@ -1,3 +1,3 @@
 *Hunter
-addChildDataBindingOwner: aPresenterWithDataBindings 
+addChildDataBindingOwner: aPresenterWithDataBindings
 	self owner addChildDataBindingOwner: aPresenterWithDataBindings.
