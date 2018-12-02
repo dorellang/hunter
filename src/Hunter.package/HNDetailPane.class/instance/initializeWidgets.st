@@ -11,4 +11,5 @@ initializeWidgets
 		on: [ :p | 
 			p
 				project: project;
-				selectedEntity: self & #selectedEntity ]
+				selectedEntity: self & #selectedEntity ].
+	filepathLabel := self newLabel.
