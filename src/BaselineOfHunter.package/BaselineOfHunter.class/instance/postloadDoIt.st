@@ -1,3 +1,5 @@
 baselines
 postloadDoIt
-	PhanideSyntaxStyleTable setCurrentFromEclipseLightTheme
+	"Hunter is tuned for light theme only."
+	PharoLightTheme beCurrent.
+	PhanideSyntaxStyleTable setCurrentFromEclipseLightTheme.
