@@ -2,6 +2,7 @@ baselines
 baseline: spec
 	<baseline>
 	spec for: #'common' do: [
+		spec postLoadDoIt: #postLoadDoIt.
 		spec
 			project: 'NeoJSON' with: [
 				spec
