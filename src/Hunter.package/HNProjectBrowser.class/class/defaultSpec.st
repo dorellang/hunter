@@ -1,9 +1,7 @@
 specs
 defaultSpec
-	^ SpecLayout composed
-		newRow: [ :row |
-			row add: #master.
-			row addSplitter.
-			row add: #detail.
-		]; yourself
-		
+	^ SpecRowLayout composed
+	 	newColumn: #master right: 0.4;
+		addSplitter;
+		newColumn: #detail left: 0.6;
+		yourself

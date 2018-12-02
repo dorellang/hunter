@@ -3,8 +3,7 @@ initializeWidgets
 	self title: 'Hunter - ', project commonPathPrefix.
 
 	master := self newTabManager.
-	master addTab: self foldersTab.
-	master addTab: self programsVizTab.
+	master addTab: self programsTab.
 	master addTab: self umlVizTab.
 	master addTab: self nameCloudTab.
 	

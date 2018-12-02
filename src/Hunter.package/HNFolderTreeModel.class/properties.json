@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "MorphTreeModel",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"project",
+		"rootNodes"
+	],
+	"name" : "HNFolderTreeModel",
+	"type" : "normal"
+}

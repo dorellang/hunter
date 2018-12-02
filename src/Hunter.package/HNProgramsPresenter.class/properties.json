@@ -6,12 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"#tree",
-		"#treeModel",
-		"#reacting",
-		"#selecting",
-		"#selectedEntity => DataBindingSlot twoWay"
+		"#selectedEntity => DataBindingSlot twoWay",
+		"#viz",
+		"#foldersPane"
 	],
-	"name" : "HNFoldersPresenter",
+	"name" : "HNProgramsPresenter",
 	"type" : "normal"
 }
