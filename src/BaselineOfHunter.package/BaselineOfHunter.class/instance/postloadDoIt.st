@@ -1,0 +1,3 @@
+baselines
+postloadDoIt
+	PhanideSyntaxStyleTable setCurrentFromEclipseLightTheme
