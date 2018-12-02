@@ -1,5 +1,6 @@
 opening
 openFile
 	| project |
-	project := self newProjectBrowser.
+	project := self newProject.
+	project ifNil: [ ^ self ].
 	(HNProjectBrowser on: [ :b | b project: project]) openWithSpec
