@@ -9,4 +9,5 @@ scrollAndHighlightSelectedEntity
 		addSegment:
 			((RubPlainSegmentMorph from: segmentBegin to: segmentEnd)
 				color: (Color green alpha: 0.2);
+				setBalloonText: (selectedEntity accept: HNViz01PopupTextVisitor new);
 				yourself)
