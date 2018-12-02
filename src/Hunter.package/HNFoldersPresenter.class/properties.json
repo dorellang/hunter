@@ -9,8 +9,8 @@
 		"#tree",
 		"#treeModel",
 		"#reacting",
-		"#selecting",
-		"#selectedEntity => DataBindingSlot twoWay"
+		"#selectedEntity => DataBindingSlot twoWay",
+		"#ongoingManualSelection"
 	],
 	"name" : "HNFoldersPresenter",
 	"type" : "normal"

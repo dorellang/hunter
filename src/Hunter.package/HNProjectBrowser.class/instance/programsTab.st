@@ -1,11 +1,12 @@
 private - master tabs
 programsTab
-	| tab |
+	| tab programs |
 	tab := self newTab.
+	programs := (self instantiate: HNProgramsPresenter on: [ :v |
+		v project: project; selectedEntity: self &#selectedEntity
+	]).
 	tab label: 'Programs';
 		iconName: #objects;
 		closeable: false;
-		presenter: (self instantiate: HNProgramsPresenter on: [ :v |
-			v project: project; selectedEntity: self &#selectedEntity
-		]).
+		presenter: programs.
 	^ tab

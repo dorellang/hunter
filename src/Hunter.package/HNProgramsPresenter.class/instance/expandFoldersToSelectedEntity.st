@@ -1,0 +1,3 @@
+api
+expandFoldersToSelectedEntity
+	self foldersPane expandFoldersToSelectedEntity

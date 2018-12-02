@@ -1,5 +1,5 @@
 initialization
 initialize
 	reacting := false.
-	selecting := false.
+	ongoingManualSelection := false.
 	super initialize
