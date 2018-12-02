@@ -1,3 +1,3 @@
 printing
 printOn: aStream
-	aStream << '"' << word << '" (' << count << ' occurrences)'
+	aStream << '"' << word << '" (' << self count << ' occurrences)'

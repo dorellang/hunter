@@ -1,0 +1,3 @@
+adding
+addOccurrence: aNameCloudOccurrence
+	occurrences add: aNameCloudOccurrence

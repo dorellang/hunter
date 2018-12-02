@@ -1,3 +1,3 @@
 accessing
 count
-	^ count
+	^ occurrences size

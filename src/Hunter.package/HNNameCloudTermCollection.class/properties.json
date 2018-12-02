@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"word",
-		"occurrences"
+		"termsByWord"
 	],
-	"name" : "HNNameCloudTerm",
+	"name" : "HNNameCloudTermCollection",
 	"type" : "normal"
 }

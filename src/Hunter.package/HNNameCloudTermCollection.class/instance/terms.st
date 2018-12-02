@@ -1,0 +1,3 @@
+accessing
+terms
+	^ termsByWord values

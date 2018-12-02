@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "HNSubPresenter",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#selectedEntity => DataBindingSlot twoWay",
+		"#viz"
+	],
+	"name" : "HNNameCloudPresenter",
+	"type" : "normal"
+}

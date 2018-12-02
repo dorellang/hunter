@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "DIegoOrellana 12/2/2018 16:00",
+	"super" : "RTBuilder",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"maxHeight",
+		"minHeight",
+		"maxWords",
+		"layout",
+		"terms",
+		"minFrequency",
+		"maxFrequency"
+	],
+	"name" : "HNNewNameCloud",
+	"type" : "normal"
+}

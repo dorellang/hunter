@@ -1,0 +1,3 @@
+accessing
+program
+	^ innermostMetaModel program

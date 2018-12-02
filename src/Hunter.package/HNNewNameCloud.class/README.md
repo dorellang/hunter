@@ -1,0 +1,1 @@
+Based on RTNameCloud, but we're copying its code because it wasn't flexible enough :/
