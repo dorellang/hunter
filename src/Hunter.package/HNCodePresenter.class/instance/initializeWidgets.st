@@ -1,6 +1,8 @@
 initialization
 initializeWidgets
 	| styler morph |
+	PhanideSyntaxStyleTable setCurrentFromEclipseTheme:
+		PhanideSyntaxStyleTable mrThemeStyleRawEclipseTableDefinition.
 	styler := PhanideRegexStyler new
 		name: 'JavaScript';
 		extensions: #(js);
