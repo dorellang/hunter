@@ -1,3 +1,0 @@
-accessing
-announceUpdate
-	self announcer announce: HNProjectInTheBrowserUpdated new

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "RTAbstractInteractionView",
-	"category" : "Hunter-Glamour",
+	"category" : "Hunter-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
