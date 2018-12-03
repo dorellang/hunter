@@ -4,7 +4,9 @@ paintInto: b
 	| lb es |
 
 	"nodes"
-	b shape circle size: #linesOfCode; borderColor: Color black.
+	b shape circle 
+		size: #linesOfCode;
+		borderColor: Color black.
 
 	b interaction 
 		popupText: #filepathInProject.
@@ -28,7 +30,6 @@ paintInto: b
 		withShorterDistanceAttachPoint.
 	b edges moveBehind; connectToAll: #resolvedDependencies.
 
-
 	"layout"
 	(b layout hnCustom: HNOptimizedForceBasedLayout new)
 		charge: [:x | x width * -15 ];
@@ -48,8 +49,7 @@ paintInto: b
 
 	"view settings"
 	b view @ RTZoomableView.
-	self flag: #todo.
-	"b view @ elementHighligter."
+	b view @ self elementHighlighter.
 
 	"legend"
 	lb := HNLegendBuilder new.

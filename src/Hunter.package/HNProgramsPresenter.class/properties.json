@@ -7,8 +7,10 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"#selectedEntity => DataBindingSlot twoWay",
+		"#searchTextString => DataBindingSlot twoWay",
 		"#viz",
-		"#foldersPane"
+		"#foldersPane",
+		"#searchTextInput"
 	],
 	"name" : "HNProgramsPresenter",
 	"type" : "normal"

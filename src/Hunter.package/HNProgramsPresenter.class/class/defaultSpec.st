@@ -1,7 +1,10 @@
 spec
 defaultSpec
-	^ SpecRowLayout composed
-		newColumn: #foldersPane right: 0.7;
-		addSplitter;
-		newColumn: #viz left: 0.3;
-		yourself
+	^ SpecColumnLayout composed
+		newRow: [ :row | 
+			row
+				newColumn: #foldersPane right: 0.7;
+				addSplitter;
+				newColumn: #viz left: 0.3;
+				yourself ];
+		newRow: #searchTextInput height: 25

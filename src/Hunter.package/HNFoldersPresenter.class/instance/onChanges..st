@@ -1,4 +1,3 @@
 specs
 onChanges: dataChanges
-	dataChanges whenValueChangedAt: #selectedEntity send: #expandPathToMetaModel:.
-	
+	dataChanges whenValueChangedAt: #selectedEntity send: #expandPathToMetaModel:

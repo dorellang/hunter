@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"#elementHighlighter",
+		"#searchTextString => DataBindingSlot twoWay"
+	],
 	"name" : "HNProgramsVizPresenter",
 	"type" : "normal"
 }

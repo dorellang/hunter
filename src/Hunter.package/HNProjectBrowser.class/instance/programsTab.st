@@ -3,7 +3,9 @@ programsTab
 	| tab programs |
 	tab := self newTab.
 	programs := (self instantiate: HNProgramsPresenter on: [ :v |
-		v project: project; selectedEntity: self &#selectedEntity
+		v 
+			project: project; 
+			selectedEntity: self &#selectedEntity.
 	]).
 	tab label: 'Programs';
 		iconName: #objects;
