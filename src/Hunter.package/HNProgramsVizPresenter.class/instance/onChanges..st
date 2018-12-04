@@ -2,4 +2,6 @@ hooks
 onChanges: someChanges
 	someChanges
 		whenValueChangedAt: #searchTextString
-		do: [ :aString | self elementHighlighter highlightElementsUsing: aString ]
+			do: [ :aString | self elementHighlighter refresh ];
+		whenValueChangedAt: #selectedEntity
+			do: [ :aString | self elementHighlighter refresh ]

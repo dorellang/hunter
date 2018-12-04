@@ -6,7 +6,8 @@ paintInto: b
 	"nodes"
 	b shape circle 
 		size: #linesOfCode;
-		borderColor: Color black.
+		borderColor: Color black;
+		borderWidth: 0.5.
 
 	b interaction 
 		popupText: #filepathInProject.

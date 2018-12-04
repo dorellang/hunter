@@ -1,3 +1,3 @@
 hooks
 elementHighlighter
-	^ elementHighlighter ifNil: [ elementHighlighter := HNHighlightElementsInView new ]
+	^ elementHighlighter ifNil: [ elementHighlighter := self newElementHighlighter ]

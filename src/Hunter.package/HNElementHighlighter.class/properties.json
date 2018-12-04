@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"view",
-		"transparency"
+		"conditionsAndColors"
 	],
-	"name" : "HNHighlightElementsInView",
+	"name" : "HNElementHighlighter",
 	"type" : "normal"
 }
