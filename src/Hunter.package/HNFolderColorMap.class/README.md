@@ -1,0 +1,1 @@
+I am initialized for a register and generate colors for each of its code nodes.

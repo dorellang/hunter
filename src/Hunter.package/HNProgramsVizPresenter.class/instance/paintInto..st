@@ -1,16 +1,20 @@
 hooks
 paintInto: b
 
-	| lb es |
+	| lb es map |
+
+	map := HNFolderColorMap new
+		registerProject: project;
+		yourself.
 
 	"nodes"
 	b shape circle 
 		size: #linesOfCode;
+		color: [ :each | map colorAt: each folder ];
 		borderColor: Color black;
 		borderWidth: 0.5.
 
-	b interaction 
-		popupText: #filepathInProject.
+	b interaction popupText: #filepathInProject.
 
 	es := b nodes: self project programs.
 	
@@ -39,14 +43,8 @@ paintInto: b
 	b layout
 		ifNotConnectedThen: RTGridLayout new.
 
-	"nodes' size and color"
-	b normalizer 
-		normalizeSize: #linesOfCode min: 5 max: 30 using: [:nb | nb sqrt ];
-		normalizeColor: [:p | p resolvedDependencies size sqrt ];
-		alphaColor: 0.5.
-	"b shape
-		if: [ :program | program  name includesSubstring: searchText caseSensitive: false ]
-		fillColor: Color green."
+	"nodes' size"
+	b normalizer normalizeSize: #linesOfCode min: 5 max: 30 using: [:nb | nb sqrt ].
 
 	"view settings"
 	b view @ RTZoomableView.
