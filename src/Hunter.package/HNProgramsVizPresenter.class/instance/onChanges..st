@@ -1,7 +1,7 @@
 hooks
 onChanges: someChanges
 	someChanges
-		whenValueChangedAt: #searchTextString
+		whenValueChangedAt: #projectSearchResult
 			do: [ :aString | self elementHighlighter refresh ];
 		whenValueChangedAt: #selectedEntity
 			do: [ :aString | self elementHighlighter refresh ]

@@ -7,4 +7,4 @@ defaultSpec
 				addSplitter;
 				newColumn: #viz left: 0.3;
 				yourself ];
-		newRow: #searchTextInput height: 25
+		newRow: #searchBar height: 25

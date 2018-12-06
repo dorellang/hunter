@@ -1,0 +1,3 @@
+testing
+invalidParameters
+	^ stringToFind isEmptyOrNil

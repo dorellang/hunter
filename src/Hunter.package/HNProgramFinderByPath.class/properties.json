@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNEntityFinder",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stringToFind"
+	],
+	"name" : "HNProgramFinderByPath",
+	"type" : "normal"
+}
