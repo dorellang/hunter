@@ -1,0 +1,3 @@
+accessing
+projectSearchResultDataBinding: anObject
+	projectSearchResultDataBinding := anObject

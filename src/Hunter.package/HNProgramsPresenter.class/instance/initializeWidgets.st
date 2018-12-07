@@ -8,7 +8,8 @@ initializeWidgets
 	]).
 	foldersPane := self instantiate: HNFoldersPresenter on: [ :v |
 		v 	project: project;
-			selectedEntity: self &#selectedEntity
+			selectedEntity: self &#selectedEntity;
+			projectSearchResult: self &#projectSearchResult
 	].
 	searchBar := self instantiate: HNProgramsSearchBarPresenter on: [ :v |
 		v 	project: project;

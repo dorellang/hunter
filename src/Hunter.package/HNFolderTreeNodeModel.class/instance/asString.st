@@ -1,6 +1,9 @@
 converting
 asString
-	| theFolder |
+	| theFolder isHighlighted |
+	self flag: #todo. "FIX"
+	isHighlighted := self model projectSearchResultDataBinding value ifNil: [ false ] ifNotNil: [:c | c includes: self item].
+
 	self flag: #todo.	"
 		- ugly: create specialized subclasses?
 		- remove dependency to Epicea
@@ -10,5 +13,5 @@ asString
 		ifTrue: [ self item ].
 	^ EpMorphFactory default
 		rowWithAll:
-			{self item basename asMorph.
+			{self item basename asMorph backgroundColor: (isHighlighted ifTrue: [ Color green muchLighter ] ifFalse: [ Color transparent ]).
 			(self colorIconFor: theFolder) asMorph}

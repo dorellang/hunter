@@ -10,6 +10,7 @@
 		"#treeModel",
 		"#reacting",
 		"#selectedEntity => DataBindingSlot twoWay",
+		"#projectSearchResult => DataBindingSlot oneWay",
 		"#ongoingManualSelection"
 	],
 	"name" : "HNFoldersPresenter",
