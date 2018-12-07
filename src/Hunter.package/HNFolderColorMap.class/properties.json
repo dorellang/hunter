@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "MartinDias 8/30/2018 19:29",
+	"super" : "Object",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colorByFolderMap"
+	],
+	"name" : "HNFolderColorMap",
+	"type" : "normal"
+}

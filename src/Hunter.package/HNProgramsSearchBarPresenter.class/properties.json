@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "HNSubPresenter",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#projectSearchResult => DataBindingSlot twoWay",
+		"#currentMode => DataBindingSlot oneWay",
+		"#stringToFind => DataBindingSlot oneWay",
+		"#searchTextInput",
+		"#searchInPathModeRadio",
+		"#searchInContentsModeRadio"
+	],
+	"name" : "HNProgramsSearchBarPresenter",
+	"type" : "normal"
+}

@@ -2,7 +2,8 @@
 
 PATTERNS=`cat .gitignore`
 
-echo "Will remove: $PATTERNS"
+echo "ATTENTION! This script removes all .gitignore'd files and directories:"
+echo "$PATTERNS"
 read -r -p "Are You Sure? [Y/n] " input
  
 case $input in
