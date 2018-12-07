@@ -1,0 +1,3 @@
+actions
+setTheme
+	PharoLightTheme beCurrent.

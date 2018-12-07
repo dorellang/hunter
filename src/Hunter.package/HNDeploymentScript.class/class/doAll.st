@@ -1,0 +1,13 @@
+public
+doAll
+	self
+		closeAllWindows;
+		removeAllMorphs;
+		setTheme;
+		deactivateStartupActions;
+		dontRaiseWarningForMissingChangesOrSourcesFiles;
+		deactivateDeprecationWarnings;
+		beDeployed;
+		addToStartupList;
+		dontAskForConfirmationWhenQuitting;
+		setProgressBarSizeAndPosition

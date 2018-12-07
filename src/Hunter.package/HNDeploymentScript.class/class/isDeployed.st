@@ -1,0 +1,3 @@
+settings
+isDeployed
+	^ IsDeployed

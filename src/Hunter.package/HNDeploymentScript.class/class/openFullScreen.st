@@ -1,0 +1,3 @@
+actions
+openFullScreen
+	HNOpenProjectFolder new openFullScreen

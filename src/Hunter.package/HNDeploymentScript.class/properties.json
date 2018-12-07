@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "MartinDias 12/7/2018 16:50",
+	"super" : "Object",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"IsDeployed",
+		"Save"
+	],
+	"instvars" : [ ],
+	"name" : "HNDeploymentScript",
+	"type" : "normal"
+}
