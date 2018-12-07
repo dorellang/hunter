@@ -1,0 +1,3 @@
+adding
+addPredicate: aSymbolCollection
+	HNDslForbiddenAtPostTraversal signal

@@ -1,0 +1,3 @@
+testing
+hasMatches
+	^ matches notEmpty

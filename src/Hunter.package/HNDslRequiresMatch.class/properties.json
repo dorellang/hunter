@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "DiegoOrellana 10/5/2018 18:10",
+	"super" : "HNDslGroupDependency",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNDslRequiresMatch",
+	"type" : "normal"
+}

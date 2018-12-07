@@ -1,6 +1,6 @@
 visiting
 visitImportDefaultSpecifier: aNode
-	self matcher processNode: aNode with: [
+	self matcher processNode: aNode andTraverseChildrenWith: [
 		self visitChildrenOf: aNode at: #local.
 		self visitChildrenOf: aNode at: #imported
 	]

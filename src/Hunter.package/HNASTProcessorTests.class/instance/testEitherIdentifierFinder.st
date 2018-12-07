@@ -1,11 +1,12 @@
 tests
 testEitherIdentifierFinder
 	| ast processor identifiers |
+	self skip: 'Nested AST queries are not supported right now'.
 	ast := self basicAST.
 	identifiers := OrderedCollection new.
 	processor := HNBasicASTProcessor new specify: [ :on |
 		on node if: #hasTypeIdentifier;
-			ifEither: [
+			ifMatchesEither: [
 				on node if: [ :id | id name = 'foo' ].
 				on node if: [ :id | id name = 'bar' ]
 			];

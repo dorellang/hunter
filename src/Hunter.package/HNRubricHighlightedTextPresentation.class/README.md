@@ -1,1 +1,0 @@
-Just like GLMRubricHighlightedTextPresentation, except it enforces a dark background.

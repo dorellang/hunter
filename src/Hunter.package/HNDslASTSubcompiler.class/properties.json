@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "HNDslActualASTCompiler",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNDslASTSubcompiler",
+	"type" : "normal"
+}

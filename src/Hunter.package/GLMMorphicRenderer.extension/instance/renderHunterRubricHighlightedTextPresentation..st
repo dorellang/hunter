@@ -1,3 +1,0 @@
-*Hunter
-renderHunterRubricHighlightedTextPresentation: aPresentation
-	^ HNMorphicRubricHighlightedTextRenderer render: aPresentation from: self

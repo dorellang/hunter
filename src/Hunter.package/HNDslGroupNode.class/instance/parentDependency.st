@@ -1,0 +1,3 @@
+accessing
+parentDependency
+	^ groupDependency asParentDependencyPromiseFactory

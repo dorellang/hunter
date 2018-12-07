@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"case",
+		"node",
+		"parent",
+		"matchedPromise",
+		"resolveCb",
+		"rejectCb",
+		"traverseCb",
+		"context",
+		"promiseHub",
+		"groupPromiseHubs",
+		"traversedPromise",
+		"donePromise"
+	],
+	"name" : "HNDslMatch",
+	"type" : "normal"
+}

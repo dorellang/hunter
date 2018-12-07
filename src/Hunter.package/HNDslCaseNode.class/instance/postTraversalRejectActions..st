@@ -1,0 +1,3 @@
+accessing
+postTraversalRejectActions: aBlockCollection
+	postTraversalRejectActions := aBlockCollection

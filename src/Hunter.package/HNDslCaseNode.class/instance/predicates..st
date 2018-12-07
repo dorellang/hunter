@@ -1,0 +1,3 @@
+accessing
+predicates: anUpTo2ArgsToBooleanBlockCollection
+	predicates := anUpTo2ArgsToBooleanBlockCollection

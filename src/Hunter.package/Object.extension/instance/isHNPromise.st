@@ -1,0 +1,3 @@
+*Hunter
+isHNPromise
+	^ false

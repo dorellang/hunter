@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "DiegoOrellana 9/21/2018 18:58",
+	"super" : "NotFound",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNDslVariableNotFound",
+	"type" : "normal"
+}

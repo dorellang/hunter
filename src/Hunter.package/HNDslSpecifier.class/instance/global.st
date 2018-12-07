@@ -1,0 +1,3 @@
+public
+global
+	^ currentFrame global

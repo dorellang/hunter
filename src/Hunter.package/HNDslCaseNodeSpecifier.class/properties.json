@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"specifier",
+		"caseNode",
+		"caseConfigurator"
+	],
+	"name" : "HNDslCaseNodeSpecifier",
+	"type" : "normal"
+}

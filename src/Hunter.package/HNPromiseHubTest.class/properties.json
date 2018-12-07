@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Hunter-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"resolvingPromises",
+		"rejectingPromises",
+		"promiseCbs",
+		"result"
+	],
+	"name" : "HNPromiseHubTest",
+	"type" : "normal"
+}

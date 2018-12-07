@@ -1,0 +1,3 @@
+accessing
+subcaseGroups: aPromiseHubClassToIntegerAssocCollection
+	subcaseGroups := aPromiseHubClassToIntegerAssocCollection

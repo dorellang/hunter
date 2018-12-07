@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "DiegoOrellana 9/24/2018 19:13",
+	"super" : "Object",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"casesDict",
+		"knownSelectors",
+		"knownTypes"
+	],
+	"name" : "HNDslCaseHolder",
+	"type" : "normal"
+}

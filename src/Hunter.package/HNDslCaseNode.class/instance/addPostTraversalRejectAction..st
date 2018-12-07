@@ -1,0 +1,3 @@
+adding
+addPostTraversalRejectAction: aBlock
+	postTraversalRejectActions add: aBlock

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "DiegoOrellana 9/18/2018 12:14",
+	"super" : "Object",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [
+		"instance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"predicateCheckBlock"
+	],
+	"name" : "HNDslAbstractPredicateChecker",
+	"type" : "normal"
+}

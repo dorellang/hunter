@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"node",
+		"group",
+		"parentCase",
+		"caseGroupIndex",
+		"priorityContainer",
+		"descendantSubcaseCompilers"
+	],
+	"name" : "HNDslActualASTCompiler",
+	"type" : "normal"
+}

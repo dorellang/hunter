@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNDslSpecifierAbstractFrame",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parent"
+	],
+	"name" : "HNDslSpecifierFrame",
+	"type" : "normal"
+}

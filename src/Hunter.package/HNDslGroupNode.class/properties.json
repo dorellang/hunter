@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "HNDslNode",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"groupDependency",
+		"promiseHubClass",
+		"caseNodes"
+	],
+	"name" : "HNDslGroupNode",
+	"type" : "normal"
+}

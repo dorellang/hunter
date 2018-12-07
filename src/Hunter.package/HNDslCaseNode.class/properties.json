@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "",
+	"super" : "HNDslNode",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"types",
+		"predicates",
+		"initActions",
+		"resolveActions",
+		"rejectActions",
+		"finallyActions",
+		"postTraversalResolveActions",
+		"postTraversalRejectActions",
+		"postTraversalFinallyActions",
+		"promiseHubClass",
+		"localVariables",
+		"groups",
+		"priority"
+	],
+	"name" : "HNDslCaseNode",
+	"type" : "normal"
+}

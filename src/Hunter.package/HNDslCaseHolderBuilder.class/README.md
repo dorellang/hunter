@@ -1,0 +1,1 @@
+I am a DSL Case holder builder. My purpose is to build a DSL Case Holder that allows to query efficiently cases that have a certain type and selector. Check the tests at HNDslCaseHolderTest in order to see how I am meant to be used.

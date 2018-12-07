@@ -1,0 +1,1 @@
+I am a DSL Case Holder, my purpose is to quickly access the cases that match a certain type and selector. Basically each case instead of having a subcases references themselves it has a reference to me, so you can retrieve efficiently the cases for a given type and selector with my forCasesWithType:selector:do: method.

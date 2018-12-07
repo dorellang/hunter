@@ -1,16 +1,16 @@
 {
 	"commentStamp" : "DiegoOrellana 9/12/2018 00:27",
 	"super" : "Object",
-	"category" : "Hunter-Util",
+	"category" : "Hunter-Promise",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"result",
-		"error",
 		"resolvedCbs",
 		"rejectedCbs",
-		"completedCbs"
+		"completedCbs",
+		"status"
 	],
 	"name" : "HNPromise",
 	"type" : "normal"

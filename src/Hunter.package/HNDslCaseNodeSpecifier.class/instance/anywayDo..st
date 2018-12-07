@@ -1,0 +1,3 @@
+public
+anywayDo: upTo2ArgBlock
+	caseConfigurator addFinallyAction: upTo2ArgBlock

@@ -1,6 +1,7 @@
 tests
 testMatchChildrenAt
 	| ast processor identifiers |
+	self skip: 'Nested AST queries are not supported right now'.
 	ast := self basicAST.
 	identifiers := OrderedCollection new.
 	processor := HNBasicASTProcessor new specify: [ :on |

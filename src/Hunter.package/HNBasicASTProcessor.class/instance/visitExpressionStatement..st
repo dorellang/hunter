@@ -1,5 +1,5 @@
 visiting
 visitExpressionStatement: aNode
-	self matcher processNode: aNode with: [
+	self matcher processNode: aNode andTraverseChildrenWith: [
 		self visitChildrenOf: aNode at: #expression
 	]

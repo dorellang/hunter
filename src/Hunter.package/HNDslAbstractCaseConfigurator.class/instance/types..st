@@ -1,0 +1,3 @@
+adding
+types: aSymbolCollection
+	self subclassResponsibility

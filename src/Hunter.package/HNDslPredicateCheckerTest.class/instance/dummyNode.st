@@ -1,0 +1,3 @@
+helpers
+dummyNode
+	^ 42

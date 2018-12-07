@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "HNDslAbstractParentDependency",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNDslMatchParentDependency",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+hooks
+handleEarlyTerminationFor: aPromise
+	self subclassResponsibility

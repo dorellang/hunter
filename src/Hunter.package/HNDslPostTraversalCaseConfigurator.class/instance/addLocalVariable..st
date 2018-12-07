@@ -1,0 +1,3 @@
+adding
+addLocalVariable: aSymbolCollection
+	HNDslForbiddenAtPostTraversal signal

@@ -1,3 +1,3 @@
 testing
 isRejected
-	^ error isNotNil
+	^ status = #rejected

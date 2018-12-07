@@ -1,3 +1,3 @@
 testing
 isResolved
-	^ result isNotNil
+	^ status = #resolved

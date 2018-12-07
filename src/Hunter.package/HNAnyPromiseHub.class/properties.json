@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "DiegoOrellana 9/19/2018 14:37",
+	"super" : "HNAbstractPromiseHub",
+	"category" : "Hunter-Promise",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNAnyPromiseHub",
+	"type" : "normal"
+}

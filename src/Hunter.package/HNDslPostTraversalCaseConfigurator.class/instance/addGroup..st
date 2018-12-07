@@ -1,0 +1,3 @@
+adding
+addGroup: aSymbolCollection
+	HNDslForbiddenAtPostTraversal signal

@@ -1,0 +1,3 @@
+public
+makePromiseWithParent: aMatch
+	self subclassResponsibility

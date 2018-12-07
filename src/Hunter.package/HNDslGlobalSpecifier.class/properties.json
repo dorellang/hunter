@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"globalVariables",
+		"initActions"
+	],
+	"name" : "HNDslGlobalSpecifier",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+hooks
+combinePromises
+	self subclassResponsibility

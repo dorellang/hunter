@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "HNDslAbstractContext",
+	"category" : "Hunter-DSL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parent",
+		"symbolsToContextDict"
+	],
+	"name" : "HNDslContext",
+	"type" : "normal"
+}

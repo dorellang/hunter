@@ -1,0 +1,1 @@
+I am HNDslVariableNotFound, an exception indicating that a variable was not found in a Hunter DSL context.

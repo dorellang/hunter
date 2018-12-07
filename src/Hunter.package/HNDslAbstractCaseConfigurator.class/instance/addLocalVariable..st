@@ -1,0 +1,3 @@
+adding
+addLocalVariable: aSymbol
+	self subclassResponsibility

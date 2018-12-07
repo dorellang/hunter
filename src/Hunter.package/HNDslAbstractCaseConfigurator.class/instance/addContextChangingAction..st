@@ -1,0 +1,3 @@
+adding
+addContextChangingAction: aBlock
+	self subclassResponsibility

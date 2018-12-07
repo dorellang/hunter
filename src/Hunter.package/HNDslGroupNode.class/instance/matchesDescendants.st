@@ -1,0 +1,3 @@
+testing
+matchesDescendants
+	self subclassResponsibility

@@ -1,0 +1,3 @@
+accessing
+descendantSubcaseCompilers: aCollection
+	descendantSubcaseCompilers := aCollection

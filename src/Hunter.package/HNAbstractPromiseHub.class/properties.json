@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "DiegoOrellana 9/28/2018 18:48",
+	"super" : "Object",
+	"category" : "Hunter-Promise",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"inputPromises",
+		"combined",
+		"resolveCb",
+		"rejectCb",
+		"noMoreInput",
+		"promiseCount",
+		"capacity"
+	],
+	"name" : "HNAbstractPromiseHub",
+	"type" : "normal"
+}

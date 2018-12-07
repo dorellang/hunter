@@ -1,0 +1,3 @@
+testing
+isDead
+	^ donePromise isCompleted
