@@ -1,16 +1,12 @@
 hooks
 paintInto: b
 
-	| lb es map |
-
-	map := HNFolderColorMap new
-		registerProject: project;
-		yourself.
+	| lb es |
 
 	"nodes"
 	b shape circle 
 		size: #linesOfCode;
-		color: [ :each | map colorAt: each folder ];
+		color: [ :each | each folder attributeAt: #mappedColor ];
 		borderColor: Color black;
 		borderWidth: 0.5.
 

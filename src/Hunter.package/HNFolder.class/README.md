@@ -1,0 +1,1 @@
+Instances of this class represent a folder in a JS project.

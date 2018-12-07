@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "MartinDias 12/7/2018 13:31",
 	"super" : "Object",
 	"category" : "Hunter-MetaModel",
 	"classinstvars" : [ ],
@@ -9,7 +9,8 @@
 		"path",
 		"programs",
 		"subFolders",
-		"parent"
+		"parent",
+		"attributes"
 	],
 	"name" : "HNFolder",
 	"type" : "normal"

@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"#selectedEntity => DataBindingSlot twoWay",
-		"#projectSearch => DataBindingSlot twoWay",
 		"#projectSearchResult => DataBindingSlot oneWay",
 		"#viz",
 		"#foldersPane",
