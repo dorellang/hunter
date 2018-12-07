@@ -2,6 +2,12 @@ spec protocol
 onMorphTreeSelectionChanged: anAnnouncement
 	| selectedItem |
 	reacting ifTrue: [ ^ self ]. "short circuit processing change"
+
+	anAnnouncement selection lastSelectedNode ifNil: [ 
+		selectedEntity := nil.
+		self refresher refreshIfRequested.
+		^self ]. "No selection"
+	
 	"this executes only when user actually clicked an item in folder tree"
 	ongoingManualSelection := true.
 	[
