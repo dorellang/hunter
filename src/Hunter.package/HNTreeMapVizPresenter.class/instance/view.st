@@ -1,3 +1,3 @@
 hooks
 view
-	^ RTCircularTreeMapBuilder new
+	^ RTTreeMapBuilder new
