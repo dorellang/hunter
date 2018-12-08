@@ -18,7 +18,8 @@ paintInto: builder
 	builder
 		weight: [ :metaModel | metaModel accept: weightVisitor ].
 
-	builder extent: self widget extent "400@200".
+	self flag: #todo. "Hack to optimize space."
+	builder extent: self widget extent + (40@0).
 
 	lb := HNLegendBuilder new.
 	lb onDemand: 'Help'.
