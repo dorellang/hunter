@@ -10,10 +10,12 @@ initializeWidgets
 	master := self instantiate: HNProgramsPresenter on: [ :v |
 		v 
 			project: project; 
-			selectedEntity: self &#selectedEntity.
+			selectedEntity: self &#selectedEntity;
+			stringToFind: self &#stringToFind
 	].
 	
 	detail := self instantiate: HNDetailPane on: [ :p |
-		p project: project;
-			selectedEntity: self &#selectedEntity
+		p 	project: project;
+			selectedEntity: self &#selectedEntity;
+			stringToFind: self &#stringToFind
 	]

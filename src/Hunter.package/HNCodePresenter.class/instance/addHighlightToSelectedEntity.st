@@ -1,0 +1,3 @@
+refreshing
+addHighlightToSelectedEntity
+	textSpecAdapter morph addSegment: self newSelectedEntityHighlightSegment

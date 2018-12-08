@@ -1,3 +1,0 @@
-refreshing
-text
-	^ text

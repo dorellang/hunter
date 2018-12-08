@@ -22,7 +22,7 @@ initializeWidgets
 		on: PharoShortcuts current findShortcut
 		do: [:x | "nothing, we don't need a search within a floating editor widget"].
 		
-	text := morph
+	textSpecAdapter := morph
 		hResizing: #spaceFill;
 		vResizing: #spaceFill;
 		asSpecAdapter

@@ -7,6 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"#selectedEntity => DataBindingSlot twoWay",
+		"#stringToFind => DataBindingSlot twoWay",
 		"#filepathLabel",
 		"#treeMap",
 		"#code"

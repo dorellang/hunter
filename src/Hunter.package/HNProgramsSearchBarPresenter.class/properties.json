@@ -8,7 +8,7 @@
 	"instvars" : [
 		"#projectSearchResult => DataBindingSlot twoWay",
 		"#currentMode => DataBindingSlot oneWay",
-		"#stringToFind => DataBindingSlot oneWay",
+		"#stringToFind => DataBindingSlot twoWay",
 		"#searchTextInput",
 		"#searchInPathModeRadio",
 		"#searchInContentsModeRadio"

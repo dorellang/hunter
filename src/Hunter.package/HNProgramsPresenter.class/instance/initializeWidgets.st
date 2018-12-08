@@ -13,5 +13,6 @@ initializeWidgets
 	].
 	searchBar := self instantiate: HNProgramsSearchBarPresenter on: [ :v |
 		v 	project: project;
-			projectSearchResult: self &#projectSearchResult
+			projectSearchResult: self &#projectSearchResult;
+			stringToFind: self &#stringToFind
 	].

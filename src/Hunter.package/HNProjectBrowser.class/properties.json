@@ -8,7 +8,8 @@
 	"instvars" : [
 		"#master",
 		"#detail",
-		"#selectedEntity => DataBindingSlot oneWay"
+		"#selectedEntity => DataBindingSlot oneWay",
+		"#stringToFind => DataBindingSlot oneWay"
 	],
 	"name" : "HNProjectBrowser",
 	"type" : "normal"
