@@ -11,7 +11,9 @@ asString
 	theFolder := (self item isKindOf: HNFolder)
 		ifFalse: [ self item folder ]
 		ifTrue: [ self item ].
-	^ EpMorphFactory default
-		rowWithAll:
-			{self item basename asMorph backgroundColor: (isHighlighted ifTrue: [ Color green muchLighter ] ifFalse: [ Color transparent ]).
-			(self colorIconFor: theFolder) asMorph}
+	^ EpMorphFactory default rowWithAll: {
+		self item basename asMorph backgroundColor: (isHighlighted
+			ifTrue: [ HNColorTheme searchHighlightColor ]
+			ifFalse: [ Color transparent ]).
+		(self colorIconFor: theFolder) asMorph
+		}

@@ -2,7 +2,7 @@ hooks
 newElementHighlighter
 	^ HNElementHighlighter new
 		addCondition: [ :aRTElement | aRTElement model = selectedEntity ] 
-			color: (UIManager default theme selectionColor);
+			color: HNColorTheme selectedEntityHighlightColor;
 		addCondition: [ :aRTElement | projectSearchResult includes: aRTElement model ] 
-			color: (Color green alpha: 0.8);
+			color: HNColorTheme searchHighlightColor;
 		yourself
