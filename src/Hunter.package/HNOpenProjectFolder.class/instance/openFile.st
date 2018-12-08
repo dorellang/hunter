@@ -1,6 +1,7 @@
 opening
 openFile
-	| project |
-	project := self newProject.
-	project ifNil: [ ^ self ].
+	| directory project |
+	directory := self askForProjectDirectoryIfNone: [ ^ self ].
+	project := self readProjectLocatedAt: directory.
+
 	(HNProjectBrowser on: [ :b | b project: project]) openWithSpec

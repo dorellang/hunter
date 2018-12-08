@@ -1,8 +1,8 @@
 opening
 openFullScreen
-	| project |
-	project := self newProject.
-	project ifNil: [ ^ self ].
+	| directory project |
+	directory := self askForProjectDirectoryIfNone: [ ^ self ].
+	project := self readProjectLocatedAt: directory.	
 
 	(HNProjectBrowser on: [ :b | b project: project]) openWorldWithSpec widget
 		color: UIManager default theme windowColor;
@@ -11,7 +11,7 @@ openFullScreen
 
 	"Force refresh morphs after changes to widget above."
 	World themeChanged.
-	(SystemWindow allSubInstances select:[:e | e owner isNil]) do:#themeChanged.
+	(SystemWindow allSubInstances select:[:e | e owner isNil]) do: #themeChanged.
 	"Hack because buttons icons are not shown until you mouse over it ..."	
 	PluggableButtonMorph allInstances do: #changed. 
 	
