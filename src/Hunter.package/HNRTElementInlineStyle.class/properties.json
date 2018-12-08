@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "DiegoOrellana 12/8/2018 11:15",
+	"super" : "HNRTElementStyle",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"applyStyleBlock"
+	],
+	"name" : "HNRTElementInlineStyle",
+	"type" : "normal"
+}

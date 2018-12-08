@@ -1,22 +1,42 @@
 hooks
 paintInto: b
-
 	| lb es map |
-
+	
 	map := HNFolderColorMap new
 		registerProject: project;
 		yourself.
 
 	"nodes"
-	b shape circle 
-		size: #linesOfCode;
-		color: [ :each | map colorAt: each folder ];
-		borderColor: Color black;
-		borderWidth: 0.5.
+	b shape circle size: #linesOfCode.
 
 	b interaction popupText: #filepathInProject.
 
 	es := b nodes: self project programs.
+	
+	es @ (HNRTElementStyler new
+		defaultStyle: [ :e |
+			e trachelShape color: (map colorAt: e model folder);
+				strokePaint: Color black;
+				strokeWidth: 0.5.
+			e connectedEdges do: [ :anEdge | anEdge trachelShape color: Color lightGray ]
+		];
+		addStyle: #selected with: [ :e |
+			e trachelShape strokePaint: UIManager default theme selectionColor darker darker;
+				strokeWidth: 10.0.
+			e incomingEdges do: [ :anEdge | anEdge trachelShape color: Color blue ].
+			e outgoingEdges do: [ :anEdge | anEdge trachelShape color: Color red ]
+		];
+		addStyle: #searchResult with: [ :e |
+			e trachelShape strokePaint: Color green;
+				strokeWidth: 5.0
+		];
+		addStyle: #hover with: [ :e |
+			e trachelShape color: e color darker darker darker.
+			e incomingEdges do: [ :anEdge | anEdge trachelShape color: Color blue ].
+			e outgoingEdges do: [ :anEdge | anEdge trachelShape color: Color red ]
+		]).
+
+	es @ (HNStyleHighlightable new style: #hover).
 	
 	es do: [:anElement |
 		anElement addInteraction: (HNHighlightable new
@@ -31,7 +51,6 @@ paintInto: b
 	"edges"
 	b shape
 		shape: (RTArrowedLine new head: (RTFilledNarrowArrow asHead size: 4; width: 1); width: 1);
-		color: Color lightGray;
 		withShorterDistanceAttachPoint.
 	b edges moveBehind; connectToAll: #resolvedDependencies.
 
@@ -48,7 +67,6 @@ paintInto: b
 
 	"view settings"
 	b view @ RTZoomableView.
-	b view @ self elementHighlighter.
 
 	"legend"
 	lb := HNLegendBuilder new.

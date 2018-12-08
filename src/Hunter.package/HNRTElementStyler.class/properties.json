@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "RTInteraction",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [
+		"styles",
+		"stylesBySelector",
+		"styleChangeAnnouncer"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"inlineStyles",
+		"computedStyles",
+		"view"
+	],
+	"name" : "HNRTElementStyler",
+	"type" : "normal"
+}
