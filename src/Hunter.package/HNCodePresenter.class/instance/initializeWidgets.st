@@ -17,6 +17,10 @@ initializeWidgets
 			(GLMHighlighterTextRubEditingMode
 				withStylerDecorator: (styler textDecoratorInPresentation: nil fileReference: nil));
 		yourself.
+
+	morph textArea
+		on: PharoShortcuts current findShortcut
+		do: [:x | "nothing, we don't need a search within a floating editor widget"].
 		
 	text := morph
 		hResizing: #spaceFill;
