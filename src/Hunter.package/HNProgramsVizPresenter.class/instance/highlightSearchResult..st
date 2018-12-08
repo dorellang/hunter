@@ -1,11 +1,13 @@
 refreshing
-highlightSearchResult: someElements
-	| elementSet |
-	elementSet := someElements asSet.
-	view view elements do: [ :anotherElement |
-		(elementSet includes: anotherElement) ifTrue: [
-			anotherElement showStyleNamed: #searchResult
+highlightSearchResult: someEntities
+	| entitySet |
+	entitySet := someEntities asSet.
+	view view elements select: [ :e |
+		(e model isKindOf: HNProgram) or: [ e model isKindOf: HNFolder ]
+	] thenDo: [ :anElement |
+		(entitySet includes: anElement model) ifTrue: [
+			anElement showStyleNamed: #searchResult
 		] ifFalse: [
-			anotherElement hideStyleNamed: #searchResult
+			anElement hideStyleNamed: #searchResult
 		]
 	]
