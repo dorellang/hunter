@@ -20,7 +20,7 @@ styleTableDefinitionFromEclipseTheme: nameAndColorArray
 			nextPut: { #struct. nameAndColorDictionary at: #class };
 			nextPut: { #patternDontCare. nameAndColorDictionary at: #foreground };
 
-			nextPut: { #identifier. nameAndColorDictionary at: #localVariable };
+			nextPut: { #identifier. nameAndColorDictionary at: #writeOccurrenceIndication };
 			nextPut: { #symbol. nameAndColorDictionary at: #constant };
 			nextPut: { #callBracket. nameAndColorDictionary at: #bracket };
 			nextPut: { #methodBracket. nameAndColorDictionary at: #bracket };
