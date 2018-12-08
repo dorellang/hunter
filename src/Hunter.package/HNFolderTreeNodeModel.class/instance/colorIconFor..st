@@ -9,5 +9,4 @@ colorIconFor: aHNFolder
 
 	^ (FormCanvas extent: 16 @ 16)
 		fillOval: (4 @ 4 extent: 10 @ 10) color: iconColor borderWidth: 1 borderColor: Color transparent;
-		"fillRectangle: (4 @ 4 extent: 10 @ 10) color: iconColor;"
 		form
