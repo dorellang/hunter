@@ -1,7 +1,7 @@
-hooks
+refreshing
 onChanges: someChanges
+	view ifNil: [ ^ self ].
 	someChanges
-		whenValueChangedAt: #projectSearchResult
-			do: [ :aString | self elementHighlighter refresh ];
-		whenValueChangedAt: #selectedEntity
-			do: [ :aString | self elementHighlighter refresh ]
+		whenValueChangedAt: #projectSearchResult send: #highlightSearchResult:;
+		whenValueChangedAt: #selectedEntity send: #highlightSelectedEntity:.
+	self refreshView.

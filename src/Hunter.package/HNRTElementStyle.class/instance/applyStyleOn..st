@@ -1,0 +1,3 @@
+styling
+applyStyleOn: anRTElement
+	self subclassResponsibility

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "RTAbstractHighlightable",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"styles"
+	],
+	"name" : "HNStyleHighlightable",
+	"type" : "normal"
+}

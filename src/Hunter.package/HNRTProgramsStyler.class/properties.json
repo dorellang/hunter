@@ -1,15 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "HNSubPresenter",
+	"super" : "HNRTElementStyler",
 	"category" : "Hunter-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"#glamour",
-		"#selectedEntity => DataBindingSlot twoWay",
-		"#view"
+		"folderColorMap",
+		"project"
 	],
-	"name" : "HNRoassalVizPresenter",
+	"name" : "HNRTProgramsStyler",
 	"type" : "normal"
 }

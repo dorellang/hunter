@@ -1,3 +1,3 @@
 hooks
-view
+newView
 	^ project nameCloudTerms asViewBuilder

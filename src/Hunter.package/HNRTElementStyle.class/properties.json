@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"isWithEdges"
+	],
+	"name" : "HNRTElementStyle",
+	"type" : "normal"
+}

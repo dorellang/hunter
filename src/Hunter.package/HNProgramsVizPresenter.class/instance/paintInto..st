@@ -1,33 +1,24 @@
 hooks
 paintInto: b
-
-	| lb es |
+	| lb es map |
+	
+	map := HNFolderColorMap new
+		registerProject: project;
+		yourself.
 
 	"nodes"
-	b shape circle 
-		size: #linesOfCode;
-		color: [ :each | each folder attributeAt: #mappedColor ];
-		borderColor: Color black;
-		borderWidth: 0.5.
+	b shape circle size: #linesOfCode.
 
 	b interaction popupText: #filepathInProject.
 
 	es := b nodes: self project programs.
 	
-	es do: [:anElement |
-		anElement addInteraction: (HNHighlightable new
-			focusOnIncomingAndOutgoingElements;
-			edgeColor: [ :edge | 
-				(edge from == anElement) 
-					ifTrue: [ Color blue ] 
-					ifFalse: [ Color red ] ];
-			yourself).
-		].
-
+	es @ (HNRTProgramsStyler new project: project).
+	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
+	
 	"edges"
 	b shape
 		shape: (RTArrowedLine new head: (RTFilledNarrowArrow asHead size: 4; width: 1); width: 1);
-		color: Color lightGray;
 		withShorterDistanceAttachPoint.
 	b edges moveBehind; connectToAll: #resolvedDependencies.
 
@@ -44,7 +35,6 @@ paintInto: b
 
 	"view settings"
 	b view @ RTZoomableView.
-	b view @ self elementHighlighter.
 
 	"legend"
 	lb := HNLegendBuilder new.

@@ -1,0 +1,3 @@
+accessing
+whenAddedSymbol
+	^ whenAddedSymbol

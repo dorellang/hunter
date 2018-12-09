@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "HNRTElementStyle",
+	"category" : "Hunter-Visualizations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"methodSelector",
+		"priority",
+		"isDefault",
+		"whenAddedSymbol",
+		"whenRemovedSymbol"
+	],
+	"name" : "HNRTElementMethodStyle",
+	"type" : "normal"
+}
