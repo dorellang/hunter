@@ -1,26 +1,21 @@
 refreshing
 stylesFromMethods
-	| newStyles styleWithPriorityPragmas defaultStylePragma |
+	| newStyles |
 	"todo handle negative priority"
 
 	newStyles := OrderedCollection new.
-
-	defaultStylePragma := (Pragma allNamed: #defaultStyle from: HNRTElementStyler to: self) last.
-	newStyles add: (
-		HNRTElementMethodStyle new
-			name: defaultStylePragma methodSelector allButLast asSymbol;
-			methodSelector: defaultStylePragma methodSelector;
-			priority: 0;
-			isDefault: true
-	).
-
-	styleWithPriorityPragmas := Pragma allNamed: #styleWithPriority:
-		from: HNRTElementStyler to: self
-		sortedByArgument: 1.
-	styleWithPriorityPragmas collect: [ :p | HNRTElementMethodStyle new
-		name: p methodSelector allButLast asSymbol;
-		methodSelector: p methodSelector;
-		priority: p arguments first.
-	] into: newStyles.
+	
+	HNRTElementStylerPragmaHandler pragmaHandlerSelectors do: [ :aSelector |
+		| aPragma |
+		aPragma := (Pragma allNamed: aSelector from: self to: HNRTElementStyler)
+			ifEmpty: nil ifNotEmpty: [ :col | col last ].
+		aPragma ifNotNil: [
+			| pragmaHandler |
+			pragmaHandler := HNRTElementStylerPragmaHandler new pragma: aPragma.
+			newStyles add: (
+				pragmaHandler perform: aPragma selector withEnoughArguments: aPragma arguments
+			)
+		]
+	].
 
 	^ newStyles

@@ -1,4 +1,4 @@
 adding
 addStyle: aSymbol with: aBlock
-	computedStyles := nil.
+	cachedStyles := nil.
 	inlineStyles add: (HNRTElementInlineStyle new name: aSymbol; applyStyleBlock: aBlock).

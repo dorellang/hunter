@@ -1,3 +1,3 @@
 printing
 printOn: aStream
-	aStream << 'HNRTElementInlineStyle(#' << name << ')'
+	aStream << 'HNRTElementInlineStyle(#' << name << ', isWithEdges=' << isWithEdges asString << ')'

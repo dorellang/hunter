@@ -11,8 +11,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"inlineStyles",
-		"computedStyles",
-		"view"
+		"view",
+		"cachedStyles",
+		"cachedStylesByName"
 	],
 	"name" : "HNRTElementStyler",
 	"type" : "normal"

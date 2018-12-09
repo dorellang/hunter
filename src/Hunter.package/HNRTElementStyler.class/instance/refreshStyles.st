@@ -1,4 +1,4 @@
 refreshing
 refreshStyles
-	computedStyles := nil.
+	self dropCachedStyles.
 	self refreshViewIfPossible

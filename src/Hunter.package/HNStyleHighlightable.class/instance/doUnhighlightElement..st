@@ -1,3 +1,5 @@
 actions
 doUnhighlightElement: anElement
-	anElement hideStyleNamed: style; signalUpdate
+	anElement hideStyleNamed: style;
+		applyStyles;
+		signalUpdate

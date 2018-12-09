@@ -2,12 +2,14 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "Hunter-Visualizations",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"instance"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"isWithEdges"
+		"pragma"
 	],
-	"name" : "HNRTElementStyle",
+	"name" : "HNRTElementStylerPragmaHandler",
 	"type" : "normal"
 }

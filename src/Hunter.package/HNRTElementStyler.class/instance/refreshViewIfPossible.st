@@ -1,3 +1,6 @@
 refreshing
 refreshViewIfPossible
-	view ifNotNil: [ view signalUpdate ]
+	view ifNotNil: [ 
+		view reapplyStyles.
+		view signalUpdate
+	]
