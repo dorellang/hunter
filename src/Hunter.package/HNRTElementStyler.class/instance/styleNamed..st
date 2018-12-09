@@ -1,3 +1,4 @@
 accessing
 styleNamed: aSymbol
-	^ self cachedStylesByName at: aSymbol
+	self flag: #todo. "maybe log when nil"
+	^ self cachedStylesByName at: aSymbol ifAbsent: [ nil ]
