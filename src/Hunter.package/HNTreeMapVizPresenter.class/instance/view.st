@@ -1,3 +1,0 @@
-hooks
-view
-	^ RTTreeMapBuilder new

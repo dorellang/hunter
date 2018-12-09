@@ -24,7 +24,7 @@ paintInto: builder
 	lb := HNLegendBuilder new.
 	lb onDemand: 'Help'.
 	lb view: builder view.
-	lb addText: 'Each circle may represent either a file, a function or a class.'.
+	lb addText: 'Each box may represent either a file, a function or a class.'.
 	lb addText: 'Size is proportional to lines of code.'.
 "	palette := RTColorPalette diverging colors: 10 scheme: 'RdYlGn'.
 	lb addColorFadingUsing: palette reverse text: '# of variables'."

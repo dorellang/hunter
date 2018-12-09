@@ -10,6 +10,7 @@
 		"#treeModel",
 		"#reacting",
 		"#selectedEntity => DataBindingSlot twoWay",
+		"#selectedFolder => DataBindingSlot twoWay",
 		"#projectSearchResult => DataBindingSlot oneWay",
 		"#ongoingManualSelection"
 	],

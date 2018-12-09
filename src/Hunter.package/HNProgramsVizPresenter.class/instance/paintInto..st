@@ -1,10 +1,6 @@
 hooks
 paintInto: b
-	| lb es map |
-	
-	map := HNFolderColorMap new
-		registerProject: project;
-		yourself.
+	| lb es |
 
 	"nodes"
 	b shape circle size: #linesOfCode.
@@ -43,5 +39,6 @@ paintInto: b
 	lb addText: 'Each node represents a JS file.'.
 	lb addText: 'And the arrows, the dependencies between them.'.
 	lb addText: 'Radio is proportional to lines of code.'.
-	lb addColorFadingFrom: Color gray to: Color red text: '# of nodes that depend on me'.
+	lb addText: 'The color depends on the folder the file is.'.
+	"lb addColorFadingFrom: Color gray to: Color red text: '# of nodes that depend on me'."
 	lb build.
