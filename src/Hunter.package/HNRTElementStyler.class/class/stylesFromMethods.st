@@ -6,10 +6,9 @@ stylesFromMethods
 	newStyles := OrderedCollection new.
 	
 	HNRTElementStylerPragmaHandler pragmaHandlerSelectors do: [ :aSelector |
-		| aPragma |
-		aPragma := (Pragma allNamed: aSelector from: self to: HNRTElementStyler)
-			ifEmpty: nil ifNotEmpty: [ :col | col last ].
-		aPragma ifNotNil: [
+		| somePragmas |
+		somePragmas := Pragma allNamed: aSelector from: self to: HNRTElementStyler.
+		somePragmas do: [ :aPragma |
 			| pragmaHandler |
 			pragmaHandler := HNRTElementStylerPragmaHandler new pragma: aPragma.
 			newStyles add: (
@@ -18,4 +17,4 @@ stylesFromMethods
 		]
 	].
 
-	^ newStyles
+	^ newStyles sorted: [ :a :b | a priority < b priority ]

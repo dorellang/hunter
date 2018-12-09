@@ -14,7 +14,7 @@ paintInto: b
 	es := b nodes: self project programs.
 	
 	es @ (HNRTProgramsStyler new project: project).
-	es @ (HNStyleHighlightable new style: #hover).
+	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
 	
 	"edges"
 	b shape

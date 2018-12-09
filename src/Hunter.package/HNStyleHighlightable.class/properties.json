@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"style"
+		"styles"
 	],
 	"name" : "HNStyleHighlightable",
 	"type" : "normal"

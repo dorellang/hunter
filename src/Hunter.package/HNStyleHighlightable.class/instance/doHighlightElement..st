@@ -1,5 +1,6 @@
 actions
 doHighlightElement: anElement
-	anElement showStyleNamed: style;
-		applyStyles; 
-		signalUpdate
+	styles do: [ :aStyle |
+		anElement showStyleNamed: aStyle
+	].
+	anElement applyStyles; signalUpdate.

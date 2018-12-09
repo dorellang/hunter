@@ -1,3 +1,5 @@
 accessing
-style: aSymbol
-	style := aSymbol
+style: aSymbolOrCollection
+	styles := aSymbolOrCollection isCollection
+		ifTrue: aSymbolOrCollection
+		ifFalse: #(asSymbolOrCollection)

@@ -9,7 +9,9 @@
 		"name",
 		"methodSelector",
 		"priority",
-		"isDefault"
+		"isDefault",
+		"whenAddedSymbol",
+		"whenRemovedSymbol"
 	],
 	"name" : "HNRTElementMethodStyle",
 	"type" : "normal"

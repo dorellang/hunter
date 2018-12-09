@@ -1,3 +1,8 @@
 testing
 isStyleMethod: aCompiledMethod
-	^ HNRTElementStylerPragmaHandler pragmaHandlerSelectors includes: aCompiledMethod selector.
+	aCompiledMethod pragmas do: [ :aPragma |
+		(HNRTElementStylerPragmaHandler pragmaHandlerSelectors
+			includes: aPragma selector)
+			ifTrue: [ ^ true ]
+	].
+	^ false

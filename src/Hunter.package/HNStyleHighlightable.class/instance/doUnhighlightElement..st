@@ -1,5 +1,6 @@
 actions
 doUnhighlightElement: anElement
-	anElement hideStyleNamed: style;
-		applyStyles;
-		signalUpdate
+	styles do: [ :aStyle |
+		anElement hideStyleNamed: aStyle
+	].
+	anElement applyStyles; signalUpdate.
