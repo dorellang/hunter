@@ -1,3 +1,3 @@
 testing
 doesMatch: aProgram
-	^ aProgram sourceCode includesSubstring: stringToFind
+	^ aProgram sourceCode includesSubstring: stringToFind caseSensitive: false
