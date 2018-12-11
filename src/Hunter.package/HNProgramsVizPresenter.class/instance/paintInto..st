@@ -11,6 +11,12 @@ paintInto: b
 	
 	es @ (HNRTProgramsStyler new project: project).
 	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
+
+	"Unselect when clicking on the background"
+	b view when: TRMouseClick do: [ :event | 
+		selectedEntity := nil.
+		selectedFolder := nil.
+		self refresher refreshIfRequested ].
 	
 	"edges"
 	b shape

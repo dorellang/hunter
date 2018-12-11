@@ -1,8 +1,14 @@
 specs
 onChanges: dataChanges
-	dataChanges 
+	dataChanges
 		whenValueChangedAt: #project do: [ 
 			self annotateFoldersWithMappedColors.
 			tree widget expandRoots ];
-		whenValueChangedAt: #selectedEntity send: #expandPathToMetaModel:;
-		whenValueChangedAt: #projectSearchResult do: [ treeModel updateList ].
+		whenValueChangedAt: #selectedEntity do: [ :entity |
+			entity
+				ifNil: [ tree morph deselectAll ]
+				ifNotNil: [ self expandPathToMetaModel: entity ] ];
+		whenValueChangedAt: #selectedFolder do: [ :entity |
+			entity
+				ifNil: [ tree morph deselectAll ] ];
+		whenValueChangedAt: #projectSearchResult send: #updateList to: treeModel
