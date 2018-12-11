@@ -7,11 +7,9 @@ baseline: spec
 			baseline: 'NeoJSON' with: [
 				spec
 					repository: 'github://svenvc/NeoJSON:b10eb7aa1b3bac323da2ab1b286a27e6c8810076/repository' ];
-			project: 'OSSubprocess' with: [
+			baseline: 'OSSubprocess' with: [
 				spec
-					className: #ConfigurationOfOSSubprocess;
-					versionString: #'stable';
-					repository: 'github://marianopeck/OSSubprocess:master/repository' ];
+					repository: 'github://marianopeck/OSSubprocess:v1.0.1/repository' ];
 			baseline: 'Roassal2' with: [
 				spec
 					repository: 'github://ObjectProfile/Roassal2:9b70250774b5f3a18502f86e6f9fa2d04541e114/src' ];
