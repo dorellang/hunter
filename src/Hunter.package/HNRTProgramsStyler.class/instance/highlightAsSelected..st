@@ -2,4 +2,4 @@ styles
 highlightAsSelected: anElement
 	anElement trachelShape
 		strokePaint: HNColorTheme selectedEntityHighlightColor;
-		strokeWidth: anElement width / 3.
+		strokeWidth: (4 min: anElement width / 2.5)
