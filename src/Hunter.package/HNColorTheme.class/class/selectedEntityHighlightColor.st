@@ -1,3 +1,3 @@
 colors
 selectedEntityHighlightColor
-	^ UIManager default theme selectionColor
+	^ "UIManager default theme selectionColor" Color cyan
