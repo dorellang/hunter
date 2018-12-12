@@ -5,5 +5,4 @@ undoAll
 		doRaiseWarningForMissingChangesOrSourcesFiles;
 		activateDeprecationWarnings;
 		deactivateDeployed;
-		removeFromStartupList;
-		askForConfirmationWhenQuitting
+		removeFromStartupList

@@ -5,8 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [
-		"IsDeployed",
-		"Save"
+		"IsDeployed"
 	],
 	"instvars" : [ ],
 	"name" : "HNDeploymentScript",
