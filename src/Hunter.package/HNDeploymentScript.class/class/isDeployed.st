@@ -1,3 +1,3 @@
-settings
+actions
 isDeployed
 	^ IsDeployed

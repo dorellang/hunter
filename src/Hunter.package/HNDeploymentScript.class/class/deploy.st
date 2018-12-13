@@ -4,5 +4,13 @@ deploy
 	self deploy
 	"
 
-	self doAll.
-	self closeWindowsAndOpenFullScreen
+	self
+		closeAllWindows;
+		removeAllMorphs;
+		setTheme;
+		deactivateStartupActions;
+		dontRaiseWarningForMissingChangesOrSourcesFiles;
+		deactivateDeprecationWarnings;
+		beDeployed;
+		setProgressBarSizeAndPosition;
+		openFullScreen

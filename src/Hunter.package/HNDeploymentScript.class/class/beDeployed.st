@@ -1,3 +1,3 @@
-settings
+actions
 beDeployed
 	IsDeployed := true
