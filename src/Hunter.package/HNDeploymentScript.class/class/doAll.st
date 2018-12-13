@@ -8,5 +8,4 @@ doAll
 		dontRaiseWarningForMissingChangesOrSourcesFiles;
 		deactivateDeprecationWarnings;
 		beDeployed;
-		addToStartupList;
 		setProgressBarSizeAndPosition

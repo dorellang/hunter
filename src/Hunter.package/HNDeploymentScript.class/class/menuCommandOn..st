@@ -6,4 +6,4 @@ menuCommandOn: aBuilder
 		parent: HNAbstractWorldMenu projectName asSymbol;
 		label: 'Launch as a standalone application';
 		icon: HNAbstractWorldMenu image;
-		action: [ self developmentEnvironmentEnabled: false ]
+		action: [ self deploy ]
