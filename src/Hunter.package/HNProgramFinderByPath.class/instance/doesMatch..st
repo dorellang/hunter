@@ -1,3 +1,3 @@
 testing
 doesMatch: aProgram
-	^ aProgram filepathInProject includesSubstring: stringToFind caseSensitive: false
+	^ HNStringSearch does: aProgram filepathInProject include: stringToFind
