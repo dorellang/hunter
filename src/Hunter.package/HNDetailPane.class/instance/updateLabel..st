@@ -1,4 +1,4 @@
-as yet unclassified
+refreshing
 updateLabel: aMetaModel
 	| labelText |
 	(aMetaModel isKindOf: HNSourceMetaModel) ifTrue: [
