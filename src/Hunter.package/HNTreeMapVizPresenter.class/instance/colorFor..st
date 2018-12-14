@@ -1,5 +1,7 @@
 hooks
 colorFor: metaModel
-	^ (stringToFind isEmptyOrNil not and: [ metaModel sourceCode includesSubstring: stringToFind ])
+	^ (self isHighlightedBySearch: metaModel)
 		ifTrue: [ HNColorTheme searchHighlightColor ]
-		ifFalse: [ Color transparent ]
+		ifFalse: [ (self isSelectedSubProgramEntity: metaModel)
+				ifTrue: [ HNColorTheme selectedSubProgramEntityColor ]
+				ifFalse: [ Color transparent ] ]

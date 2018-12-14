@@ -1,3 +1,3 @@
 as yet unclassified
-selectedEntityCodeSegmentColor
+selectedSubProgramEntityColor
 	^ Color blue alpha: 0.2
