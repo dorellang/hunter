@@ -3,6 +3,6 @@ newSelectedEntityHighlightSegment
 	| interval |
 	interval := self textIntervalForSelectedEntity.
 	^ (RubPlainSegmentMorph from: interval first to: interval last)
-		color: (Color blue alpha: 0.2);
+		color: HNColorTheme selectedEntityCodeSegmentColor;
 		setBalloonText: (selectedEntity accept: HNViz01PopupTextVisitor new);
 		yourself
