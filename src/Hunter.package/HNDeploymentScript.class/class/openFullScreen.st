@@ -1,3 +1,13 @@
 actions
 openFullScreen
-	HNOpenProjectFolder new openFullScreen
+	HNWorldPresenter new openWorldWithSpec widget
+		color: UIManager default theme windowColor;
+		borderColor: UIManager default theme windowColor;
+		borderWidth: 5.
+
+	"Force refresh morphs after changes to widget above."
+	World themeChanged.
+	(SystemWindow allSubInstances select:[:e | e owner isNil]) do: #themeChanged.
+	"Hack because buttons icons are not shown until you mouse over it ..."	
+	PluggableButtonMorph allInstances do: #changed. 
+	
