@@ -21,12 +21,12 @@ paintInto: b
 	
 	"external and unknown nodes"
 	b shape triangle 
-		color: Color green whiter;
+		color: HNColorTheme externalProgramColor;
 		size: #linesOfCode.
 	b nodes: project externalPrograms.
 
 	b shape rectangle
-		color: Color red whiter;
+		color: HNColorTheme unknownProgramColor;
 		size: #linesOfCode.
 	b nodes: project unknownPrograms.
 
