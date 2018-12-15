@@ -5,7 +5,7 @@ buildProject
 	project := HNProject new.
 
 	parseResultCollection
-		do: [ :each | self processParseResult: each in: project. ] 
+		do: [ :each | self processParseResult: each in: project ] 
 		displayingProgress: [ :each | 'Processing AST of ', each path asPath basename ].
 
 	project resolveSuperclassRelations.

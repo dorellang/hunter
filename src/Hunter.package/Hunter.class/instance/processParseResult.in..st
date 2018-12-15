@@ -2,7 +2,11 @@ building
 processParseResult: aHNParseResult in: aHNProject
 
 	| metaModelBuilder rootScope scopeBuilder identifierBinder importProcessor nameCloudProcessor ast |
-	aHNParseResult status = 'ok' ifFalse: [ ^self "skip errors" ].
+	aHNParseResult status = 'ok' ifFalse: [
+		| programWithError |
+		programWithError := HNUnparsedProgram new filepath: aHNParseResult path.
+		aHNProject addProgram: programWithError.
+		^self ].
 	
 	metaModelBuilder := HNMetaModelBuilder withMetaModel: aHNProject programPath: aHNParseResult path.
 	rootScope := HNRootScope withProject: aHNProject.
