@@ -1,5 +1,6 @@
 events-processing
 openProjectLocatedAt: aDirectory
+	self removeMorph: contentsMorph.
 	contentsMorph := (HNOpenProjectFolder new presenterForProjectLocatedAt: aDirectory) buildWithSpec.
 	contentsMorph
 		color: Color transparent;

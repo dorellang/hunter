@@ -2,6 +2,7 @@ events-processing
 initialMessageMorph
 	| font |
 	font := LogicalFont familyName: StandardFonts defaultFont familyName pointSize: 18.
-	^ (StringMorph contents: 'Drop a directory here' font: font emphasis: TextEmphasis bold)
-		color: UIManager default theme windowColor darker;
+	^ 'Drop a directory here' asMorph 
+		font: font emphasis: TextEmphasis bold value;
+		color: (UIManager default theme textColor alpha: 0.2);
 		yourself
