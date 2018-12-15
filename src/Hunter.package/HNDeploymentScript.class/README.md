@@ -8,4 +8,4 @@ I'm responsible for preparing the image to be a Hunter standalone image. Namely,
 How to start
 ------------
 
-self developmentEnvironmentEnabled: false.
+self deploy

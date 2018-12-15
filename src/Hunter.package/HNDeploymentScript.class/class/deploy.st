@@ -3,7 +3,6 @@ deploy
 	"
 	self deploy
 	"
-
 	self
 		closeAllWindows;
 		removeAllMorphs;
@@ -12,5 +11,4 @@ deploy
 		dontRaiseWarningForMissingChangesOrSourcesFiles;
 		deactivateDeprecationWarnings;
 		beDeployed;
-		setProgressBarSizeAndPosition;
 		openFullScreen
