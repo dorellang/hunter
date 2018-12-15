@@ -19,7 +19,3 @@ processParseResult: aHNParseResult in: aHNProject
 		accept: importProcessor;
 		accept: nameCloudProcessor.
 		"ast accept: angularVisitor."
-
-	"NOTE Assuming resulting AST has only one Program node at root."
-	"(and it's added at end to project by visitor)"
-	aHNProject programs last filepath: aHNParseResult path.
