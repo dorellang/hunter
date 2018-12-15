@@ -7,7 +7,7 @@ paintInto: b
 
 	b interaction popupText: #filepathInProject.
 
-	es := b nodes: self project programs.
+	es := b nodes: project programs.
 	
 	es @ (HNRTProgramsStyler new project: project).
 	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
@@ -18,11 +18,25 @@ paintInto: b
 		selectedFolder := nil.
 		self refresher refreshIfRequested ].
 	
+	
+	"external and unknown nodes"
+	b shape triangle 
+		color: Color green whiter;
+		size: #linesOfCode.
+	b nodes: project externalPrograms.
+
+	b shape rectangle
+		color: Color red whiter;
+		size: #linesOfCode.
+	b nodes: project unknownPrograms.
+
+
 	"edges"
 	b shape
 		shape: (RTArrowedLine new head: (RTFilledNarrowArrow asHead size: 4; width: 1); width: 1);
 		withShorterDistanceAttachPoint.
 	b edges moveBehind; connectToAll: #resolvedDependencies.
+
 
 	"layout"
 	(b layout hnCustom: HNOptimizedForceBasedLayout new)

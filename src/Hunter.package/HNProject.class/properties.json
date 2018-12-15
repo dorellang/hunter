@@ -14,7 +14,9 @@
 		"programsByPath",
 		"commonPathPrefix",
 		"folder",
-		"nameCloudTerms"
+		"nameCloudTerms",
+		"externalProgramsByName",
+		"unknownProgramsByPath"
 	],
 	"name" : "HNProject",
 	"type" : "normal"

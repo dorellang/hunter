@@ -10,5 +10,6 @@ buildProject
 
 	project resolveSuperclassRelations.
 	project resolveFolders.
+	project resolveProgramDependencies.
 	
 	^ project
