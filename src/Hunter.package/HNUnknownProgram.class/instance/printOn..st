@@ -5,5 +5,5 @@ printOn: aStream
 	super printOn: aStream.
 	aStream
 		nextPut: $(;
-		print: path basename;
+		print: path;
 		nextPut: $)

@@ -1,3 +1,3 @@
 helpers
 fixturePath: fixtureName
-	^ '/', ((Hunter baseDirectory / 'fixtures' / fixtureName ) asPath printWithDelimiter: $/)
+	^ (Hunter baseDirectory / 'fixtures' / fixtureName ) asPath pathString
