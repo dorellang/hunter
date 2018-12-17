@@ -3,7 +3,7 @@ paintInto: b
 	| lb es |
 
 	"nodes"
-	b shape circle size: #linesOfCode.
+	b shape circle size: #sourceFileSize.
 	b interaction popupText: #filepathInProject.
 	es := b nodes: project programs.
 	es @ (HNRTProgramsStyler new project: project).
@@ -16,14 +16,14 @@ paintInto: b
 		self refresher refreshIfRequested ].
 	
 	"external programs"
-	b shape rectangle size: #linesOfCode.
+	b shape rectangle size: #sourceFileSize.
 	b interaction popupText: [:each | 'External module: ', String cr, each packageName ].
 	es := b nodes: project externalPrograms.
 	es @ (HNRTProgramsStyler new project: project).
 	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
 
 	"unknown programs"	
-	b shape circle size: #linesOfCode.
+	b shape circle size: #sourceFileSize.
 	b interaction popupText: [:each | 'Unknown file: ', String cr, each filepathInProject ].
 	es := b nodes: project unknownPrograms.
 	es do: [:each | each trachelShape dashes: #(1) ].
@@ -45,7 +45,7 @@ paintInto: b
 		ifNotConnectedThen: RTGridLayout new.
 
 	"nodes' size"
-	b normalizer normalizeSize: #linesOfCode min: 5 max: 30 using: [:nb | nb sqrt ].
+	b normalizer normalizeSize: #sourceFileSize min: 5 max: 30 using: [:nb | nb sqrt ].
 
 	"view settings"
 	b view @ RTZoomableView.
@@ -56,7 +56,7 @@ paintInto: b
 	lb view: b view.
 	lb addText: 'Each node represents a JS file.'.
 	lb addText: 'And the arrows, the dependencies between them.'.
-	lb addText: 'Radio is proportional to lines of code.'.
+	lb addText: 'Radio is proportional to file size.'.
 	lb addText: 'The color depends on the folder the file is.'.
 	"lb addColorFadingFrom: Color gray to: Color red text: '# of nodes that depend on me'."
 	lb build.
