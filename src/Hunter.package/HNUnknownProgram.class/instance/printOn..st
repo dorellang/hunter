@@ -5,5 +5,5 @@ printOn: aStream
 	super printOn: aStream.
 	aStream
 		nextPut: $(;
-		print: path;
+		print: self filepathInProject;
 		nextPut: $)

@@ -4,5 +4,6 @@ declareUnknownProgramRequiredFrom: aHNProgram to: resolvedPath
 		at: resolvedPath
 		ifAbsentPut: [
 			HNUnknownProgram new
-				path: (resolvedPath asPath relativeTo: self commonPathPrefix asPath) pathString;
+				project: self;
+				path: resolvedPath;
 				yourself ]
