@@ -4,11 +4,9 @@ baseline: spec
 	spec for: #'common' do: [
 		spec postLoadDoIt: #postLoadDoIt.
 		spec
-			project: 'NeoJSON' with: [
-				spec
-					className: #ConfigurationOfNeoJSON;
-					versionString: #'stable';
-					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/Neo/main/' ];
+			baseline: 'NeoJSON' with: [
+                spec
+                    repository: 'github://svenvc/NeoJSON/repository' ];
 			project: 'OSSubprocess' with: [
 				spec
 					className: #ConfigurationOfOSSubprocess;
