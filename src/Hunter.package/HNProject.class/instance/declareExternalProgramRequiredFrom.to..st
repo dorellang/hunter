@@ -4,6 +4,7 @@ declareExternalProgramRequiredFrom: aHNProgram to: importedPathString
 	packageName := importedPathString readStream upTo: $/.
 	^ self externalProgramsByName
 		at: packageName
-		ifAbsentPut: [ HNExternalProgram new
+		ifAbsentPut: [ 
+			HNExternalProgram new
 				packageName: packageName;
 				yourself ]
