@@ -4,11 +4,8 @@ paintInto: b
 
 	"nodes"
 	b shape circle size: #linesOfCode.
-
 	b interaction popupText: #filepathInProject.
-
 	es := b nodes: project programs.
-	
 	es @ (HNRTProgramsStyler new project: project).
 	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
 
@@ -18,25 +15,26 @@ paintInto: b
 		selectedFolder := nil.
 		self refresher refreshIfRequested ].
 	
-	
-	"external and unknown nodes"
-	b shape triangle 
-		color: HNColorTheme externalProgramColor;
-		size: #linesOfCode.
-	b nodes: project externalPrograms.
+	"external programs"
+	b shape rectangle size: #linesOfCode.
+	b interaction popupText: [:each | 'External module: ', String cr, each packageName ].
+	es := b nodes: project externalPrograms.
+	es @ (HNRTProgramsStyler new project: project).
+	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
 
-	b shape rectangle
-		color: HNColorTheme unknownProgramColor;
-		size: #linesOfCode.
-	b nodes: project unknownPrograms.
-
+	"unknown programs"	
+	b shape circle size: #linesOfCode.
+	b interaction popupText: [:each | 'Unknown file: ', String cr, each path ].
+	es := b nodes: project unknownPrograms.
+	es do: [:each | each trachelShape dashes: #(1) ].
+	es @ (HNRTProgramsStyler new project: project).
+	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
 
 	"edges"
 	b shape
 		shape: (RTArrowedLine new head: (RTFilledNarrowArrow asHead size: 4; width: 1); width: 1);
 		withShorterDistanceAttachPoint.
 	b edges moveBehind; connectToAll: #resolvedDependencies.
-
 
 	"layout"
 	(b layout hnCustom: HNOptimizedForceBasedLayout new)
