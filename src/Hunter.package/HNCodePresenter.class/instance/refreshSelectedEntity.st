@@ -1,7 +1,5 @@
 refreshing
 refreshSelectedEntity
-	selectedEntity logCr.
-
 	selectedEntity
 		ifNil: [ 
 			textModel setText: '' ]
