@@ -1,3 +1,3 @@
-as yet unclassified
+colors
 unknownProgramColor
 	^ Color white

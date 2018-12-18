@@ -9,7 +9,8 @@ initializeWidgets
 		
 	textModel := RubScrolledTextModel new.
 	
-	morph := textModel newScrolledText
+	morph := (HNCodeMorph on: textModel) 
+		getSelectionSelector: #primarySelectionInterval;
 		beReadOnly;
 		withLineNumbers;
 		font: StandardFonts codeFont;

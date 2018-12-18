@@ -1,3 +1,3 @@
-as yet unclassified
+colors
 externalProgramColor
 	^ Color black

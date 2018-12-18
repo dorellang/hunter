@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RubScrolledTextMorph",
+	"category" : "Hunter-UI-Code",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNCodeMorph",
+	"type" : "normal"
+}
