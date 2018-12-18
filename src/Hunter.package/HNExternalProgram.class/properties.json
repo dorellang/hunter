@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNMockProgram",
+	"category" : "Hunter-MetaModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"packageName"
+	],
+	"name" : "HNExternalProgram",
+	"type" : "normal"
+}
