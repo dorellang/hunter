@@ -1,3 +1,6 @@
 accessing
 baseDirectory
-	^ BaseDirectory ifNil: [ IceLibgitRepository localRepositoriesLocation / #dorellang / #hunter ]
+	(BaseDirectory isNil or: [ BaseDirectory exists not ]) ifTrue: [ 
+		BaseDirectory := self baseDirectoryGuessIfNotFound: [ 
+			self error: 'Please set the repository directory with "Hunter>>baseDirectory:"' ] ].
+	^ BaseDirectory
