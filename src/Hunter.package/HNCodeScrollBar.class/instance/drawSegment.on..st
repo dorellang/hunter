@@ -1,9 +1,10 @@
 drawing
 drawSegment: aSegment on: aCanvas
-	| top bottom rectangle |
-	top := aSegment top * self height / self codeMorph textArea height.
-	bottom := aSegment bottom * self height / self codeMorph textArea height.
-	rectangle := 1 @ top corner: self width-1 @ bottom.
+	| totalBounds top bottom rectangle |
+	totalBounds := self pagingArea.
+	top := aSegment top * totalBounds height / self codeMorph textArea height.
+	bottom := aSegment bottom * totalBounds height / self codeMorph textArea height.
+	rectangle := 1 @ top corner: totalBounds width-1 @ bottom.
 	aCanvas
-		fillRectangle: (rectangle translateBy: self topLeft)
+		fillRectangle: (rectangle translateBy: totalBounds topLeft)
 		color: (HNColorTheme scrollBarColorFor: aSegment)
