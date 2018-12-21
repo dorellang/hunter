@@ -24,7 +24,7 @@ paintInto: b
 
 	"unknown programs"	
 	b shape circle size: #sourceFileSize.
-	b interaction popupText: [:each | 'Unknown file: ', String cr, each filepathInProject ].
+	b interaction popupText: [:each | 'Not-JS or Not-found file: ', String cr, each filepathInProject ].
 	es := b nodes: project unknownPrograms.
 	es do: [:each | each trachelShape dashes: #(1) ].
 	es @ (HNRTProgramsStyler new project: project).
