@@ -6,5 +6,7 @@ drawSegment: aSegment on: aCanvas
 	bottom := aSegment bottom * totalBounds height / self codeMorph textArea height.
 	rectangle := 1 @ top corner: totalBounds width-1 @ bottom.
 	aCanvas
-		fillRectangle: (rectangle translateBy: totalBounds topLeft)
-		color: (HNColorTheme scrollBarColorFor: aSegment)
+		frameAndFillRectangle: (rectangle translateBy: totalBounds topLeft)
+		fillColor: aSegment color 
+		borderWidth: 1
+		borderColor: (HNColorTheme scrollBarSegmentBorderColorFor: aSegment)
