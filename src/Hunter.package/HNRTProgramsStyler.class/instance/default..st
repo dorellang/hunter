@@ -6,6 +6,7 @@ default: anElement
 	hackyColorProvider := Dictionary new
 		at: HNExternalProgram put: [HNColorTheme externalProgramColor];
 		at: HNUnknownProgram put: [ HNColorTheme unknownProgramColor ];
+		at: HNUnparsedProgram put: [ self folderColorMap colorAt: anElement model folder ];
 		at: HNProgram put: [ self folderColorMap colorAt: anElement model folder ];
 		yourself.
 	
