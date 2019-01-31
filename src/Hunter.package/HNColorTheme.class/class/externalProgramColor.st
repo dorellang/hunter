@@ -1,3 +1,3 @@
 colors
 externalProgramColor
-	^ Color black
+	^ Color white

@@ -17,16 +17,19 @@ paintInto: b
 	
 	"external programs"
 	b shape rectangle size: #sourceFileSize.
-	b interaction popupText: [:each | 'External module: ', String cr, each packageName ].
+	b interaction popupText: [:each | '{1}
+({2})' format: {each packageName.  each shortDescription} ].
 	es := b nodes: project externalPrograms.
+	es do: [:each | each trachelShape dashes: #(2) ].
 	es @ (HNRTProgramsStyler new project: project).
 	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
 
 	"unknown programs"	
 	b shape circle size: #sourceFileSize.
-	b interaction popupText: [:each | 'Not-JS or Not-found file: ', String cr, each filepathInProject ].
+	b interaction popupText: [:each | '{1}
+({2})' format: {each filepathInProject.  each shortDescription} ].
 	es := b nodes: project unknownPrograms.
-	es do: [:each | each trachelShape dashes: #(1) ].
+	es do: [:each | each trachelShape dashes: #(2) ].
 	es @ (HNRTProgramsStyler new project: project).
 	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
 

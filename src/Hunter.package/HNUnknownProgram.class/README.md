@@ -1,0 +1,1 @@
+I represent a JS file that is referenced by others but was not found in the filesystem.
