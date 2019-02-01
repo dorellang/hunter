@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "HNViz01WeightVisitor",
+	"name" : "HNPopupTextVisitor",
 	"type" : "normal"
 }

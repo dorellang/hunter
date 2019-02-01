@@ -3,8 +3,8 @@ paintInto: builder
 	| lb weightVisitor popupTextVisitor |
 	selectedEntity ifNil: [ ^self ].
 	
-	weightVisitor := HNViz01WeightVisitor new.
-	popupTextVisitor := HNViz01PopupTextVisitor new.
+	weightVisitor := HNWeightVisitor new.
+	popupTextVisitor := HNPopupTextVisitor new.
 
 	builder shape
 		fillColor: [ :metaModel | self colorFor: metaModel ].
