@@ -1,0 +1,3 @@
+mock
+shortDescription
+	^ self subclassResponsibility

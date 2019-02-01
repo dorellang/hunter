@@ -1,0 +1,3 @@
+style
+mouseOverFillStyle
+	^ self normalFillStyle

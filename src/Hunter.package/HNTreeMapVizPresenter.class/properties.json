@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"#stringToFind => DataBindingSlot twoWay"
+	],
 	"name" : "HNTreeMapVizPresenter",
 	"type" : "normal"
 }

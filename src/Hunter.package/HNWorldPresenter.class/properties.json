@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "MartinDias 12/15/2018 01:04",
+	"super" : "DynamicComposablePresenter",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mainMenu",
+		"contents"
+	],
+	"name" : "HNWorldPresenter",
+	"type" : "normal"
+}

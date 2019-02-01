@@ -5,8 +5,8 @@ initializeWidgets
 			HNRoassalVizGlamourPresentation new
 				parentDataBindingOwner: self;
 				refresher: self refresher;
-				selectedEntity: self &#selectedEntity;
+				inheritDataBindingNamed: #selectedEntity;
 				createViewWith: [ self view ];
-				paintWith: [ :view | self paintInto: view ];
+				paintWith: [ :v | self paintInto: v ];
 				startOn: 1.
 		]

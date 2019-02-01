@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RubScrollBar",
+	"category" : "Hunter-UI-Code",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNCodeScrollBar",
+	"type" : "normal"
+}

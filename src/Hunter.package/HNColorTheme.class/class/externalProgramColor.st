@@ -1,0 +1,3 @@
+colors
+externalProgramColor
+	^ Color white

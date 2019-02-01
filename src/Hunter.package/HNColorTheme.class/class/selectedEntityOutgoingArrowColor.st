@@ -1,0 +1,3 @@
+colors
+selectedEntityOutgoingArrowColor
+	^ Color blue

@@ -8,6 +8,7 @@
 	"instvars" : [
 		"#glamour",
 		"#selectedEntity => DataBindingSlot twoWay",
+		"#selectedFolder => DataBindingSlot twoWay",
 		"#view"
 	],
 	"name" : "HNRoassalVizPresenter",

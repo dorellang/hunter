@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "MartinDias 12/14/2018 20:48",
+	"super" : "PanelMorph",
+	"category" : "Hunter-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contentsMorph"
+	],
+	"name" : "HNDirectoryDropHandlerMorph",
+	"type" : "normal"
+}

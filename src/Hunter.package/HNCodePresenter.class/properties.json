@@ -7,8 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"#selectedEntity => DataBindingSlot twoWay",
-		"#text",
-		"#textModel"
+		"#stringToFind => DataBindingSlot twoWay",
+		"#textModel",
+		"#textSpecAdapter"
 	],
 	"name" : "HNCodePresenter",
 	"type" : "normal"

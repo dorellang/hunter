@@ -1,3 +1,3 @@
 testing
 doesMatch: aProgram
-	^ aProgram sourceCode includesSubstring: stringToFind
+	^ HNStringSearch does: aProgram sourceFileContents include: stringToFind

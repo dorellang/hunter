@@ -1,0 +1,3 @@
+refreshing
+removeAllHighlights
+	textSpecAdapter morph removeAllSegments

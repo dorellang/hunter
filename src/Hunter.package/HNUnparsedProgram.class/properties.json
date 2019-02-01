@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "MartinDias 12/15/2018 15:44",
+	"super" : "HNProgram",
+	"category" : "Hunter-MetaModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNUnparsedProgram",
+	"type" : "normal"
+}

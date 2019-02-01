@@ -1,4 +1,3 @@
 accessing
 esprimaBinWrapperPath
-	^ '/', ((Hunter baseDirectory / 'esprima-bin-wrapper' / 'dist' / 'esprima-bin-wrapper.node.js')
-		asPath printWithDelimiter: $/)
+	^ self esprimaBinWrapperPathRelativeTo: Hunter baseDirectory

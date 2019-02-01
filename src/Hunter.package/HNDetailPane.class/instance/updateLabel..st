@@ -1,7 +1,5 @@
-as yet unclassified
+refreshing
 updateLabel: aMetaModel
-	| labelText |
-	(aMetaModel isKindOf: HNSourceMetaModel) ifTrue: [
-		labelText := aMetaModel program filepathInProject .
-		filepathLabel label: labelText
-	]
+	self flag: #todo.
+	(aMetaModel respondsTo: #program)
+		ifTrue: [ filepathLabel label: aMetaModel program filepathInProject ]

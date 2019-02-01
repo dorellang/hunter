@@ -1,3 +1,3 @@
-accessing
-onChanges: dataChanges
-	dataChanges whenValueChangedAt: #project send: #annotateFoldersWithMappedColors
+refreshing
+onChanges: someChanges
+	someChanges whenValueChangedAt: #selectedEntity send: #discardSelectedFolder.

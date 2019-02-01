@@ -1,9 +1,9 @@
 refreshing
 highlightSelectedEntity: aSelectedEntity
 	view view elements select: [ :e |
-		(e model isKindOf: HNProgram) or: [ e model isKindOf: HNFolder ]
+		(e model isKindOf: HNBasicMetaModel)
 	] thenDo: [ :anElement |
-		(anElement model = aSelectedEntity) ifTrue: [
+		(aSelectedEntity notNil and: [ anElement model = aSelectedEntity program ]) ifTrue: [
 			anElement showStyleNamed: #selected.
 		] ifFalse: [
 			anElement hideStyleNamed: #selected.

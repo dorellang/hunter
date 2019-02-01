@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "MartinDias 12/14/2018 13:15",
+	"super" : "Object",
+	"category" : "Hunter-Util",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNStringSearch",
+	"type" : "normal"
+}

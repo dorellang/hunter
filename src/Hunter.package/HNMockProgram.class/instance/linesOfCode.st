@@ -1,0 +1,3 @@
+mock
+linesOfCode
+	^ 50

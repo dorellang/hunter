@@ -9,7 +9,8 @@ initializeWidgets
 		
 	textModel := RubScrolledTextModel new.
 	
-	morph := textModel newScrolledText
+	morph := (HNCodeMorph on: textModel) 
+		getSelectionSelector: #primarySelectionInterval;
 		beReadOnly;
 		withLineNumbers;
 		font: StandardFonts codeFont;
@@ -17,8 +18,12 @@ initializeWidgets
 			(GLMHighlighterTextRubEditingMode
 				withStylerDecorator: (styler textDecoratorInPresentation: nil fileReference: nil));
 		yourself.
+
+	morph textArea
+		on: PharoShortcuts current findShortcut
+		do: [:x | "nothing, we don't need a search within a floating editor widget"].
 		
-	text := morph
+	textSpecAdapter := morph
 		hResizing: #spaceFill;
 		vResizing: #spaceFill;
 		asSpecAdapter

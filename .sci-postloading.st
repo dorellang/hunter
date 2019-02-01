@@ -1,1 +1,0 @@
-Hunter baseDirectory: FileSystem workingDirectory

@@ -1,5 +1,5 @@
 specs
 defaultSpec
 	^ SpecLayout composed
-		add: #text;
+		add: #textSpecAdapter;
 		yourself

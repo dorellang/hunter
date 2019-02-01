@@ -1,0 +1,3 @@
+refreshing
+textSpecAdapter
+	^ textSpecAdapter

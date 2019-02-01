@@ -1,12 +1,8 @@
-private - master tabs
+private
 nameCloudTab
-	| tab |
-	tab := self newTab.
-	tab label: 'NameCloud';
+	^ self newTab
+		label: 'NameCloud';
 		iconName: #glamorousCloud;
 		closeable: false;
-		presenter: (self instantiate: HNNameCloudPresenter on: [ :p |
-			p project: project;
-				selectedEntity: self &#selectedEntity
-		]).
-	^ tab
+		presenter: (self instantiate: HNNameCloudPresenter on: [ :p | p inheritSharedDataBindings ]);
+		yourself

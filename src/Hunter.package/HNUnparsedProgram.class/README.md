@@ -1,0 +1,1 @@
+Instances of this class are programs that esprima couldn't parse correctly.

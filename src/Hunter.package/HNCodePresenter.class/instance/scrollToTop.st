@@ -1,3 +1,3 @@
 refreshing
 scrollToTop
-	text morph scrollToBeginningOfText.
+	textSpecAdapter morph scrollToBeginningOfText.
