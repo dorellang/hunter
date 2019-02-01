@@ -1,3 +1,3 @@
 visiting
 visitVariable: aVariable
-	^ 0
+	^ 1
