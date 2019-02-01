@@ -1,12 +1,8 @@
-private - master tabs
+private
 umlVizTab
-	| tab |
-	tab := self newTab.
-	tab label: 'UML';
+	^ self newTab
+		label: 'UML';
 		iconName: #hierarchy;
 		closeable: false;
-		presenter: (self instantiate: HNUMLVizPresenter on: [ :v |
-			v project: project;
-				selectedEntity: self &#selectedEntity
-		]).
-	^ tab
+		presenter: (self instantiate: HNUMLVizPresenter on: [ :p | p inheritSharedDataBindings ]);
+		yourself

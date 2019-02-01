@@ -1,3 +1,3 @@
-private - master tabs
+private
 foldersPane
-	^ self instantiate: HNFoldersPresenter on: [ :v | v project: project ].
+	^ self instantiate: HNFoldersPresenter on: [ :p | p inheritSharedDataBindings ].
