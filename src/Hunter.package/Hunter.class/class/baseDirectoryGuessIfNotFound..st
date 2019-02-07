@@ -6,7 +6,8 @@ baseDirectoryGuessIfNotFound: aBlockClosure
 	expectedPaths := {
 		FileLocator workingDirectory.
 		IceLibgitRepository repositoriesLocation / #dorellang / #hunter }.
-	expectedPaths do: [ :each | 
-		(HNEsprimaWrapper esprimaBinWrapperPathRelativeTo: each) exists ifTrue: [ ^ each ] ].
+	expectedPaths 
+		detect: [ :each | (HNEsprimaWrapper esprimaBinWrapperPathRelativeTo: each) exists ]
+		ifFound: [ :each | ^ each ].
 
 	^ aBlockClosure value
