@@ -10,7 +10,9 @@ Hunter runs on top of [Pharo](http://pharo.org), the live programming environmen
 
 ## How to use
 
-We do not provide a ready to use distribution of Hunter, but it is simple to build from sources: clone this repository and execute `./build.sh` in a terminal.
+**Build Hunter**: Clone this repository and execute `./build.sh` in a terminal. It's a very simple process if your systems meets the requirements (see below).
+
+**Start Hunter**: Once the build finished. Use `./start.sh`to open the application, where you can open a JavaScript project in two ways: click on the open button and choose the directory, or drag and drop it.
 
 ### System requirements
 
@@ -28,7 +30,7 @@ sudo apt-get install libssl1.0.0:i386
 sudo apt-get install libcairo2:i386
 ```
 
-## Development of Hunter
+## Development
 
 There are two main alternatives to get a Pharo image with Hunter loaded on it:
 
