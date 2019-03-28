@@ -1,13 +1,10 @@
-Pharo.changes
-PharoDebug.log
-Pharo.changes.*
-Pharo.image
-Pharo.image.bak.*
-Pharo*.sources
+*.changes
+*.image
+*.sources
 image.*/
 pharo-local/
 pharo
 pharo-ui
 pharo-vm/
+*.log
 *.swp
-progress.log
