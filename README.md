@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/dorellang/hunter.svg?branch=master)](https://travis-ci.org/dorellang/hunter)
 
-(WARNING: This is a Work-In-Progress, so stuff may not work as expected...)
-
 Hunter (standing for **H**unter **U**seful and **N**ice **T**ool for **E**CMA**S**cript **R**eengineering) is a platform in development that helps programmers to understand JavaScript applications via interactive visualizations.
 
 Hunter runs on top of [Pharo](http://pharo.org), the live programming environment.
@@ -16,9 +14,9 @@ We do not provide a ready to use distribution of Hunter, but it is simple to bui
 
 ### System requirements
 
-Currently, Hunter only runs under Linux and OS X. Windows is not currently supported. Also you need to have [NodeJS](https://nodejs.org/en/) in your system. Node >= 6.0.0 is fine.
+Hunter runs under Linux and OS X. Windows is not currently supported. Also you need to have [NodeJS](https://nodejs.org/en/) in your system (version >= 6).
 
-Furthermore, if you're running a 64-bit version of Linux (quite likely nowadays) you need to install the 32-bit versions of some libraries. This will do the work in Debian 8+ and Ubuntu 14.04+ (according to [the official Pharo docs](http://pharo.org/gnu-linux-installation)):
+**Note for linux 64-bits**: if you're running a 64-bit version of Linux (quite likely nowadays) you need to install the 32-bit versions of some libraries. This will do the work in Debian 8+ and Ubuntu 14.04+ (according to [the official Pharo docs](http://pharo.org/gnu-linux-installation)):
 
 ```
 sudo dpkg --add-architecture i386 
