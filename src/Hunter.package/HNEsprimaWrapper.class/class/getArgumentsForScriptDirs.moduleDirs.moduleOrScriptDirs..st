@@ -5,14 +5,17 @@ moduleOrScriptDirs: aModuleOrScriptDirCollection
 	arguments := OrderedCollection new.
 	aScriptDirCollection ifNotEmpty: [
 		arguments add: '-s'.
-		arguments addAll: aScriptDirCollection
+		aScriptDirCollection do: [:each |
+			arguments add: (each surroundedBy: '"') ].
 	].
 	aModuleDirCollection ifNotEmpty: [
 		arguments add: '-m'.
-		arguments addAll: aModuleDirCollection
+		aModuleDirCollection do: [:each |
+			arguments add: (each surroundedBy: '"') ].
 	].
 	aModuleOrScriptDirCollection ifNotEmpty: [
 		arguments add: '-x'.
-		arguments addAll: aModuleOrScriptDirCollection
+		aModuleOrScriptDirCollection do: [:each |
+			arguments add: (each surroundedBy: '"') ].
 	].
 	^ arguments
