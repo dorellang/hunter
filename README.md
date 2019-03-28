@@ -8,13 +8,15 @@ Hunter (standing for **H**unter **U**seful and **N**ice **T**ool for **E**CMA**S
 
 Hunter runs on top of [Pharo](http://pharo.org), the live programming environment.
 
-## Install Hunter 
+![screenshot](screenshot.png)
 
-In order to install and test Hunter currently you have two options: use the `install.sh` script or load it into an existing Pharo image. Either way you'll want to check the System Requirements.
+## How to use
+
+We do not provide a ready to use distribution of Hunter, but it is simple to build from sources: clone this repository and execute `./build.sh` in a terminal.
 
 ### System requirements
 
-Currently Hunter only runs under Linux and OS X. Windows is not supported. Also you need to have a [NodeJS](https://nodejs.org/en/) installation in your system. Node 6 runs fine, but Node 8 should work too.
+Currently, Hunter only runs under Linux and OS X. Windows is not currently supported. Also you need to have [NodeJS](https://nodejs.org/en/) in your system. Node >= 6.0.0 is fine.
 
 Furthermore, if you're running a 64-bit version of Linux (quite likely nowadays) you need to install the 32-bit versions of some libraries. This will do the work in Debian 8+ and Ubuntu 14.04+ (according to [the official Pharo docs](http://pharo.org/gnu-linux-installation)):
 
@@ -28,13 +30,14 @@ sudo apt-get install libssl1.0.0:i386
 sudo apt-get install libcairo2:i386
 ```
 
-### Install Hunter from zero with install.sh
+## Development of Hunter
 
-This is the recommended way of installing Hunter as it gets you a pristine Pharo 7 image and you can't go wrong if you covered the System Requirements (otherwise please submit an issue). Simply run the `install.sh` script in this repo. Then if you want to run Hunter you can launch the Pharo image by running and run `./pharo-ui` in order to launch the image. This works in Ubuntu 16.04/18.04.
+There are two main alternatives to get a Pharo image with Hunter loaded on it:
 
-### Load Hunter into an existing Pharo 7 image
+* Execute `./build.sh --dev` in a terminal, then execute `./pharo-ui Pharo.image`.
+* Download a Pharo 7 image by yourself, then load the BaselineOfHunter.
 
-Maybe you find that the overhead of downloading a new Pharo image and VM is too much if you already have some other images there. In that case, do the following:
+For the second alternative, you can evaluate the following inside Pharo:
 
 ```smalltalk
 Metacello new
@@ -42,7 +45,3 @@ Metacello new
 	repository: 'github://dorellang/hunter:master/src';
 	load.
 ```
-
-## Run and visualize your project!
-
-In your Smalltalk image open the World Menu and go to "Hunter > Open JavaScript project directory" and select the directory where the JS project you want to analyze is. Wait a moment (it takes about ~40 seconds for a medium to big sized project to load), and then an inspector window with some cool visualizations should open.
