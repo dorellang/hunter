@@ -1,3 +1,0 @@
-visualizations
-vizDescription
-	^ self asString

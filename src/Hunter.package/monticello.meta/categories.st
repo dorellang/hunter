@@ -1,9 +1,7 @@
 SystemOrganization addCategory: #Hunter!
 SystemOrganization addCategory: #'Hunter-AST'!
-SystemOrganization addCategory: #'Hunter-AngularJS'!
 SystemOrganization addCategory: #'Hunter-BaseASTVisitors'!
 SystemOrganization addCategory: #'Hunter-BaseMetaModelVisitors'!
-SystemOrganization addCategory: #'Hunter-Examples'!
 SystemOrganization addCategory: #'Hunter-Importing'!
 SystemOrganization addCategory: #'Hunter-Interpreter'!
 SystemOrganization addCategory: #'Hunter-Library'!
@@ -14,6 +12,7 @@ SystemOrganization addCategory: #'Hunter-NameCloud'!
 SystemOrganization addCategory: #'Hunter-Scope'!
 SystemOrganization addCategory: #'Hunter-Tests'!
 SystemOrganization addCategory: #'Hunter-UI'!
+SystemOrganization addCategory: #'Hunter-UI-Code'!
 SystemOrganization addCategory: #'Hunter-Util'!
 SystemOrganization addCategory: #'Hunter-Visualizations'!
 SystemOrganization addCategory: #'Hunter-WorldMenu'!
