@@ -1,6 +1,6 @@
 actions
 openFullScreen
 	HNWorldPresenter new openWorldWithSpec widget
-		color: Color lightGray "UIManager default theme windowColor";
-		borderColor: Color lightGray "UIManager default theme windowColor";
+		color: UITheme current windowColor;
+		borderColor: UITheme current windowColor;
 		borderWidth: 6
