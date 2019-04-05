@@ -10,7 +10,6 @@
 	"instvars" : [
 		"moduleDirs",
 		"scriptDirs",
-		"jsonFile",
 		"stream",
 		"parseResultCollection",
 		"moduleOrScriptDirs"
