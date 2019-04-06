@@ -1,2 +1,0 @@
-visiting
-visitSwitchStatement: aNode

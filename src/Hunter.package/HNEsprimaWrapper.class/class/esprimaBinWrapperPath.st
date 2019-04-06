@@ -1,3 +1,0 @@
-accessing
-esprimaBinWrapperPath
-	^ self esprimaBinWrapperPathRelativeTo: Hunter baseDirectory

@@ -1,3 +1,0 @@
-visiting
-visitIdentifier: anIdentifier
-	identifierFoundCallback cull: anIdentifier

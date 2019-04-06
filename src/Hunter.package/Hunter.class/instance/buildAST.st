@@ -1,5 +1,10 @@
 building
 buildAST
 	parseResultCollection := stream
-		ifNotNil: [ self loadFromJSONStream: stream ]
-		ifNil: [ self loadFromDirs ]
+		ifNotNil: [
+			HNEsprimaWrapper parseResultsFrom: stream ]
+		ifNil: [
+			HNEsprimaWrapper
+				parseResultsFromScriptDirs: scriptDirs
+				moduleDirs: moduleDirs
+				moduleOrScriptDirs: moduleOrScriptDirs ]

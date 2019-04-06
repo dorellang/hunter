@@ -1,3 +1,0 @@
-accessing
-finalizer
-	^ finalizer

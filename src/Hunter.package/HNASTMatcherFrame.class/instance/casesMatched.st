@@ -1,3 +1,0 @@
-initialization
-casesMatched
-	^ casesMatched

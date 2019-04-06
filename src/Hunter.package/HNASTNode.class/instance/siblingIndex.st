@@ -1,3 +1,0 @@
-accessing
-siblingIndex
-	^ siblingIndex

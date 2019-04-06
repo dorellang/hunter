@@ -1,3 +1,0 @@
-testing
-isBindingPattern
-	^ true

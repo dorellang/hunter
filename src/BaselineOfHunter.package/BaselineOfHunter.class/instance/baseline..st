@@ -18,4 +18,6 @@ baseline: spec
 				spec
 					repository: 'github://dorellang/DataBindings/src'.
 			].
-		spec package: 'Hunter'. ].
+		spec package: 'Hunter-AST'.
+		spec package: 'Hunter' with: [ spec requires: #('Hunter-AST') ].
+		].

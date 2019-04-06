@@ -1,3 +1,0 @@
-accessing
-isClassLikeNode
-	^ true

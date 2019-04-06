@@ -1,2 +1,0 @@
-visiting
-visitClassDeclaration: aNode
