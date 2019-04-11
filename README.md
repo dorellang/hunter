@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dorellang/hunter.svg?branch=master)](https://travis-ci.org/dorellang/hunter)
 
-Hunter (standing for **H**unter **U**seful and **N**ice **T**ool for **E**CMA**S**cript **R**eengineering) is a platform in development that helps programmers to understand JavaScript applications via interactive visualizations.
+Hunter (standing for **H**unter **U**seful and **N**ice **T**ool for **E**CMAScript **R**eengineering) is a platform in development that helps programmers to understand JavaScript applications via interactive visualizations.
 
 Hunter runs on top of [Pharo](http://pharo.org), the live programming environment.
 
