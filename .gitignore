@@ -1,9 +1,9 @@
-Pharo.changes
-PharoDebug.log
-Pharo.changes.*
-Pharo.image
-Pharo.image.bak.*
+Pharo*.changes
+Pharo*.changes.*
+Pharo*.image
+Pharo*.image.*
 Pharo*.sources
+PharoDebug.log
 image.*/
 pharo-local/
 pharo
