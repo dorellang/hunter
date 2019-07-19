@@ -5,22 +5,23 @@ baseline: spec
 		spec postLoadDoIt: #postLoadDoIt.
 		spec
 			baseline: 'NeoJSON' with: [
-				spec
-					repository: 'github://svenvc/NeoJSON:14da7628190cdc6b94462c8a41650b54f44a5ea9/repository' ];
-			baseline: 'OSSubprocess' with: [
-				spec
-					repository: 'github://marianopeck/OSSubprocess:v1.0.1/repository' ];
+				spec repository: 'github://svenvc/NeoJSON:c368bbf475f60d564cd3fb708e99b92efea8ffd3/repository' ];
+
+			baseline: 'OSSubprocess'
+				with: [ spec repository: 'github://pharo-contributions/OSSubprocess:v1.1' ];
+"
+			baseline: 'OSWinSubprocess'
+				with: [ spec repository: 'github://pharo-contributions/OSWinSubprocess:v1' ];
+"
 			baseline: 'Roassal2' with: [
-				spec
-					repository: 'github://ObjectProfile/Roassal2:85131fe0c093513009d3106ae7151bb471aac2f0/src' ];
+				spec repository: 'github://ObjectProfile/Roassal2:c1da8614c951008ea501f126ef3ccf25d73580ac/src' ];
+
 			baseline: 'Phanide' with: [
-				spec
-					repository: 'github://ronsaldo/phanide:4679635b00c35d4edda63b7927fc09c1a4948564/filetree'.
-			];
+				spec repository: 'github://ronsaldo/phanide:a38e384c9293bc1aa73fff0dd2396539a4500981/filetree' ];
+
 			baseline: 'DataBindings' with: [
-				spec
-					repository: 'github://dorellang/DataBindings/src'.
-			].
+				spec repository: 'github://dorellang/DataBindings/src' ].
+
 		spec package: 'Hunter-AST'.
 		spec package: 'Hunter' with: [ spec requires: #('Hunter-AST') ].
 		].
