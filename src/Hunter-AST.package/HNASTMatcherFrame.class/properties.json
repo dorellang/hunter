@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-AST-Visitors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parent",
+		"descendantRelevantCases",
+		"directChildCases",
+		"newDescendantCases",
+		"descendantRelevantCasesDict",
+		"casesMatched"
+	],
+	"name" : "HNASTMatcherFrame",
+	"type" : "normal"
+}

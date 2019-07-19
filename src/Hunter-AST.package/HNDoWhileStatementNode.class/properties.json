@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "HNStatementNode",
+	"category" : "Hunter-AST-AST",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"body",
+		"test"
+	],
+	"name" : "HNDoWhileStatementNode",
+	"type" : "normal"
+}

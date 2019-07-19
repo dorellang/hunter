@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "HNExpressionNode",
+	"category" : "Hunter-AST-AST",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"body",
+		"superClass"
+	],
+	"name" : "HNClassExpressionNode",
+	"type" : "normal"
+}

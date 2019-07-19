@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-AST-Parser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"path",
+		"type",
+		"status",
+		"result",
+		"sourceType"
+	],
+	"name" : "HNParseResult",
+	"type" : "normal"
+}
