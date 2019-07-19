@@ -5,7 +5,7 @@ moduleOrScript: aModuleOrScriptDirCollection
 	| process |
 	process := OSSUnixSubprocess new
 		command: 'node';
-		arguments: { self esprimaBinWrapperPath asPath pathString },
+		arguments: { self esprimaWrapperPath asPath pathString },
 			(self getArgumentsForScriptDirs: aScriptDirCollection
 				moduleDirs: aModuleDirCollection
 				moduleOrScriptDirs: aModuleOrScriptDirCollection);
