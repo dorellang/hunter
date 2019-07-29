@@ -4,7 +4,7 @@
 set -ex
 
 # download image and vm
-curl https://get.pharo.org/70+vm | bash
+curl https://get.pharo.org/64/70+vm | bash
 
 ./pharo Pharo.image metacello install "filetree://src" BaselineOfHunter --install=development
 ./pharo Pharo.image eval --save '(IceRepositoryCreator new repository: nil; location: FileSystem workingDirectory; createRepository) register'
