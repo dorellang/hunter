@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "HNEsprimaWrapperRunStrategy",
+	"category" : "Hunter-AST-Parser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNOSSubprocessEsprimaWrapperRunStrategy",
+	"type" : "normal"
+}

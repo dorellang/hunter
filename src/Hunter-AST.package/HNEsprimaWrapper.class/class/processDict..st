@@ -1,4 +1,4 @@
-parsing
+private-parsing
 processDict: aDict
 	| type class result |
 	type := aDict at: 'type' ifAbsent: [ Error signal: 'Expected type in ASTNode'].

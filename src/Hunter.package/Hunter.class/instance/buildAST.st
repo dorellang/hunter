@@ -2,9 +2,6 @@ building
 buildAST
 	parseResultCollection := stream
 		ifNotNil: [
-			HNEsprimaWrapper parseResultsFrom: stream ]
+			HNEsprimaWrapper parseResultsFromStream: stream ]
 		ifNil: [
-			HNEsprimaWrapper
-				parseResultsFromScriptDirs: scriptDirs
-				moduleDirs: moduleDirs
-				moduleOrScriptDirs: moduleOrScriptDirs ]
+			HNEsprimaWrapper parseResultsFromHunter: self ]

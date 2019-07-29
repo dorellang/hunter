@@ -2,7 +2,7 @@ tests
 testBasic
 
 	| parseResults parsedAST variableDeclaration variableDeclarator |
-	parseResults := HNEsprimaWrapper parseResultsFrom: self esprimaWrapperOutputString readStream.
+	parseResults := HNEsprimaWrapper parseResultsFromStream: self esprimaWrapperOutputString readStream.
 
 	self assert: parseResults class equals: Array.
 	self assert: parseResults size equals: 1.

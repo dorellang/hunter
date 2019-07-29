@@ -1,3 +1,3 @@
 helpers
 astFromJSON: json
-	^ (HNEsprimaWrapper parseResultsFrom: json readStream) first result
+	^ (HNEsprimaWrapper parseResultsFromStream: json readStream) first result

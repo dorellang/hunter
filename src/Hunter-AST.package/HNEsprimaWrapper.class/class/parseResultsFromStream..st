@@ -1,9 +1,9 @@
 parsing
-parseResultsFrom: readStream
+parseResultsFromStream: readStream
 	"Answer the parse output. 
 	It uses a NeoJSONReader with the AST Schema, which is named #ASTNode."
 
-	^ (NeoJSONReader on: readStream)
+	^ (NeoJSONReader on: (ZnBufferedReadStream on: readStream))
 		for: #ASTNode customDo: [ :mapping  | 
 			mapping decoder: [ :readValue |
 				| isOk |

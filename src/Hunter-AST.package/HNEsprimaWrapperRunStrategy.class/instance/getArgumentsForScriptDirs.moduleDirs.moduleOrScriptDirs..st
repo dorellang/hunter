@@ -1,4 +1,4 @@
-parsing
+running
 getArgumentsForScriptDirs: aScriptDirCollection moduleDirs: aModuleDirCollection
 moduleOrScriptDirs: aModuleOrScriptDirCollection
 	| arguments |
