@@ -6,8 +6,8 @@ runFor: aHunter astStreamDo: aBlock
 	tmpOutputErrorsFileReference := tmpOutputFileReference, 'errors'.
 	
 	commandAsString := String streamContents: [ :stream |
-		stream nextPutAll: self commandForNodejs.
-		(self argumentsFor: aHunter) do: [:each | stream space; nextPutAll: each ].
+		stream nextPutAll: self nodejsCommand.
+		(self nodejsArgumentsFor: aHunter) do: [:each | stream space; nextPutAll: each ].
 			
 		stream
 			nextPutAll: ' > ';

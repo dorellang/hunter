@@ -3,12 +3,12 @@ runFor: aHunter astStreamDo: aBlock
 
 	| process |
 	process := OSSUnixSubprocess new
-		command: command;
-		arguments: arguments;
+		command: self nodejsCommand;
+		arguments: (self nodejsArgumentsFor: aHunter);
 		redirectStdoutTo: (OSSVMProcess vmProcess systemAccessor makeBlockingPipe);
 		run.
 	
 	aBlock value: process stdoutStream reader.
 	
-	command waitForExit.
-	command closeAndCleanStreams.
+	process waitForExit.
+	process closeAndCleanStreams.
