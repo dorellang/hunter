@@ -18,13 +18,14 @@ echo " ---------------------------------"
 echo ""
 
 ./pharo Pharo.image metacello install "filetree://src" BaselineOfHunter --install=development
-./pharo Pharo.image eval --save '(IceRepositoryCreator new repository: nil; location: FileSystem workingDirectory; createRepository) register'
 
 
 
 # if the --dev command-line flag was set, stop here.
 if [[ $* == *--dev* ]]
 then
+    ./pharo Pharo.image eval --save '(IceRepositoryCreator new repository: nil; location: FileSystem workingDirectory; createRepository) register'
+
     echo ""
     echo " -------------------------"
     echo "| Build Finished: SUCCESS |"
