@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# We want to see what is executed and fail on bad exit codes
-set -ex
+# We want to fail on bad exit codes
+set -e
 
 echo ""
 echo " -------------------"
