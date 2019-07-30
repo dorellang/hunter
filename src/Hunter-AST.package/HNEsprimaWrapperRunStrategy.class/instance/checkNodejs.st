@@ -1,0 +1,3 @@
+running
+checkNodejs
+	self subclassResponsibility

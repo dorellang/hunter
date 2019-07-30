@@ -1,5 +1,5 @@
 running
-nodejsArgumentsFor: aHunter
+esprimaWrapperArgumentsFor: aHunter
 	^ Array streamContents: [ :stream |
 		stream nextPut: HNEsprimaWrapper esprimaWrapperPath asPath pathString.
 	

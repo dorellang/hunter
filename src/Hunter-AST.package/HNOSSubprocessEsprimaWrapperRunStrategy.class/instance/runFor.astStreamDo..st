@@ -4,7 +4,7 @@ runFor: aHunter astStreamDo: aBlock
 	| process |
 	process := OSSUnixSubprocess new
 		command: self nodejsCommand;
-		arguments: (self nodejsArgumentsFor: aHunter);
+		arguments: (self esprimaWrapperArgumentsFor: aHunter);
 		redirectStdoutTo: (OSSVMProcess vmProcess systemAccessor makeBlockingPipe);
 		run.
 	

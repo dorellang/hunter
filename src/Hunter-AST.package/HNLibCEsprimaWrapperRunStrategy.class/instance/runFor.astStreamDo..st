@@ -1,14 +1,14 @@
 running
 runFor: aHunter astStreamDo: aBlock
 
-	| commandAsString tmpOutputFileReference tmpOutputErrorsFileReference |
+	| commandWithArguments tmpOutputFileReference tmpOutputErrorsFileReference |
 	tmpOutputFileReference := FileReference newTempFilePrefix: 'hunter-' suffix: '.json'. 
 	tmpOutputErrorsFileReference := tmpOutputFileReference, 'errors'.
 	
-	commandAsString := String streamContents: [ :stream |
+	commandWithArguments := String streamContents: [ :stream |
 		stream nextPutAll: self nodejsCommand.
-		(self nodejsArgumentsFor: aHunter) do: [:each | stream space; nextPutAll: each ].
-			
+		(self esprimaWrapperArgumentsFor: aHunter) do: [:each | stream space; nextPutAll: each ].
+
 		stream
 			nextPutAll: ' > ';
 			nextPutAll: tmpOutputFileReference pathString;
@@ -16,7 +16,7 @@ runFor: aHunter astStreamDo: aBlock
 			nextPutAll: tmpOutputErrorsFileReference pathString.
  		].
 	
-	 OSPlatform current runCommand: commandAsString.
+	OSPlatform current runCommand: commandWithArguments.
 
 	tmpOutputErrorsFileReference contents ifNotEmpty: [ :errorMessage | self error: errorMessage ].
 

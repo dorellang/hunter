@@ -1,3 +1,3 @@
 running
-runFor: aBlock astStreamDo: anObject
+runFor: aHunter astStreamDo: aBlock
 	^ self subclassResponsibility
