@@ -19,7 +19,7 @@ baseline: spec
 		spec package: 'Hunter-AST'.
 		spec package: 'Hunter' with: [ spec requires: #('Hunter-AST') ].
 		].
-
+"
 	spec for: #Unix do: [ 
 		spec baseline: 'OSSubprocess' with: [ 
 			spec repository: 'github://pharo-contributions/OSSubprocess:v1.1' ].
@@ -27,7 +27,7 @@ baseline: spec
 			spec requires: #('OSSubprocess' ) ] 
 		]
 
-" Windows?
+ Windows?
 			baseline: 'OSWinSubprocess'
 				with: [ spec repository: 'github://pharo-contributions/OSWinSubprocess:v1' ];
 "
