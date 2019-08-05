@@ -9,7 +9,7 @@ echo "| Downloading Pharo |"
 echo " -------------------"
 echo ""
 
-curl https://get.pharo.org/64/70+vm | bash
+curl https://get.pharo.org/70+vm | bash
 
 echo ""
 echo " ---------------------------------"
@@ -17,6 +17,7 @@ echo "| Loading Hunter and dependencies |"
 echo " ---------------------------------"
 echo ""
 
+./pharo Pharo.image eval --save "EpMonitor current disable"
 ./pharo Pharo.image metacello install "filetree://src" BaselineOfHunter --install=development
 
 
@@ -25,6 +26,7 @@ echo ""
 if [[ $* == *--dev* ]]
 then
     ./pharo Pharo.image eval --save '(IceRepositoryCreator new repository: nil; location: FileSystem workingDirectory; createRepository) register'
+    ./pharo Pharo.image eval --save "EpMonitor current enable"
 
     echo ""
     echo " -------------------------"
