@@ -3,7 +3,7 @@ paintInto: b
 	| es |
 
 	"nodes"
-	b shape circle size: #sourceFileSize.
+	b shape circle size: #linesOfCode.
 	b interaction popup
 		backgroundColor: HNColorTheme popupBackgroundColor;
 		text: #filepathInProject.
@@ -51,7 +51,7 @@ paintInto: b
 		ifNotConnectedThen: RTGridLayout new.
 
 	"nodes' size"
-	b normalizer normalizeSize: #sourceFileSize min: 5 max: 30 using: [:nb | nb sqrt ].
+	b normalizer normalizeSize: #linesOfCode min: 5 max: 30 using: [:nb | nb sqrt ].
 
 	"view settings"
 	b view @ RTZoomableView.
