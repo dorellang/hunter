@@ -9,5 +9,5 @@ pharo-local/
 pharo
 pharo-ui
 pharo-vm/
+*.log
 *.swp
-progress.log
