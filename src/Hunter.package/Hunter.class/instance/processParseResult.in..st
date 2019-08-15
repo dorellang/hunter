@@ -4,9 +4,11 @@ processParseResult: aHNParseResult in: aHNProject
 	| metaModelBuilder rootScope scopeBuilder identifierBinder importProcessor nameCloudProcessor ast |
 	aHNParseResult status = 'ok' ifFalse: [
 		| programWithError |
-		programWithError := HNUnparsedProgram new filepath: aHNParseResult path.
+		programWithError := HNUnparsedProgram new
+			filepath: aHNParseResult path;
+			yourself.
 		aHNProject addProgram: programWithError.
-		^self ].
+		^ self ].
 	
 	metaModelBuilder := HNMetaModelBuilder withMetaModel: aHNProject programPath: aHNParseResult path.
 	rootScope := HNRootScope withProject: aHNProject.
@@ -14,7 +16,6 @@ processParseResult: aHNParseResult in: aHNProject
 	identifierBinder := HNIdentifierBinder withProject: aHNProject.
 	importProcessor := HNImportProcessor withProject: aHNProject.
 	nameCloudProcessor := HNNameCloudProcessor withProject: aHNProject.
-	"angularVisitor := HNAngularJSVisitor withProject: aHNProject."
 	
 	ast := aHNParseResult result.
 	ast accept: metaModelBuilder;
@@ -22,4 +23,3 @@ processParseResult: aHNParseResult in: aHNProject
 		accept: identifierBinder;
 		accept: importProcessor;
 		accept: nameCloudProcessor.
-		"ast accept: angularVisitor."
