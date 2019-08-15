@@ -4,12 +4,26 @@
 set -e
 
 echo ""
+echo " -----------------"
+echo "| Building Hunter |"
+echo " -----------------"
+echo ""
+echo "Build options:"
+if [[ $* == *--32bits* ]]; then echo "  32-bits"; fi
+if [[ $* == *--dev* ]]; then echo "  development"; fi
+
+echo ""
 echo " -------------------"
 echo "| Downloading Pharo |"
 echo " -------------------"
 echo ""
 
-curl https://get.pharo.org/70+vm | bash
+if [[ $* == *--32bits* ]]
+then
+    curl https://get.pharo.org/70+vm | bash
+else
+    curl https://get.pharo.org/64/70+vm | bash
+fi
 
 echo ""
 echo " ---------------------------------"
