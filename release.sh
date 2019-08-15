@@ -9,7 +9,7 @@ echo "| Releasing Hunter |"
 echo " ------------------"
 echo ""
 
-DIRNAME="hunter-`git rev-parse --short HEAD`"
+DIRNAME="release-`git rev-parse --short HEAD`"
 mkdir $DIRNAME
 cp -r pharo pharo-ui pharo-vm Pharo* start.sh $DIRNAME
 

@@ -11,3 +11,4 @@ pharo-ui
 pharo-vm/
 *.log
 *.swp
+release-*
