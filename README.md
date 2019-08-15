@@ -10,9 +10,9 @@ Hunter runs on top of [Pharo](http://pharo.org), the live programming environmen
 
 ## How to use
 
-We do not provide a ready to use distribution of Hunter, but it is simple to build from sources: clone or download this repository and execute `./build.sh` in a terminal (Powershell in Windows). Add `--32bits` argument if your system is 32-bits.
+Build: We do not provide a ready to use distribution of Hunter, but it is simple to build from sources: clone or download this repository and execute `./build.sh` in a terminal (Powershell in Windows). Add `--32bits` argument if your system is 32-bits.
 
-Once the build finished. Use `./start.sh`to open the application, where you can open a JavaScript project in two ways: click on the open button and choose the directory, or drag and drop it.
+Start: Once the build finished, use `./start.sh` to open the application. You can open a JavaScript project in two ways: click on the open button and choose the directory, or drag and drop it.
 
 ### System requirements
 
