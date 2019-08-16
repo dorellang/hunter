@@ -1,6 +1,4 @@
 SystemOrganization addCategory: #Hunter!
-SystemOrganization addCategory: #'Hunter-AST'!
-SystemOrganization addCategory: #'Hunter-BaseASTVisitors'!
 SystemOrganization addCategory: #'Hunter-BaseMetaModelVisitors'!
 SystemOrganization addCategory: #'Hunter-Importing'!
 SystemOrganization addCategory: #'Hunter-Interpreter'!

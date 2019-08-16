@@ -1,10 +1,13 @@
 hooks
 paintInto: b
-	| lb es |
+	| es |
 
 	"nodes"
-	b shape circle size: #sourceFileSize.
-	b interaction popupText: #filepathInProject.
+	b shape circle size: #linesOfCode.
+	b interaction popup
+		backgroundColor: HNColorTheme popupBackgroundColor;
+		text: #filepathInProject.
+
 	es := b nodes: project programs.
 	es @ (HNRTProgramsStyler new project: project).
 	es @ (HNStyleHighlightable new style: #(#hoverNode #hoverEdges)).
@@ -48,18 +51,19 @@ paintInto: b
 		ifNotConnectedThen: RTGridLayout new.
 
 	"nodes' size"
-	b normalizer normalizeSize: #sourceFileSize min: 5 max: 30 using: [:nb | nb sqrt ].
+	b normalizer normalizeSize: #linesOfCode min: 5 max: 30 using: [:nb | nb sqrt ].
 
 	"view settings"
 	b view @ RTZoomableView.
 
 	"legend"
-	lb := HNLegendBuilder new.
-	lb onDemand: 'Help'.
-	lb view: b view.
-	lb addText: 'Each node represents a JS file.'.
-	lb addText: 'And the arrows, the dependencies between them.'.
-	lb addText: 'Radio is proportional to file size.'.
-	lb addText: 'The color depends on the folder the file is.'.
-	"lb addColorFadingFrom: Color gray to: Color red text: '# of nodes that depend on me'."
-	lb build.
+	HNLegendBuilder new
+		view: b view;
+		onDemand: 'Help';
+		addText: 'Circles represent JS files:
+      - their size is proportional the lines of code;
+      - their color identify the container folder;
+      - when border is dashed, the file either was not found or had parsing errors.';
+		addText: 'Arrows show the dependencies between nodes (require/import).';
+		addText: 'Boxes represent external files/modules.';
+		build.

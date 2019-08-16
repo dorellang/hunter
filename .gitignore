@@ -1,6 +1,9 @@
-*.changes
-*.image
-*.sources
+Pharo*.changes
+Pharo*.changes.*
+Pharo*.image
+Pharo*.image.*
+Pharo*.sources
+PharoDebug.log
 image.*/
 pharo-local/
 pharo
@@ -8,3 +11,4 @@ pharo-ui
 pharo-vm/
 *.log
 *.swp
+release-*

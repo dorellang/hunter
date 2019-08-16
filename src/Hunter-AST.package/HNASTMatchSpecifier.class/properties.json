@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-AST-Visitors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"matcher",
+		"currentFrame",
+		"nextOrder"
+	],
+	"name" : "HNASTMatchSpecifier",
+	"type" : "normal"
+}

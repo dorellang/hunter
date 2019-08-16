@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Hunter-AST-Visitors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"conditions",
+		"actions",
+		"specifier",
+		"matchChildrenAtDict",
+		"directChildCasesDict",
+		"descendantCasesDict",
+		"order",
+		"caseClass",
+		"subcases"
+	],
+	"name" : "HNASTCaseBuilder",
+	"type" : "normal"
+}

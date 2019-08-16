@@ -1,3 +1,3 @@
 accessing
-filepath: anObject
-	filepath := anObject
+filepath: anAbsolutePathAsString
+	filepath := anAbsolutePathAsString

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "HNASTBaseCase",
+	"category" : "Hunter-AST-Visitors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HNASTNeitherCase",
+	"type" : "normal"
+}

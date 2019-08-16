@@ -1,7 +1,7 @@
 tests
 testClassOnExample
 
-	| r project classes |
+	| project classes |
 	project := Hunter new stream: self exampleCode readStream; buildProject.
 	
 	self assert: project classes size equals: 2.

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DiegoOrellana 8/9/2018 22:00",
+	"super" : "Object",
+	"category" : "Hunter-AST-Parser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"BaseDirectory"
+	],
+	"instvars" : [ ],
+	"name" : "HNEsprimaWrapper",
+	"type" : "normal"
+}

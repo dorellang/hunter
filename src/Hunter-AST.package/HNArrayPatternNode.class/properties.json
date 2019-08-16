@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "HNBindingPatternNode",
+	"category" : "Hunter-AST-AST",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"elements"
+	],
+	"name" : "HNArrayPatternNode",
+	"type" : "normal"
+}

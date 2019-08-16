@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "DiegoOrellana 4/30/2018 11:44",
+	"super" : "Object",
+	"category" : "Hunter-AST-AST",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parent",
+		"loc",
+		"range",
+		"siblings",
+		"siblingIndex"
+	],
+	"name" : "HNASTNode",
+	"type" : "normal"
+}
