@@ -2,15 +2,17 @@
 
 [![Build Status](https://travis-ci.org/dorellang/hunter.svg?branch=master)](https://travis-ci.org/dorellang/hunter)
 
-Hunter (standing for **H**unter **U**seful and **N**ice **T**ool for **E**CMAScript **R**eengineering) is a platform in development that helps programmers to understand JavaScript applications via interactive visualizations.
+Hunter (standing for **H**unter **U**seful and **N**ice **T**ool for **E**CMAScript **R**eengineering) is a tool to help understanding JavaScript applications via interactive visualizations.
 
-Hunter runs on top of [Pharo](http://pharo.org), the live programming environment.
+Hunter runs on top of [Pharo](http://pharo.org), a live programming environment.
 
 ![screenshot](screenshot.png)
 
 ## How to use
 
-Build: We do not provide a ready to use distribution of Hunter, but it is simple to build from sources: clone or download this repository and execute `./build.sh` in a terminal (Powershell in Windows). Add `--32bits` argument if your system is 32-bits.
+We do not provide a ready to use distribution of Hunter, but it is simple to build from sources.
+
+Build: Clone or download this repository and execute `./build.sh` in a terminal (Powershell in Windows). Add `--32bits` argument if your system is 32-bits.
 
 Start: Once the build finished, use `./start.sh` to open the application. You can open a JavaScript project in two ways: click on the open button and choose the directory, or drag and drop it.
 
