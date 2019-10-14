@@ -1,3 +1,3 @@
 accessing
 shortDescription
-	^ 'JS program not found'
+	^ 'Unresolved reference'

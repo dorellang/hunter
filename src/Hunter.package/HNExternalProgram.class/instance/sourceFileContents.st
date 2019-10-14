@@ -1,4 +1,4 @@
 accessing
-sourceFileContents
-	^ '// ', packageName, '
-// external dependency (npm?)'
+sourceFileContents 
+	^ '// {1}:
+// "{2}"' format: { self shortDescription. self packageName }

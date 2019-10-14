@@ -1,3 +1,3 @@
 accessing
 shortDescription
-	^ 'External Node.js package'
+	^ 'Unresolved external reference'
