@@ -1,3 +1,3 @@
 visiting
 visitVariable: aVariable
-	^ nil
+	^ aVariable name
