@@ -22,14 +22,12 @@ paintInto: builder
 		selectedEntity := selectedEntity program.
 		self refresher refreshIfRequested ].
 	
-		"Hack to optimize space."
+	"Hack to optimize space."
 	builder extent: self widget extent + (40@0).
 
 	lb := HNLegendBuilder new.
 	lb onDemand: 'Help'.
 	lb view: builder view.
-	lb addText: 'Each box may represent either a function or a class.'.
-	lb addText: 'Size is proportional to lines of code.'.
-"	palette := RTColorPalette diverging colors: 10 scheme: 'RdYlGn'.
-	lb addColorFadingUsing: palette reverse text: '# of variables'."
+	lb addText: 'Boxes represent functions, variables and classes in the selected file.'.
+	lb addText: 'Their size is proportional to lines of code.'.
 	lb build.

@@ -64,6 +64,6 @@ paintInto: b
       - their size is proportional the lines of code;
       - their color identify the container folder;
       - when border is dashed, the file either was not found or had parsing errors.';
-		addText: 'Arrows show the dependencies between nodes (require/import).';
 		addText: 'Boxes represent external files/modules.';
+		addText: 'Arrows show the dependencies between nodes (require/import).';
 		build.
