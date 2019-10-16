@@ -3,7 +3,11 @@
 PATTERNS=`cat .gitignore`
 
 echo "ATTENTION! This script removes all .gitignore'd files and directories:"
-echo "$PATTERNS"
+echo ""
+    for pattern in $PATTERNS
+    do
+        echo "`ls -1 $pattern 2>/dev/null | wc -l` occurences: $pattern"
+    done
 read -r -p "Are You Sure? [Y/n] " input
  
 case $input in
