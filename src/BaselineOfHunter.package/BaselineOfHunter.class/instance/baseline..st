@@ -8,7 +8,7 @@ baseline: spec
 				spec repository: 'github://svenvc/NeoJSON:c368bbf475f60d564cd3fb708e99b92efea8ffd3/repository' ];
 
 			baseline: 'Roassal2' with: [
-				spec repository: 'github://ObjectProfile/Roassal2:c1da8614c951008ea501f126ef3ccf25d73580ac/src' ];
+				spec repository: 'github://ObjectProfile/Roassal2:984fee0822b33705bd094f35b314012a958b87ac/src' ];
 
 			baseline: 'Phanide' with: [
 				spec repository: 'github://ronsaldo/phanide:a38e384c9293bc1aa73fff0dd2396539a4500981/filetree' ];
