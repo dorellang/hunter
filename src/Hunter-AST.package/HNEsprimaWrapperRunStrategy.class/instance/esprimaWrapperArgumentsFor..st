@@ -1,8 +1,8 @@
 running
 esprimaWrapperArgumentsFor: aHunter
 	^ Array streamContents: [ :stream |
-		stream nextPut: HNEsprimaWrapper esprimaWrapperPath asPath pathString.
-	
+		stream nextPut: (self pathArgumentFor: HNEsprimaWrapper esprimaWrapperPath pathString).
+
 		aHunter scriptDirs ifNotEmpty: [ :aCollection |
 			stream nextPut: '-s'.
 			aCollection do: [:each | stream nextPut: (self pathArgumentFor: each) ].
