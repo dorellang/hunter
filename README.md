@@ -37,6 +37,10 @@ Metacello new
 	load.
 ```
 
+## License
+
+The code is licensed under [MIT](LICENSE).
+
 ## Academia
 
 *Evaluating a Visual Approach for Understanding JavaScript Source Code*, by Martín Dias, Diego Orellana, Santiago Vidal, Leonel Merino, Alexandre Bergel. Published at [ICPC 2020 research](https://conf.researchr.org/details/icpc-2020/icpc-2020-research/29/Evaluating-a-Visual-Approach-for-Understanding-JavaScript-Source-Code). ([Prepint](http://bergel.eu/MyPapers/Dias20-Hunter.pdf))
